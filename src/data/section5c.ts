@@ -332,9 +332,9 @@ export const section5cModels: DecisionModel[] = [
   {
     slug: 'mavi-okyanus',
     section: 'strateji-rekabet',
-    title: 'Mavi Okyanus Stratejisi',
+    title: 'Blue Ocean Stratejisi (Mavi Okyanus)',
     question: 'Rakiplerle boğuşmak yerine rakipsiz bir alan açabilir miyim?',
-    summary: 'Kanlı rekabet okyanusunu terk edip dört eylem çerçevesiyle (yok et, azalt, artır, yarat) rakipsiz pazar alanı açma stratejisi.',
+    summary: 'Red Ocean\'daki (kanlı rekabet okyanusu) boğuşmayı terk edip dört eylem çerçevesiyle (yok et, azalt, artır, yarat) rakipsiz pazar alanı açma stratejisi.',
     tags: ['farklılaşma', 'inovasyon', 'pazar yaratma'],
     pages: [
       {
@@ -343,7 +343,16 @@ export const section5cModels: DecisionModel[] = [
         blocks: [
           { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Herkesin aynı müşteri için birbirini yediği kızıl okyanusta bir balık daha olmak yerine, sektörün ezberini bozup kimsenin avlanmadığı mavi bir okyanus aç: rekabeti yenmenin en iyi yolu rekabeti anlamsız kılmaktır.' },
           { t: 'callout', kind: 'ornek', title: 'Esnaftan örnek', text: 'Mahallede yedi berber var ve hepsi aynı oyunu oynuyor: daha çok ayna, daha çok koltuk, biraz daha ucuz fiyat. Berber Şevket ezberi bozuyor: televizyonu ve çay faslını kaldırıyor (yok et), bekleme süresini azaltıyor (azalt), randevu dakikliğini artırıyor (artır) ve öğle arasında işyerlerine gidip 15 dakikada yerinde tıraş hizmeti yaratıyor (yarat). Artık rakibi diğer altı berber değil; çünkü oynadığı oyun başka: vakti olmayan çalışanın berberi. Aynı sokakta, ama başka bir okyanusta.' },
-          { t: 'p', text: 'W. Chan Kim ve Renee Mauborgne, 2005 tarihli Mavi Okyanus Stratejisi kitabında yüz yılı aşkın dönemden 150 stratejik hamleyi inceledi. Bulguları: kalıcı büyük başarılar, mevcut pazarda rakibi yenerek değil, yeni talep yaratarak geldi. Modelin kalbi "değer inovasyonu"dur: geleneksel stratejinin "ya düşük maliyet ya farklılaşma, ikisi birden olmaz" ezberine karşı, sektörün gereksiz maliyetlerini atıp alıcıya yeni değer ekleyerek ikisini aynı anda yapmak.' },
+          { t: 'p', text: 'W. Chan Kim ve Renee Mauborgne, 2005 tarihli Blue Ocean Strategy (Mavi Okyanus Stratejisi) kitabında yüz yılı aşkın dönemden 150 stratejik hamleyi inceledi. Bulguları: kalıcı büyük başarılar, mevcut pazarda rakibi yenerek değil, yeni talep yaratarak geldi. Modelin kalbi "değer inovasyonu"dur: geleneksel stratejinin "ya düşük maliyet ya farklılaşma, ikisi birden olmaz" ezberine karşı, sektörün gereksiz maliyetlerini atıp alıcıya yeni değer ekleyerek ikisini aynı anda yapmak.' },
+          { t: 'h2', text: 'Red Ocean nedir? İki okyanusun farkı' },
+          { t: 'p', text: 'Kitabın çıkış noktası Red Ocean\'dır (kırmızı okyanus): sınırları belli, kuralları oturmuş mevcut pazarlar. Burada herkes aynı müşteri için boğuşur; rekabet kızıştıkça kâr erir ve sular kana bulanır — adı buradan gelir. Blue Ocean ise henüz var olmayan pazar alanıdır: rekabet yoktur, çünkü oyunun kuralları henüz yazılmamıştır.' },
+          { t: 'table', head: ['', 'Red Ocean (kırmızı okyanus)', 'Blue Ocean (mavi okyanus)'], rows: [
+            ['Pazar', 'Mevcut pazarda yarış', 'Rakipsiz yeni pazar alanı yarat'],
+            ['Rekabet', 'Rakibi yenmeye çalış', 'Rekabeti anlamsızlaştır'],
+            ['Talep', 'Mevcut talebi paylaş', 'Yeni talep yarat ve yakala'],
+            ['Değer-maliyet', 'Ya değer ya düşük maliyet: birini seç', 'Değer inovasyonu: ikisini birden kur'],
+            ['Strateji', 'Farklılaşma VEYA maliyet liderliği', 'Farklılaşma VE düşük maliyet'],
+          ]},
           { t: 'h2', text: 'Dört eylem çerçevesi' },
           { t: 'table', head: ['Eylem', 'Soru', 'Berber Şevket örneği'], rows: [
             ['Yok et', 'Sektörün kanıksadığı hangi unsur tamamen atılabilir?', 'Televizyon, uzun sohbet-çay faslı'],
