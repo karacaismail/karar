@@ -10,6 +10,7 @@ import { vizBySlug } from './data/viz'
 import { areasBySlug } from './data/areas'
 import { mountCharts } from './chart'
 import { renderBlocks, staticVizHtml, esc } from './render'
+import { runExport, type ExportPayload } from './export'
 import type { DecisionModel } from './types'
 
 const app = document.querySelector<HTMLDivElement>('#app')!
@@ -216,6 +217,38 @@ function notFoundHtml(): string {
 
 // ── Shell ────────────────────────────────────────────────────────────────────
 
+function exportPayload(route: ReturnType<typeof parseRoute>): ExportPayload {
+  if (route.view === 'section') {
+    const sec = sections.find((s) => s.id === route.id)
+    if (sec) return { scope: 'bolum', title: sec.title, file: `karar-kitabi-${sec.id}`, models: modelsBySection(sec.id), sections: [sec] }
+  }
+  if (route.view === 'model') {
+    const m = findModel(route.slug)
+    if (m) return { scope: 'model', title: m.title, file: `karar-kitabi-${m.slug}`, models: [m], sections: sections.filter((s) => s.id === m.section) }
+  }
+  return { scope: 'tum-kitap', title: 'Karar Kitabı — Tüm Modeller', file: 'karar-kitabi-tum-modeller', models: sections.flatMap((s) => modelsBySection(s.id)), sections }
+}
+
+/** Header dropdown: download the current page's complete data as JSON or Markdown. */
+function exportMenuHtml(): string {
+  return `
+    <details id="export-menu" class="relative ml-auto">
+      <summary class="flex h-11 min-w-[44px] cursor-pointer list-none items-center justify-center gap-1.5 rounded-lg px-2.5 text-ink-500 hover:bg-ink-50 [&::-webkit-details-marker]:hidden">
+        <i class="ph ph-download-simple text-2xl" aria-hidden="true"></i>
+        <span class="hidden text-base font-medium sm:inline">İndir</span>
+        <span class="sr-only">Sayfa verisini indir</span>
+      </summary>
+      <div class="absolute right-0 top-12 z-50 w-44 rounded-xl border border-ink-200 bg-white p-1 shadow-lg">
+        <button data-export="json" type="button" class="flex h-11 w-full items-center gap-2 rounded-lg px-3 text-left text-base text-ink-700 hover:bg-ink-50">
+          <i class="ph ph-brackets-curly text-xl text-brand-600" aria-hidden="true"></i> JSON indir
+        </button>
+        <button data-export="md" type="button" class="flex h-11 w-full items-center gap-2 rounded-lg px-3 text-left text-base text-ink-700 hover:bg-ink-50">
+          <i class="ph ph-file-text text-xl text-brand-600" aria-hidden="true"></i> Markdown indir
+        </button>
+      </div>
+    </details>`
+}
+
 function render(): void {
   const route = parseRoute()
   let content = ''
@@ -251,7 +284,7 @@ function render(): void {
           </span>
           <span class="truncate text-base font-bold text-ink-900">Karar Kitabı</span>
         </a>
-        <span class="ml-auto hidden text-base text-ink-400 sm:block">50 Stratejik Düşünme Modeli</span>
+        ${exportMenuHtml()}
       </div>
     </header>
 
@@ -284,8 +317,24 @@ function render(): void {
 
   initFlowbite()
   bindDrawer()
+  bindExport(exportPayload(route))
   mountCharts(vizBySlug)
   window.scrollTo({ top: 0 })
+}
+
+function bindExport(payload: ExportPayload): void {
+  const menu = document.getElementById('export-menu') as HTMLDetailsElement | null
+  if (!menu) return
+  menu.querySelectorAll<HTMLButtonElement>('[data-export]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      runExport(payload, btn.dataset.export as 'json' | 'md')
+      menu.open = false
+    })
+  })
+  // Tap outside closes the menu (mobile friendliness).
+  document.addEventListener('click', (e) => {
+    if (menu.open && !menu.contains(e.target as Node)) menu.open = false
+  })
 }
 
 // Minimal, dependency-free drawer for the mobile sidebar (320px-first).
