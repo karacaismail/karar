@@ -92,7 +92,7 @@ function v2ListHtml(): string {
     <div class="doc-prose">
       <p class="text-base font-bold uppercase tracking-widest text-brand-600">Ek Kaynaklar</p>
       <h1>V2 Dokümanları</h1>
-      <p class="!mt-3 text-ink-500">Eğitim setine eklenen ${v2Docs.length} ek doküman: aksiyon planları, gereksinim analizleri, mimari ve kaynak listeleri.</p>
+      <p class="!mt-3 text-ink-500">Eğitim setine eklenen ${v2Docs.length} ek doküman: strateji ve yönetim modelleri, oyun teorisi kaynakları, aksiyon planları ve Dilts'in Dahi Stratejileri tam metni.</p>
     </div>
     <ul class="mt-8 space-y-2">
       ${v2Docs
@@ -158,7 +158,7 @@ function homeHtml(): string {
           <i class="ph ph-books text-2xl" aria-hidden="true"></i>
         </span>
         <h2 class="mt-3 text-lg font-bold text-ink-900 group-hover:text-brand-600">Ek Kaynaklar</h2>
-        <p class="mt-1.5 text-base leading-7 text-ink-500">Aksiyon planları, gereksinim analizleri, mimari dokümanlar ve kaynak listeleri.</p>
+        <p class="mt-1.5 text-base leading-7 text-ink-500">Strateji ve yönetim modelleri, oyun teorisi kaynakları, aksiyon planları.</p>
         <p class="mt-3 inline-flex items-center gap-1 text-base font-semibold text-brand-600">${v2Docs.length} doküman <i class="ph ph-arrow-right" aria-hidden="true"></i></p>
       </a>
     </div>`

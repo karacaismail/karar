@@ -1,81 +1,9 @@
-/** Otomatik üretildi: eklenecekler v2 klasöründeki dokümanların kaydı. */
+/** Otomatik üretildi: xxx klasöründeki eğitim dokümanlarının kaydı. */
 export interface V2Doc { slug: string; title: string }
 export const v2Docs: V2Doc[] = [
   {
-    slug: 'backlink-katmans',
-    title: 'backlink-katmans'
-  },
-  {
-    slug: 'backlink-otomasyon',
-    title: 'backlink-otomasyon'
-  },
-  {
-    slug: 'backlinks-network',
-    title: 'backlinks-network'
-  },
-  {
-    slug: 'esc-requirements',
-    title: 'esc-requirements'
-  },
-  {
-    slug: 'nasil-gizlenir',
-    title: 'nasil-gizlenir'
-  },
-  {
-    slug: 'project-toma-roadmap',
-    title: 'project-toma-roadmap'
-  },
-  {
-    slug: 'project-toma-yol-haritasi',
-    title: 'project-toma-yol-haritasi'
-  },
-  {
-    slug: 'project-toma',
-    title: 'project-toma'
-  },
-  {
     slug: 'action-plan-content',
     title: 'action_plan_content'
-  },
-  {
-    slug: 'ekosistem-arastirmasi',
-    title: 'ekosistem_arastirmasi'
-  },
-  {
-    slug: 'glossary',
-    title: 'glossary'
-  },
-  {
-    slug: 'app-fikirs',
-    title: 'app.fikirs'
-  },
-  {
-    slug: 'gorsel-i-cerik-uretim-sistemi-detayli-gereksinimler-dokumani',
-    title: 'Görsel İçerik Üretim Sistemi - Detaylı Gereksinimler Dökümanı'
-  },
-  {
-    slug: 'gorsel-i-cerik-uretim-sistemi-detayli-tech-stack-dokumani',
-    title: 'Görsel İçerik Üretim Sistemi - Detaylı Tech Stack Dökümanı'
-  },
-  {
-    slug: 'gorsel-i-cerik-uretim-sistemi-preprompt-dokumani',
-    title: 'Görsel İçerik Üretim Sistemi - Preprompt Dökümanı'
-  },
-  {
-    slug: 'gorsel-ve-video-export-mekanizmasi-preprompt-ve-kod-dokumani',
-    title: 'Görsel ve Video Export Mekanizması - Preprompt ve Kod Dökümanı'
-  },
-  {
-    slug: 'mevcut-durum-analizi-ve-gereksinimler-degerlendirmesi',
-    title: 'Mevcut Durum Analizi ve Gereksinimler Değerlendirmesi'
-  },
-  {
-    slug: 'surdurulebilirlik-odakli-frontend-mimarisi-ve-i-s-akisi-tasarimi',
-    title: 'Sürdürülebilirlik Odaklı Frontend Mimarisi ve İş Akışı Tasarımı'
-  },
-  {
-    slug: 'ui-ux-ued-cdn-kaynaklar',
-    title: 'UI-UX-UED-CDN-kaynaklar'
   },
   {
     slug: 'action-plan',
@@ -86,31 +14,31 @@ export const v2Docs: V2Doc[] = [
     title: 'aksiyon-plani-v3'
   },
   {
-    slug: 'chatpt-ayarlar',
-    title: 'chatpt-ayarlar'
+    slug: 'i-s-yonetisim-modelleri-ile-gelecegi-sekillendiren-stratejik',
+    title: 'İş Yönetişim Modelleri ile Geleceği Şekillendiren Stratejik Liderlik Rehberi'
   },
   {
-    slug: 'chromeextensions',
-    title: 'chromeExtensions'
+    slug: 'i-sletme-yonetimi-icin-analiz-araclari-analiz-yontemleri-ve-2',
+    title: 'İşletme Yönetimi için_ Analiz araçları, Analiz yöntemleri ve Strateji Modelleri'
   },
   {
-    slug: 'mimari-dev-dosya-adlandirma',
-    title: 'mimari.dev.dosya-adlandirma'
+    slug: 'i-sletme-yonetimi-icin-analiz-araclari-analiz-yontemleri-ve',
+    title: 'İşletme Yönetimi için_ Analiz araçları, Analiz yöntemleri ve Strateji Modelleri dosyasının kopyası Can\'dan önce'
   },
   {
-    slug: 'pasted-content',
-    title: 'pasted_content'
+    slug: 'oyun-teorisi-oyunlari-ve-kaynaklari',
+    title: 'Oyun Teorisi Oyunları ve Kaynakları'
   },
   {
-    slug: 'requerements-analysis',
-    title: 'requerements_analysis'
+    slug: 'roberts-dilts-strategy-of-genius-dahi-stratejileri-vol-i-ii',
+    title: 'Roberts Dilts - Strategy of Genius - (Dahi Stratejileri) - Vol I-II-III-1 - 420 sayfa orjinal tam metin - convert edilen'
   },
   {
-    slug: 'research-php',
-    title: 'research.php'
+    slug: 'stratejik-uygulanabilirlik-ve-i-csellestirme-cercevesi-strat',
+    title: 'Stratejik Uygulanabilirlik ve İçselleştirme Çerçevesi_ Stratejinin Gücüne Güç Katmak'
   },
   {
-    slug: 'todo',
-    title: 'todo'
+    slug: 'yonetim-stratejileri-teknikleri-ve-modelleri',
+    title: 'Yönetim Stratejileri teknikleri ve modelleri'
   }
 ]
