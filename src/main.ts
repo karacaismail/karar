@@ -7,6 +7,7 @@ import './style.css'
 import { initFlowbite } from 'flowbite'
 import { sections, modelsBySection, findModel } from './data/content'
 import { vizBySlug } from './data/viz'
+import { areasBySlug } from './data/areas'
 import { mountCharts } from './chart'
 import { renderBlocks, staticVizHtml, esc } from './render'
 import type { DecisionModel } from './types'
@@ -163,6 +164,18 @@ function modelHtml(m: DecisionModel, pageSlug: string): string {
     <div class="doc-prose">
       <h1>${esc(m.title)}</h1>
       <p class="!mt-2 italic text-brand-600">${esc(m.question)}</p>
+      ${
+        areasBySlug[m.slug]?.length
+          ? `<div class="!mt-4 flex flex-wrap items-center gap-2">
+              <span class="inline-flex items-center gap-1 text-base font-semibold text-ink-500"><i class="ph ph-briefcase" aria-hidden="true"></i> Nerede kullanılır:</span>
+              ${areasBySlug[m.slug]
+                .map(
+                  (a) => `<span class="inline-flex items-center rounded-full border border-brand-200 bg-brand-50 px-3 py-1 text-base font-medium text-brand-700">${esc(a)}</span>`,
+                )
+                .join('')}
+            </div>`
+          : ''
+      }
       ${
         showViz
           ? `<figure class="!mt-6 rounded-2xl border border-ink-100 bg-white p-2 xs:p-3">
