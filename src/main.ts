@@ -311,19 +311,19 @@ function render(): void {
   app.innerHTML = `
     <!-- Top bar: 320px-first, single row, 44px+ touch targets -->
     <header class="sticky top-0 z-40 border-b border-ink-100 bg-white/90 backdrop-blur">
-      <div class="mx-auto flex h-14 max-w-6xl items-center gap-2 px-3 xs:px-4">
+      <div class="mx-auto flex h-14 max-w-6xl items-center gap-1.5 px-2 xs:gap-2 xs:px-4">
         <button id="drawer-open" aria-controls="doc-sidebar" aria-expanded="false" type="button"
                 class="flex h-11 w-11 items-center justify-center rounded-lg text-ink-500 hover:bg-ink-50 lg:hidden">
           <span class="sr-only">Menüyü aç</span>
           <i class="ph ph-list text-2xl" aria-hidden="true"></i>
         </button>
         <a href="#/" class="flex min-w-0 items-center gap-2">
-          <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-500 text-white">
+          <span class="flex h-8 w-8 xs:h-9 xs:w-9 shrink-0 items-center justify-center rounded-full bg-brand-500 text-white">
             <i class="ph-bold ph-compass text-xl" aria-hidden="true"></i>
           </span>
-          <span class="truncate text-base font-bold text-ink-900">Karar Kitabı</span>
+          <span class="hidden truncate text-base font-bold text-ink-900 xs:inline">Karar Kitabı</span>
         </a>
-        <span tabindex="0" class="group relative ml-auto inline-flex h-8 shrink-0 cursor-help items-center gap-1 rounded-full bg-ink-100 px-3 text-base font-semibold tabular-nums text-ink-600 focus:outline-none" title="küme/item" aria-label="küme/item sayısı">
+        <span tabindex="0" class="group relative ml-auto inline-flex h-8 shrink-0 cursor-help items-center gap-0.5 rounded-full bg-ink-100 px-2 xs:px-3 text-base font-semibold tabular-nums text-ink-600 focus:outline-none" title="küme/item" aria-label="küme/item sayısı">
           ${sections.length}<span class="text-ink-400">/</span>${sections.reduce((a, s) => a + modelsBySection(s.id).length, 0)}
           <span class="pointer-events-none absolute -bottom-9 left-1/2 z-50 hidden -translate-x-1/2 whitespace-nowrap rounded-lg bg-ink-900 px-3 py-1.5 text-base font-medium text-white group-hover:block group-focus:block">küme/item</span>
         </span>
