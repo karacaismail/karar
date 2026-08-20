@@ -3,7 +3,7 @@ import type { DecisionModel } from '../types'
 export const section4Models: DecisionModel[] = [
   {
     slug: 'takim-modeli',
-    section: 'baskalarini-gelistir',
+    section: 'ekip-liderlik',
     title: 'Takım Modeli',
     question: 'Ekibin bu işe uygun mu?',
     summary: 'Ekip üyelerini iş için kritik becerilere göre puanlayıp kritik sınırla karşılaştıran değerlendirme modeli.',
@@ -65,7 +65,7 @@ export const section4Models: DecisionModel[] = [
   },
   {
     slug: 'durumsal-liderlik',
-    section: 'baskalarini-gelistir',
+    section: 'ekip-liderlik',
     title: 'Hersey–Blanchard Modeli',
     question: 'Çalışanlarımı nasıl başarıyla yönetirim?',
     summary: 'Liderlik tarzını çalışanın olgunluk düzeyine göre değiştiren durumsal liderlik modeli.',
@@ -124,7 +124,7 @@ export const section4Models: DecisionModel[] = [
   },
   {
     slug: 'rol-oyunu-modeli',
-    section: 'baskalarini-gelistir',
+    section: 'ekip-liderlik',
     title: 'Rol Oyunu Modeli (Belbin & de Bono)',
     question: 'Kendi bakış açımı nasıl değiştiririm?',
     summary: 'De Bono\'nun altı şapkası ve Belbin\'in dokuz takım rolüyle bakış açısını bilinçli değiştirme teknikleri.',
@@ -188,7 +188,7 @@ export const section4Models: DecisionModel[] = [
   },
   {
     slug: 'sonuc-optimizasyonu',
-    section: 'baskalarini-gelistir',
+    section: 'proje-urun',
     title: 'Sonuç Optimizasyonu Modeli',
     question: 'Yazıcı neden hep teslim tarihinden hemen önce bozulur?',
     summary: 'Mevcut süreyi eşit üç döngüye bölüp projeyi "üç kez bitirerek" kaliteyi katlayan planlama modeli.',
@@ -247,7 +247,7 @@ export const section4Models: DecisionModel[] = [
   },
   {
     slug: 'proje-yonetim-ucgeni',
-    section: 'baskalarini-gelistir',
+    section: 'proje-urun',
     title: 'Proje Yönetimi Üçgeni',
     question: 'Mükemmellik neden imkânsız?',
     summary: 'Hızlı, ucuz ve kaliteli arasında aynı anda yalnızca ikisinin seçilebileceğini söyleyen model.',
@@ -303,7 +303,7 @@ export const section4Models: DecisionModel[] = [
   },
   {
     slug: 'drexler-sibbet-modeli',
-    section: 'baskalarini-gelistir',
+    section: 'ekip-liderlik',
     title: 'Drexler/Sibbet Takım Performans Modeli',
     question: 'Bir grup nasıl takıma dönüşür?',
     summary: 'Her takımın geçtiği yedi aşamayı ve her aşamanın çözülüp çözülmediğini gösteren işaretleri tanımlayan model.',
@@ -366,7 +366,7 @@ export const section4Models: DecisionModel[] = [
   },
   {
     slug: 'beklentiler-modeli',
-    section: 'baskalarini-gelistir',
+    section: 'insan-toplum',
     title: 'Beklentiler Modeli',
     question: 'Partner seçerken neye dikkat etmeli?',
     summary: 'Beklenti yükseldikçe mutluluğun önce arttığını, devrilme noktasından sonra kaçınılmaz hayal kırıklığına döndüğünü anlatan model.',
@@ -420,7 +420,7 @@ export const section4Models: DecisionModel[] = [
   },
   {
     slug: 'gelecekte-nasil-karar-verecegiz',
-    section: 'baskalarini-gelistir',
+    section: 'veri-teknoloji',
     title: 'Gelecekte Nasıl Karar Vereceğiz?',
     question: 'Karin Frick\'in denemesi: makineler karar verirken modellere ne olacak?',
     summary: 'Veri ve yapay zekâ çağında karar vermenin nasıl değiştiğine dair Gottlieb Duttweiler Enstitüsü\'nden bir bakış.',

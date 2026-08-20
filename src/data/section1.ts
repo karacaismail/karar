@@ -3,7 +3,7 @@ import type { DecisionModel } from '../types'
 export const section1Models: DecisionModel[] = [
   {
     slug: 'eisenhower-matrisi',
-    section: 'kendini-gelistir',
+    section: 'zaman-onceliklendirme',
     title: 'Eisenhower Matrisi',
     question: 'Daha verimli nasıl çalışırım?',
     summary: 'Acil ile önemli olanı ayırt etmeyi öğreten 2×2 önceliklendirme matrisi.',
@@ -65,7 +65,7 @@ export const section1Models: DecisionModel[] = [
   },
   {
     slug: 'swot-analizi',
-    section: 'kendini-gelistir',
+    section: 'strateji-rekabet',
     title: 'SWOT Analizi',
     question: 'Doğru çözümü nasıl bulurum?',
     summary: 'Güçlü ve zayıf yönler ile fırsat ve tehditleri tek tabloda birleştiren durum analizi.',
@@ -124,7 +124,7 @@ export const section1Models: DecisionModel[] = [
   },
   {
     slug: 'bcg-kutusu',
-    section: 'kendini-gelistir',
+    section: 'strateji-rekabet',
     title: 'BCG Kutusu',
     question: 'Maliyet ve faydayı nasıl değerlendiririm?',
     summary: 'Ürün ve yatırımları pazar büyümesi ile pazar payına göre dört gruba ayıran portföy matrisi.',
@@ -182,7 +182,7 @@ export const section1Models: DecisionModel[] = [
   },
   {
     slug: 'proje-portfoy-matrisi',
-    section: 'kendini-gelistir',
+    section: 'proje-urun',
     title: 'Proje Portföy Matrisi',
     question: 'Genel bakışı nasıl korurum?',
     summary: 'Aynı anda yürüyen projeleri maliyet ve zaman gibi iki eksende haritalayarak dengede tutmayı sağlayan model.',
@@ -244,7 +244,7 @@ export const section1Models: DecisionModel[] = [
   },
   {
     slug: 'geri-bildirim-analizi',
-    section: 'kendini-gelistir',
+    section: 'ogrenme-geri-bildirim',
     title: 'Geri Bildirim Analizi',
     question: 'Kendi çalışmamı değerlendirmeyi nasıl öğrenirim?',
     summary: 'Peter Drucker\'ın beklenti ile gerçek sonucu karşılaştırarak güçlü yönleri keşfetme tekniği.',
@@ -298,7 +298,7 @@ export const section1Models: DecisionModel[] = [
   },
   {
     slug: 'john-whitmore-modeli',
-    section: 'kendini-gelistir',
+    section: 'ogrenme-geri-bildirim',
     title: 'John Whitmore Modeli',
     question: 'Doğru hedefin peşinde miyim?',
     summary: 'Bir hedefi on dört ölçüte karşı sınayarak nihai hedef ile performans hedefini ayıran model.',
@@ -353,7 +353,7 @@ export const section1Models: DecisionModel[] = [
   },
   {
     slug: 'lastik-bant-modeli',
-    section: 'kendini-gelistir',
+    section: 'karar-verme',
     title: 'Lastik Bant Modeli',
     question: 'Bir ikilemle nasıl başa çıkarım?',
     summary: 'İki çekici seçenek arasında kalındığında "beni ne tutuyor, beni ne çekiyor" sorularını soran model.',
@@ -408,7 +408,7 @@ export const section1Models: DecisionModel[] = [
   },
   {
     slug: 'geri-bildirim-kutusu',
-    section: 'kendini-gelistir',
+    section: 'ogrenme-geri-bildirim',
     title: 'Geri Bildirim Kutusu',
     question: 'Başkalarının övgü ve eleştirileriyle nasıl başa çıkarım?',
     summary: 'Gelen geri bildirimi tavsiye, övgü, eleştiri ve öneri olarak dört kutuya ayırıp eyleme dönüştüren model.',
@@ -469,7 +469,7 @@ export const section1Models: DecisionModel[] = [
   },
   {
     slug: 'evet-hayir-kurali',
-    section: 'kendini-gelistir',
+    section: 'zaman-onceliklendirme',
     title: 'Evet/Hayır Kuralı',
     question: 'Hızlı bir karar nasıl verilir?',
     summary: 'Net parametrelere dayalı evet/hayır sorularıyla eleme yaparak hızlı karar vermeyi sağlayan kural.',
@@ -521,7 +521,7 @@ export const section1Models: DecisionModel[] = [
   },
   {
     slug: 'secim-fazlaligi',
-    section: 'kendini-gelistir',
+    section: 'karar-verme',
     title: 'Seçim Fazlalığı',
     question: 'Seçeneklerini neden sınırlamalısın?',
     summary: 'Çok fazla seçeneğin memnuniyeti artırmak yerine kafa karışıklığı ve karar felci ürettiğini gösteren model.',
@@ -575,7 +575,7 @@ export const section1Models: DecisionModel[] = [
   },
   {
     slug: 'pazar-boslugu-modeli',
-    section: 'kendini-gelistir',
+    section: 'strateji-rekabet',
     title: 'Pazar Boşluğu Modeli',
     question: 'Kazançlı bir fikri nasıl tanırım?',
     summary: 'Rakipleri üç eksenli bir haritaya yerleştirerek pazardaki doldurulmamış boşlukları görünür kılan model.',
@@ -636,7 +636,7 @@ export const section1Models: DecisionModel[] = [
   },
   {
     slug: 'morfolojik-kutu-scamper',
-    section: 'kendini-gelistir',
+    section: 'yaraticilik-dahi',
     title: 'Morfolojik Kutu ve SCAMPER',
     question: 'Yaratıcı olmak için neden yapıya ihtiyacın var?',
     summary: 'Var olan özellikleri sistematik biçimde birleştirerek ve SCAMPER sorularıyla dönüştürerek yenilik üreten iki teknik.',
@@ -702,7 +702,7 @@ export const section1Models: DecisionModel[] = [
   },
   {
     slug: 'hediye-modeli',
-    section: 'kendini-gelistir',
+    section: 'insan-toplum',
     title: 'Hediye Modeli',
     question: 'Hediyelere ne kadar harcamalı?',
     summary: 'Hediyeleri fiyat ve değer eksenlerinde konumlandırıp cömertliği ve deneyimi öne çıkaran model.',
@@ -764,7 +764,7 @@ export const section1Models: DecisionModel[] = [
   },
   {
     slug: 'kutunun-disinda-dusunmek',
-    section: 'kendini-gelistir',
+    section: 'yaraticilik-dahi',
     title: 'Kutunun Dışında Düşünmek',
     question: 'Parlak fikirler nasıl bulunur?',
     summary: 'Dokuz nokta bulmacasıyla varsayılan sınırları aşmayı anlatan — ve kutu içinde düşünmenin şaşırtıcı gücünü de gösteren — model.',
@@ -819,7 +819,7 @@ export const section1Models: DecisionModel[] = [
   },
   {
     slug: 'sonuclar-modeli',
-    section: 'kendini-gelistir',
+    section: 'karar-verme',
     title: 'Sonuçlar Modeli',
     question: 'Kararları neden zamanında vermek önemli?',
     summary: 'Bilgi zamanla artarken kararların etkisinin azaldığını gösteren, erken ve cesur karar vermeye çağıran model.',
@@ -873,7 +873,7 @@ export const section1Models: DecisionModel[] = [
   },
   {
     slug: 'bilincsiz-dusunme-teorisi',
-    section: 'kendini-gelistir',
+    section: 'karar-verme',
     title: 'Bilinçsiz Düşünme Teorisi',
     question: 'Sezgisel kararlar nasıl verilir?',
     summary: 'Karmaşık kararlarda bilinçdışının büyük veri yığınlarını rasyonel akıldan daha iyi elediğini söyleyen teori.',
@@ -928,7 +928,7 @@ export const section1Models: DecisionModel[] = [
   },
   {
     slug: 'durma-kurali',
-    section: 'kendini-gelistir',
+    section: 'zaman-onceliklendirme',
     title: 'Durma Kuralı',
     question: 'Bir kararı ne zaman gözden geçirmelisin?',
     summary: 'Önceden konmuş, koşulsuz bir eşikle ne zaman durulacağını baştan belirleyen basit kural.',
@@ -987,7 +987,7 @@ export const section1Models: DecisionModel[] = [
   },
   {
     slug: 'alici-karar-modeli',
-    section: 'kendini-gelistir',
+    section: 'pazarlama-musteri',
     title: 'Alıcı Karar Modeli',
     question: 'Bir araba nasıl satın alınır?',
     summary: 'Büyük bir satın almada araştırmayı sınırlamak, beklentiyi düşürmek ve karar kaygısını yönetmek için dört buçuk pratik ipucu.',

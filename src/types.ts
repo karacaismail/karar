@@ -1,11 +1,27 @@
 /** Content model for the documentation site. TypeScript-first: pages render from typed data only. */
 
+/**
+ * Cluster taxonomy. Clustering conditions, in priority order:
+ * 1. Kim kullanır: birey / ekip / işletme
+ * 2. İş türü: karar verme / analiz / uygulama / iyileştirme
+ * 3. Konu alanı: zaman, insan, oyun, strateji, pazarlama, kalite, risk, yaratıcılık, teknoloji
+ */
 export type SectionId =
-  | 'kendini-gelistir'
-  | 'kendini-anla'
-  | 'baskalarini-anla'
-  | 'baskalarini-gelistir'
-  | 'strateji-araclari'
+  | 'zaman-onceliklendirme'
+  | 'karar-verme'
+  | 'kendini-tanima'
+  | 'insan-toplum'
+  | 'oyun-teorisi-muzakere'
+  | 'ogrenme-geri-bildirim'
+  | 'ekip-liderlik'
+  | 'strateji-rekabet'
+  | 'pazarlama-musteri'
+  | 'hedef-performans'
+  | 'proje-urun'
+  | 'surec-kalite'
+  | 'risk-guvenlik'
+  | 'yaraticilik-dahi'
+  | 'veri-teknoloji'
 
 export interface Section {
   id: SectionId

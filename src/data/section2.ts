@@ -3,7 +3,7 @@ import type { DecisionModel } from '../types'
 export const section2Models: DecisionModel[] = [
   {
     slug: 'akis-modeli',
-    section: 'kendini-anla',
+    section: 'kendini-tanima',
     title: 'Akış (Flow) Modeli',
     question: 'Beni ne mutlu eder?',
     summary: 'Beceri ile zorluk dengelendiğinde ortaya çıkan derin odak hâlini açıklayan model.',
@@ -63,7 +63,7 @@ export const section2Models: DecisionModel[] = [
   },
   {
     slug: 'johari-penceresi',
-    section: 'kendini-anla',
+    section: 'kendini-tanima',
     title: 'Johari Penceresi',
     question: 'Başkaları hakkımda ne biliyor?',
     summary: 'Kendin ve başkalarının senin hakkında bildiklerini dört pencerede haritalayan model.',
@@ -121,7 +121,7 @@ export const section2Models: DecisionModel[] = [
   },
   {
     slug: 'bilissel-celiski',
-    section: 'kendini-anla',
+    section: 'karar-verme',
     title: 'Bilişsel Çelişki Modeli',
     question: 'İnsanlar zararlı olduğunu bile bile neden devam eder?',
     summary: 'İnanç ile davranış çeliştiğinde zihnin gerçeği değil, hikâyeyi değiştirdiğini anlatan model.',
@@ -173,7 +173,7 @@ export const section2Models: DecisionModel[] = [
   },
   {
     slug: 'hayal-edilemez-modeli',
-    section: 'kendini-anla',
+    section: 'kendini-tanima',
     title: 'Hayal Edilemez Modeli',
     question: 'Kanıtlayamadığın hâlde neye inanıyorsun?',
     summary: 'İnançlarımızı kanıtlanabilirlik ve hayal edilebilirlik eksenlerinde sorgulatan model.',
@@ -232,7 +232,7 @@ export const section2Models: DecisionModel[] = [
   },
   {
     slug: 'uffe-elbaek-modeli',
-    section: 'kendini-anla',
+    section: 'kendini-tanima',
     title: 'Uffe Elbæk Modeli',
     question: 'Kendini nasıl tanırsın?',
     summary: 'Kendini dört eksende puanlayarak özalgı ile dış algıyı karşılaştıran kişisel barometre.',
@@ -292,7 +292,7 @@ export const section2Models: DecisionModel[] = [
   },
   {
     slug: 'enerji-modeli',
-    section: 'kendini-anla',
+    section: 'kendini-tanima',
     title: 'Enerji Modeli',
     question: 'Şimdi ve burada mı yaşıyorsun?',
     summary: 'Zihinsel enerjini geçmiş, şimdi ve gelecek arasında nasıl böldüğünü gösteren model.',
@@ -350,7 +350,7 @@ export const section2Models: DecisionModel[] = [
   },
   {
     slug: 'siyasi-pusula',
-    section: 'kendini-anla',
+    section: 'insan-toplum',
     title: 'Siyasi Pusula',
     question: 'Siyasi partiler neyi savunur?',
     summary: 'Siyasi görüşleri sol–sağ ve liberal–otoriter eksenlerinde konumlandıran model.',
@@ -408,7 +408,7 @@ export const section2Models: DecisionModel[] = [
   },
   {
     slug: 'kisisel-performans-modeli',
-    section: 'kendini-anla',
+    section: 'kendini-tanima',
     title: 'Kişisel Performans Modeli',
     question: 'İşini değiştirmen gerektiğini nasıl anlarsın?',
     summary: 'İş tatminini mecburiyet, yetenek ve istek eksenlerinde üç hafta boyunca ölçen model.',
@@ -466,7 +466,7 @@ export const section2Models: DecisionModel[] = [
   },
   {
     slug: 'making-of-modeli',
-    section: 'kendini-anla',
+    section: 'kendini-tanima',
     title: 'Making-of Modeli',
     question: 'Geleceğini belirlemek için önce geçmişini anla',
     summary: 'Bir dönemin hedeflerini, derslerini, engellerini ve insanlarını zaman çizgisine dökerek geçmişle gelecek arasında köprü kuran model.',
@@ -528,7 +528,7 @@ export const section2Models: DecisionModel[] = [
   },
   {
     slug: 'kisisel-potansiyel-tuzagi',
-    section: 'kendini-anla',
+    section: 'kendini-tanima',
     title: 'Kişisel Potansiyel Tuzağı',
     question: 'Hiçbir şey beklememek neden daha iyi?',
     summary: 'Başkalarının beklentileri ile gerçek başarılar arasındaki makas açıldığında düşülen tuzağı anlatan model.',
@@ -587,7 +587,7 @@ export const section2Models: DecisionModel[] = [
   },
   {
     slug: 'zor-secim-modeli',
-    section: 'kendini-anla',
+    section: 'karar-verme',
     title: 'Zor Seçim Modeli',
     question: 'Karar vermenin dört yaklaşımı nedir?',
     summary: 'Kararları kıyaslanabilirlik ve sonuç büyüklüğüne göre dörde ayıran, zor seçimlerde öznel gerekçeyi öne çıkaran model.',
@@ -646,7 +646,7 @@ export const section2Models: DecisionModel[] = [
   },
   {
     slug: 'bilissel-onyargi',
-    section: 'kendini-anla',
+    section: 'karar-verme',
     title: 'Bilişsel Önyargı',
     question: 'Düşünürken yaptığımız dört hata nedir?',
     summary: 'Çapa etkisi, doğrulama hatası, bulunabilirlik hatası ve hızlı/yavaş düşünme hatasını tanıtan model.',
@@ -705,7 +705,7 @@ export const section2Models: DecisionModel[] = [
   },
   {
     slug: 'yol-ayrimi-modeli',
-    section: 'kendini-anla',
+    section: 'karar-verme',
     title: 'Yol Ayrımı Modeli',
     question: 'Peki şimdi ne olacak?',
     summary: 'Hayatta bir yol ayrımına gelindiğinde geçmişi, değerleri ve önündeki altı yolu haritalayan model.',

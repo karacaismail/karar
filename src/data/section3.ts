@@ -3,7 +3,7 @@ import type { DecisionModel } from '../types'
 export const section3Models: DecisionModel[] = [
   {
     slug: 'rumsfeld-matrisi',
-    section: 'baskalarini-anla',
+    section: 'risk-guvenlik',
     title: 'Rumsfeld Matrisi',
     question: 'Riskleri nasıl daha etkili analiz ederim?',
     summary: 'Bilinen ve bilinmeyenleri dört hücrede ayrıştıran risk analizi çerçevesi.',
@@ -60,7 +60,7 @@ export const section3Models: DecisionModel[] = [
   },
   {
     slug: 'isvicre-peyniri',
-    section: 'baskalarini-anla',
+    section: 'risk-guvenlik',
     title: 'İsviçre Peyniri Modeli',
     question: 'Hatalar nasıl olur?',
     summary: 'Kazaların tek bir hatadan değil, üst üste gelen savunma deliklerinden doğduğunu anlatan model.',
@@ -115,7 +115,7 @@ export const section3Models: DecisionModel[] = [
   },
   {
     slug: 'maslow-piramitleri',
-    section: 'baskalarini-anla',
+    section: 'insan-toplum',
     title: 'Maslow Piramitleri',
     question: 'Gerçekte neye ihtiyacın var, gerçekte ne istiyorsun?',
     summary: 'İnsan ihtiyaçlarını beş basamakta sıralayan ve ihtiyaçlar ile arzuları karşı karşıya koyan model.',
@@ -179,7 +179,7 @@ export const section3Models: DecisionModel[] = [
   },
   {
     slug: 'sinus-milieu-bourdieu',
-    section: 'baskalarini-anla',
+    section: 'insan-toplum',
     title: 'Sinus Milieu ve Bourdieu Modelleri',
     question: 'Nereye aitsin?',
     summary: 'İnsanları sosyal statü ve değer yönelimine göre sosyokültürel gruplara ayıran hedef kitle modelleri.',
@@ -234,7 +234,7 @@ export const section3Models: DecisionModel[] = [
   },
   {
     slug: 'cift-dongulu-ogrenme',
-    section: 'baskalarini-anla',
+    section: 'ogrenme-geri-bildirim',
     title: 'Çift Döngülü Öğrenme Modeli',
     question: 'Hatalarından nasıl ders çıkarırsın?',
     summary: 'Sadece davranışı değil, davranışın arkasındaki hedef ve değerleri sorgulayarak öğrenmeyi anlatan model.',
@@ -290,7 +290,7 @@ export const section3Models: DecisionModel[] = [
   },
   {
     slug: 'ai-modeli',
-    section: 'baskalarini-anla',
+    section: 'ogrenme-geri-bildirim',
     title: 'AI Modeli (Takdir Eden Sorgulama)',
     question: 'Nasıl bir tartışma tipisin?',
     summary: 'Zayıflıklara değil güçlü yönlere ve potansiyele odaklanan tartışma ve gelişim yaklaşımı.',
@@ -352,7 +352,7 @@ export const section3Models: DecisionModel[] = [
   },
   {
     slug: 'pareto-ilkesi',
-    section: 'baskalarini-anla',
+    section: 'zaman-onceliklendirme',
     title: 'Pareto İlkesi',
     question: 'Çıktının %80\'i neden girdinin %20\'sinden gelir?',
     summary: 'Sonuçların büyük kısmının nedenlerin küçük kısmından doğduğunu söyleyen 80/20 kuralı.',
@@ -406,7 +406,7 @@ export const section3Models: DecisionModel[] = [
   },
   {
     slug: 'uzun-kuyruk-modeli',
-    section: 'baskalarini-anla',
+    section: 'pazarlama-musteri',
     title: 'Uzun Kuyruk Modeli',
     question: 'İnternet ekonomiyi nasıl dönüştürüyor?',
     summary: 'Niş ürünlerin toplamının çok satanlardan daha büyük bir pazar oluşturabileceğini söyleyen model.',
@@ -461,7 +461,7 @@ export const section3Models: DecisionModel[] = [
   },
   {
     slug: 'catisma-cozumu-modeli',
-    section: 'baskalarini-anla',
+    section: 'oyun-teorisi-muzakere',
     title: 'Çatışma Çözümü Modeli',
     question: 'Bir çatışma zarifçe nasıl çözülür?',
     summary: 'Bir çatışmaya verilebilecek altı tipik tepkiyi ve sonuçlarını haritalayan model.',
@@ -525,7 +525,7 @@ export const section3Models: DecisionModel[] = [
   },
   {
     slug: 'siyah-kugu-modeli',
-    section: 'baskalarini-anla',
+    section: 'risk-guvenlik',
     title: 'Siyah Kuğu Modeli',
     question: 'Deneyimlerin seni neden daha bilge yapmaz?',
     summary: 'Geçmişe bakarak geleceği öngöremeyeceğimizi ve en büyük felaketlerin sürpriz geldiğini anlatan model.',
@@ -580,7 +580,7 @@ export const section3Models: DecisionModel[] = [
   },
   {
     slug: 'ucurum-difuzyon-modeli',
-    section: 'baskalarini-anla',
+    section: 'pazarlama-musteri',
     title: 'Uçurum – Difüzyon Modeli',
     question: 'Neden herkesin bir iPod\'u vardı?',
     summary: 'Yeniliklerin toplumda salgın eğrisiyle yayıldığını ve kritik eşiğin erken benimseyenlerden kitleye geçiş olduğunu anlatan model.',
@@ -642,7 +642,7 @@ export const section3Models: DecisionModel[] = [
   },
   {
     slug: 'kara-kutu-modeli',
-    section: 'baskalarini-anla',
+    section: 'veri-teknoloji',
     title: 'Kara Kutu Modeli',
     question: 'İnanç, bilginin yerini neden alıyor?',
     summary: 'Anlamadan kullanmak zorunda olduğumuz karmaşık sistemlerin karar verme biçimimizi nasıl değiştirdiğini anlatan model.',
@@ -697,7 +697,7 @@ export const section3Models: DecisionModel[] = [
   },
   {
     slug: 'mahkum-ikilemi',
-    section: 'baskalarini-anla',
+    section: 'oyun-teorisi-muzakere',
     title: 'Mahkûm İkilemi',
     question: 'Birine güvenmek ne zaman mantıklı?',
     summary: 'İşbirliği ile ihanet arasındaki gerilimi açıklayan oyun teorisi modeli.',

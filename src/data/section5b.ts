@@ -8,7 +8,7 @@ import type { DecisionModel } from '../types'
 export const section5bModels: DecisionModel[] = [
   {
     slug: 'guven-stratejileri',
-    section: 'strateji-araclari',
+    section: 'oyun-teorisi-muzakere',
     title: 'Güven Stratejileri Turnuvası',
     question: 'Tekrar tekrar karşılaştığın insanlara karşı hangi tavır uzun vadede kazanır?',
     summary: 'Axelrod turnuvasından çıkan ders: aynı kişiyle tekrar tekrar oynanan oyunlarda hangi davranış tarzının kazandığını gösteren strateji karşılaştırması.',
@@ -62,7 +62,7 @@ export const section5bModels: DecisionModel[] = [
   },
   {
     slug: 'ortak-mallar-trajedisi',
-    section: 'strateji-araclari',
+    section: 'oyun-teorisi-muzakere',
     title: 'Ortak Malların Trajedisi',
     question: 'Herkesin kullandığı ama kimsenin sahiplenmediği kaynaklar neden tükenir?',
     summary: 'Ortak kaynakta herkesin kendi payını büyütmesinin, sonunda kaynağı herkes için yok etmesini açıklayan model.',
@@ -115,7 +115,7 @@ export const section5bModels: DecisionModel[] = [
   },
   {
     slug: 'sifir-toplamli-oyunlar',
-    section: 'strateji-araclari',
+    section: 'oyun-teorisi-muzakere',
     title: 'Sıfır Toplamlı ve Sıfır Toplamlı Olmayan Oyunlar',
     question: 'Bu mücadelede birinin kazanması için diğerinin gerçekten kaybetmesi mi gerekiyor?',
     summary: 'Pastanın sabit mi yoksa büyütülebilir mi olduğunu ayırt ederek yanlış rekabet ve yanlış işbirliğinden koruyan model.',
@@ -168,7 +168,7 @@ export const section5bModels: DecisionModel[] = [
   },
   {
     slug: 'schelling-ayrisma-modeli',
-    section: 'strateji-araclari',
+    section: 'insan-toplum',
     title: 'Schelling Ayrışma Modeli',
     question: 'Kimse kötü niyetli değilken kötü sonuçlar nasıl ortaya çıkıyor?',
     summary: 'Bireylerin küçük ve masum tercihlerinin toplamda büyük ve istenmeyen bir düzen yaratabileceğini gösteren model.',
@@ -221,7 +221,7 @@ export const section5bModels: DecisionModel[] = [
   },
   {
     slug: 'hedef-sabitleme-tuzagi',
-    section: 'strateji-araclari',
+    section: 'veri-teknoloji',
     title: 'Hedef Sabitleme Tuzağı',
     question: 'Tek bir hedefe kilitlenmek ne zaman her şeyi yakar?',
     summary: 'Ataş maksimizasyonu düşünce deneyinden damıtılan uyarı: ölçüt hedefin yerine geçtiğinde sistemin geri kalan her değeri kendi hedefine yem etmesi.',

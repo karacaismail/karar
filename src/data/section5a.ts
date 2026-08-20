@@ -3,7 +3,7 @@ import type { DecisionModel } from '../types'
 export const section5aModels: DecisionModel[] = [
   {
     slug: 'freud-belirti-okuma',
-    section: 'strateji-araclari',
+    section: 'yaraticilik-dahi',
     title: 'Freud\'un Derin Yapı Stratejisi',
     question: 'Bu davranışın altında ne yatıyor?',
     summary: 'Tekrarlayan bir davranışın ya da sorunun görünmeyen nedenini ve bugün hâlâ işe yarayan amacını bulup dile dökerek çözen analiz stratejisi.',
@@ -64,7 +64,7 @@ export const section5aModels: DecisionModel[] = [
   },
   {
     slug: 'olumlu-niyet-cercevesi',
-    section: 'strateji-araclari',
+    section: 'ekip-liderlik',
     title: 'Olumlu Niyet Çerçevesi',
     question: 'Bu kötü alışkanlık kime ne kazandırıyor?',
     summary: 'Her sorunlu davranışın arkasında bir zamanlar işe yaramış bir olumlu amaç arayan ve davranışı değil, amacı karşılamanın yolunu değiştiren çerçeveleme stratejisi.',
@@ -124,7 +124,7 @@ export const section5aModels: DecisionModel[] = [
   },
   {
     slug: 'leonardo-gormeyi-bilmek',
-    section: 'strateji-araclari',
+    section: 'ogrenme-geri-bildirim',
     title: 'Leonardo\'nun Görmeyi Bilme Stratejisi',
     question: 'Bir şeyi gerçekten öğrendiğimi nasıl anlarım?',
     summary: 'Leonardo da Vinci\'nin gözlem, çizerek dışa vurma ve farkı ölçüp düzeltme döngüsüyle bir konuyu ezbere değil derinden öğrenme stratejisi.',
@@ -185,7 +185,7 @@ export const section5aModels: DecisionModel[] = [
   },
   {
     slug: 'tesla-zihinsel-prototipleme',
-    section: 'strateji-araclari',
+    section: 'yaraticilik-dahi',
     title: 'Tesla\'nın Zihinsel Prototipleme Stratejisi',
     question: 'Fikrimi para ve malzeme harcamadan nasıl test ederim?',
     summary: 'Nikola Tesla\'nın bir buluşu elle yapmadan önce zihninde kurup çalıştırma, kusurlarını hayalinde giderme ve ancak tamamlanınca gerçeğe dökme stratejisi.',

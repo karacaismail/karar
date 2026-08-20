@@ -3,7 +3,7 @@ import type { DecisionModel } from '../types'
 export const section5cModels: DecisionModel[] = [
   {
     slug: 'porter-bes-guc',
-    section: 'strateji-araclari',
+    section: 'strateji-rekabet',
     title: 'Porter\'ın Beş Güç Analizi',
     question: 'Bu sektörde para kazanmak neden bu kadar zor?',
     summary: 'Bir sektörün kâr potansiyelini beş rekabet gücüne bakarak ölçen Michael Porter\'ın sektör analizi modeli.',
@@ -58,7 +58,7 @@ export const section5cModels: DecisionModel[] = [
   },
   {
     slug: 'pestle-analizi',
-    section: 'strateji-araclari',
+    section: 'strateji-rekabet',
     title: 'PESTLE Analizi',
     question: 'İşimi benim dışımdaki hangi rüzgarlar etkileyecek?',
     summary: 'İşletmeyi çevreleyen politik, ekonomik, sosyal, teknolojik, hukuki ve çevresel dış etkenleri sistemli tarayan analiz.',
@@ -114,7 +114,7 @@ export const section5cModels: DecisionModel[] = [
   },
   {
     slug: 'smart-hedefler',
-    section: 'strateji-araclari',
+    section: 'hedef-performans',
     title: 'SMART Hedefler',
     question: 'Hedefim gerçekten hedef mi, yoksa dilek mi?',
     summary: 'Hedefi belirli, ölçülebilir, ulaşılabilir, ilgili ve zamana bağlı beş süzgeçten geçirerek dilekten plana çeviren yöntem.',
@@ -169,7 +169,7 @@ export const section5cModels: DecisionModel[] = [
   },
   {
     slug: 'okr',
-    section: 'strateji-araclari',
+    section: 'hedef-performans',
     title: 'OKR (Hedefler ve Anahtar Sonuçlar)',
     question: 'Herkes çok çalışıyor ama aynı yöne mi koşuyoruz?',
     summary: 'İlham veren bir hedefi 3-5 ölçülebilir anahtar sonuca bağlayan, Intel\'de doğup Google\'da yaygınlaşan hizalanma sistemi.',
@@ -224,7 +224,7 @@ export const section5cModels: DecisionModel[] = [
   },
   {
     slug: 'dengeli-karne',
-    section: 'strateji-araclari',
+    section: 'hedef-performans',
     title: 'Dengeli Karne (Balanced Scorecard)',
     question: 'Kasadaki para iyi görünüyor; işim gerçekten iyi mi?',
     summary: 'Şirket performansını sadece parayla değil dört pencereden (finans, müşteri, süreç, öğrenme) birlikte ölçen Kaplan-Norton modeli.',
@@ -277,7 +277,7 @@ export const section5cModels: DecisionModel[] = [
   },
   {
     slug: 'vrio',
-    section: 'strateji-araclari',
+    section: 'strateji-rekabet',
     title: 'VRIO Analizi',
     question: 'Elimdeki hangi güç gerçekten rakiplerin kopyalayamayacağı bir güç?',
     summary: 'Bir kaynağın kalıcı rekabet avantajı olup olmadığını dört soruyla (değerli, nadir, taklidi zor, örgütlenmiş) test eden model.',
@@ -331,7 +331,7 @@ export const section5cModels: DecisionModel[] = [
   },
   {
     slug: 'mavi-okyanus',
-    section: 'strateji-araclari',
+    section: 'strateji-rekabet',
     title: 'Mavi Okyanus Stratejisi',
     question: 'Rakiplerle boğuşmak yerine rakipsiz bir alan açabilir miyim?',
     summary: 'Kanlı rekabet okyanusunu terk edip dört eylem çerçevesiyle (yok et, azalt, artır, yarat) rakipsiz pazar alanı açma stratejisi.',
@@ -385,7 +385,7 @@ export const section5cModels: DecisionModel[] = [
   },
   {
     slug: 'mvp-ve-gate-dongusu',
-    section: 'strateji-araclari',
+    section: 'proje-urun',
     title: 'MVP ve Kapı (Gate) Döngüsü',
     question: 'Bu fikre devam mı, yön değişikliği mi, fren mi?',
     summary: 'Fikri en küçük çalışan ürünle (MVP) test edip her aşama kapısında dört karardan birini (ilerle, öğren, pivot, öldür) veren girişim disiplini.',
