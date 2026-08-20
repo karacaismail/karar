@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-white font-sans text-ink-800 antialiased;
+    font-size: 16px; /* minimum text size is 1rem everywhere: no iOS zoom, readable at 320px */
+  }
+  /* Turkish text renders correctly: proper İ/i–I/ı casing for uppercased labels. */
+  :lang(tr) {
+    -webkit-locale: 'tr';
+  }
+}
+
+@layer components {
+  /* GitBook-style prose: generous clearspace, tuned for 320px first */
+  .doc-prose {
+    @apply max-w-prose;
+  }
+  .doc-prose > * + * {
+    @apply mt-5;
+  }
+  .doc-prose h1 {
+    @apply text-2xl xs:text-3xl md:text-4xl font-bold tracking-tight text-ink-900 leading-tight;
+  }
+  .doc-prose h2 {
+    @apply text-lg xs:text-xl md:text-2xl font-semibold text-ink-900 pt-6 leading-snug;
+  }
+  .doc-prose h3 {
+    @apply text-base xs:text-lg font-semibold text-ink-900 pt-2;
+  }
+  .doc-prose p,
+  .doc-prose li {
+    @apply text-base leading-7 text-ink-700;
+  }
+  .doc-prose ul {
+    @apply list-disc pl-5 space-y-2;
+  }
+  .doc-prose ol {
+    @apply list-decimal pl-5 space-y-2;
+  }
+  .doc-prose blockquote {
+    @apply border-l-4 border-brand-400 bg-brand-50 rounded-r-lg px-4 py-3 text-ink-700 italic;
+  }
+  .doc-prose strong {
+    @apply text-ink-900;
+  }
+}
