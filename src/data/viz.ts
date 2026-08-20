@@ -354,16 +354,40 @@ export const vizBySlug: Record<string, Viz> = {
     note: 'Dört bilgi hücresi ve her birinin eylemi. Žižek\'in eklediği son satır en tehlikelisidir: bilgi vardır ama duyulmak istenmez.',
   },
   'isvicre-peyniri': {
-    kind: 'process',
-    steps: [
-      { title: 'Tehlike', text: 'Hata potansiyeli her zaman vardır.' },
-      { title: 'Katman 1 — Eğitim', text: 'Delik: yorgunluk, yeni personel.' },
-      { title: 'Katman 2 — Prosedür / kontrol listesi', text: 'Delik: aciliyette atlanır.' },
-      { title: 'Katman 3 — Otomasyon / alarm', text: 'Delik: yanlış alarm alışkanlığı.' },
-      { title: 'Katman 4 — Denetim', text: 'Delik: örneklem dışı kalanlar.' },
-      { title: 'Kaza', text: 'Yalnızca TÜM deliklerin hizalandığı nadir anda gerçekleşir.' },
-    ],
-    note: 'Reason\'ın peynir dilimleri: tehlike savunma katmanlarından sırayla geçer; her katmanın deliği farklı olduğu sürece sistem güvenlidir.',
+    kind: 'svg',
+    svg: `<svg viewBox="0 0 640 320" role="img" aria-label="İsviçre peyniri modeli: delikli savunma katmanlarından geçen tehlike oku" class="mx-auto w-full max-w-xl min-w-[480px]">
+      <defs>
+        <marker id="chz-ok" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#e03e14"/></marker>
+      </defs>
+      <g font-family="Roboto, sans-serif">
+        <text x="16" y="140" font-size="15" font-weight="700" fill="#414d57">TEHLİKE</text>
+        <line x1="16" y1="152" x2="600" y2="152" stroke="#e03e14" stroke-width="4" stroke-dasharray="0" marker-end="url(#chz-ok)"/>
+        ${[0, 1, 2, 3]
+          .map((i) => {
+            const x = 130 + i * 120
+            const holes = [
+              [[26, 60, 13], [58, 210, 16], [30, 258, 10]],
+              [[52, 74, 11], [20, 160, 14], [62, 244, 12]],
+              [[30, 96, 15], [56, 152, 13], [24, 226, 11]],
+              [[48, 66, 12], [26, 152, 15], [58, 262, 13]],
+            ][i]
+            return `
+            <g transform="translate(${x},30) skewY(-6)">
+              <rect x="0" y="30" width="84" height="252" rx="14" fill="#f5c842" stroke="#c99b1f" stroke-width="2.5"/>
+              ${holes.map(([hx, hy, r]) => `<circle cx="${hx}" cy="${hy}" r="${r}" fill="#ffffff" stroke="#c99b1f" stroke-width="1.5"/>`).join('')}
+            </g>`
+          })
+          .join('')}
+        <g font-size="13" fill="#4f5e6a" text-anchor="middle">
+          <text x="172" y="308">Eğitim</text>
+          <text x="292" y="308">Prosedür</text>
+          <text x="412" y="308">Alarm</text>
+          <text x="532" y="308">Denetim</text>
+        </g>
+        <text x="600" y="140" font-size="15" font-weight="700" fill="#e03e14" text-anchor="end">KAZA</text>
+      </g>
+    </svg>`,
+    note: 'Reason\'ın orijinal diyagramı: her savunma katmanı bir peynir dilimidir ve her dilimde delikler (zayıflıklar) vardır. Kaza, yalnızca deliklerin aynı hizaya geldiği nadir anda gerçekleşir — ok o anda bütün dilimlerden geçer. Katmanların delikleri farklı yerlerde olduğu sürece sistem güvenlidir.',
   },
   'maslow-piramitleri': {
     kind: 'pyramid',

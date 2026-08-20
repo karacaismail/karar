@@ -8,6 +8,9 @@ import { section5bModels } from './section5b'
 import { section5cModels } from './section5c'
 import { section6aModels } from './section6a'
 import { section6bModels } from './section6b'
+import { section7aModels } from './section7a'
+import { section7bModels } from './section7b'
+import { section7cModels } from './section7c'
 
 export const sections: Section[] = [
   { id: 'zaman-onceliklendirme', title: 'Zaman ve Önceliklendirme', subtitle: 'Hangi iş önce? Bireysel verimlilik ve kaldıraç modelleri', icon: 'ph-clock' },
@@ -37,11 +40,14 @@ export const models: DecisionModel[] = [
   ...section5cModels,
   ...section6aModels,
   ...section6bModels,
+  ...section7aModels,
+  ...section7bModels,
+  ...section7cModels,
 ]
 
 /** v1 anlık görüntüsünden SONRA eklenen modeller: arayüzde "Yeni" etiketi alır. */
 export const newSlugs: Set<string> = new Set(
-  [...section5aModels, ...section5bModels, ...section5cModels, ...section6aModels, ...section6bModels].map((m) => m.slug),
+  [...section5aModels, ...section5bModels, ...section5cModels, ...section6aModels, ...section6bModels, ...section7aModels, ...section7bModels, ...section7cModels].map((m) => m.slug),
 )
 
 export function modelsBySection(id: string): DecisionModel[] {

@@ -5,9 +5,13 @@ import '@phosphor-icons/web/regular/style.css'
 import '@phosphor-icons/web/bold/style.css'
 import './style.css'
 import { initFlowbite } from 'flowbite'
-import { sections, modelsBySection, findModel, newSlugs } from './data/content'
+import { sections, models, modelsBySection, findModel, newSlugs } from './data/content'
 import { vizBySlug } from './data/viz'
 import { areasBySlug } from './data/areas'
+
+/** Central specs + per-model inline specs merged; inline wins. */
+const allViz = { ...vizBySlug, ...Object.fromEntries(models.filter((m) => m.viz).map((m) => [m.slug, m.viz!])) }
+const areasOf = (slug: string): string[] | undefined => findModel(slug)?.areas ?? areasBySlug[slug]
 import { mountCharts } from './chart'
 import { renderBlocks, staticVizHtml, esc } from './render'
 import { runExport, type ExportPayload } from './export'
@@ -146,7 +150,7 @@ function modelHtml(m: DecisionModel, pageSlug: string): string {
   const idx = m.pages.indexOf(page)
   const prev = m.pages[idx - 1]
   const next = m.pages[idx + 1]
-  const viz = vizBySlug[m.slug]
+  const viz = allViz[m.slug]
   const showViz = viz && page.slug === 'kavram'
   return `
     <nav class="mb-5 flex flex-wrap items-center gap-1.5 text-base text-ink-400" aria-label="Breadcrumb">
@@ -174,10 +178,10 @@ function modelHtml(m: DecisionModel, pageSlug: string): string {
       <h1 class="flex flex-wrap items-center gap-3">${esc(m.title)}${newBadge(m.slug)}</h1>
       <p class="!mt-2 italic text-brand-600">${esc(m.question)}</p>
       ${
-        areasBySlug[m.slug]?.length
+        areasOf(m.slug)?.length
           ? `<div class="!mt-4 flex flex-wrap items-center gap-2">
               <span class="inline-flex items-center gap-1 text-base font-semibold text-ink-500"><i class="ph ph-briefcase" aria-hidden="true"></i> Nerede kullanılır:</span>
-              ${areasBySlug[m.slug]
+              ${areasOf(m.slug)!
                 .map(
                   (a) => `<span class="inline-flex items-center rounded-full border border-brand-200 bg-brand-50 px-3 py-1 text-base font-medium text-brand-700">${esc(a)}</span>`,
                 )
@@ -327,7 +331,7 @@ function render(): void {
   bindDrawer()
   bindAccordion()
   bindExport(exportPayload(route))
-  mountCharts(vizBySlug)
+  mountCharts(allViz)
   window.scrollTo({ top: 0 })
 }
 

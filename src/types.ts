@@ -50,6 +50,9 @@ export type Viz =
   | { kind: 'table'; head: string[]; rows: string[][]; accentCol?: number; note?: string }
   | { kind: 'process'; steps: { title: string; text?: string }[]; loop?: boolean; note?: string }
   | { kind: 'venn3'; labels: [string, string, string]; pairs: [string, string, string]; center: string; note?: string }
+  /** Bespoke hand-authored SVG for models whose canonical diagram has an iconic shape
+   *  (Swiss cheese slices, nine-dot box…). Authored in-repo only, never from user input. */
+  | { kind: 'svg'; svg: string; note?: string }
 
 /** One sub-page of a model (concept, application, real-world case…). */
 export interface ModelPage {
@@ -78,4 +81,8 @@ export interface DecisionModel {
   summary: string
   tags: string[]
   pages: ModelPage[]
+  /** Inline chart spec; falls back to the central vizBySlug map when absent. */
+  viz?: Viz
+  /** Inline usage-area pills; falls back to the central areasBySlug map when absent. */
+  areas?: string[]
 }

@@ -67,6 +67,9 @@ export function staticVizHtml(v: Viz): string | null {
         }
       </ol>`
   }
+  if (v.kind === 'svg') {
+    return `<div class="overflow-x-auto">${v.svg}</div>`
+  }
   if (v.kind === 'venn3') {
     const [a, b, c] = v.labels
     const [ab, ac, bc] = v.pairs

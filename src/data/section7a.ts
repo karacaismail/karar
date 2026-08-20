@@ -1,0 +1,415 @@
+import type { DecisionModel } from '../types'
+
+export const section7aModels: DecisionModel[] = [
+  {
+    slug: 'scrum',
+    section: 'proje-urun',
+    title: 'Scrum',
+    question: 'Büyük bir işi küçük teslimatlarla nasıl yönetirim?',
+    summary: 'İşi sprint denen kısa dönemlere bölen, her dönem sonunda çalışan bir parça teslim eden, rolleri ve toplantıları net tanımlanmış çevik çalışma çerçevesi.',
+    tags: ['çevik', 'sprint', 'ekip çalışması'],
+    areas: ['Yazılım geliştirme', 'Ürün ekipleri', 'Ar-Ge projeleri', 'Pazarlama kampanyaları'],
+    viz: {
+      kind: 'process',
+      loop: true,
+      steps: [
+        { title: 'İş listesi (backlog)', text: 'Yapılacaklar önem sırasına dizilir' },
+        { title: 'Sprint planlama', text: 'Bu dönem ne biter? Ekip seçer' },
+        { title: 'Sprint (1-4 hafta)', text: 'Her gün 15 dakikalık ayaküstü toplantı' },
+        { title: 'Gözden geçirme', text: 'Biten iş müşteriye gösterilir' },
+        { title: 'Değerlendirme (retro)', text: 'Ekip kendi çalışma biçimini iyileştirir' },
+      ],
+      note: 'Döngü her sprint sonunda yeniden başlar; her turda çalışan bir parça teslim edilir.',
+    },
+    pages: [
+      {
+        slug: 'kavram',
+        title: 'Kavram',
+        blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Scrum, kocaman bir işi bir yıl sonunda büyük bir sürprizle teslim etmek yerine, iki-dört haftalık kısa dönemlere (sprint) bölüp her dönemin sonunda çalışan küçük bir parça teslim etmektir; yanlış anlaşılan iş, bir yıl sonra değil iki hafta sonra ortaya çıkar.' },
+          { t: 'callout', kind: 'ornek', title: 'Atölyeden örnek', text: 'Mobilya atölyesi bir kafeye otuz masalık komple dekorasyon işi alıyor. Klasik yol: üç ay çalış, sonunda hepsini teslim et; kafe sahibi beğenmezse felaket. Usta Kemal işi ikişer haftalık dilimlere bölüyor: ilk iki haftada iki örnek masa ve bir sandalye bitiyor, kafe sahibi geliyor, bakıyor, "ayaklar daha kalın olsun" diyor. Değişiklik iki masayı düzeltmeye mal oluyor, otuz masayı değil. Her iki haftada bir teslim, bir bakış, bir düzeltme. Scrum tam budur: erken göster, ucuzken düzelt.' },
+          { t: 'p', text: 'Scrum, 1990\'larda Jeff Sutherland ve Ken Schwaber tarafından geliştirilen bir çalışma çerçevesidir. Adı ragbi sporundan gelir: takımın omuz omuza, birlikte ilerlediği o kalabalık an. Temel iddiası şudur: karmaşık işlerde en baştan kusursuz plan yapılamaz; en iyisi kısa dönemler halinde çalışıp her dönem sonunda hem işi hem planı gözden geçirmektir.' },
+          { t: 'h2', text: 'Scrum\'ın üç rolü ve dört töreni' },
+          { t: 'table', head: ['Öğe', 'Ne demek?', 'Görevi'], rows: [
+            ['Ürün Sahibi (Product Owner)', 'Müşterinin sesi', 'Yapılacaklar listesini (backlog) önem sırasına dizer; "önce ne?" sorusunun tek sahibidir'],
+            ['Scrum Ustası (Scrum Master)', 'Yöntemin bekçisi', 'Ekibin önündeki engelleri kaldırır, kurallara uyulmasını sağlar; patron değil kolaylaştırıcıdır'],
+            ['Geliştirme Ekibi', 'İşi yapanlar', 'Sprint içinde ne yapılacağına ve nasıl yapılacağına kendisi karar verir'],
+            ['Sprint Planlama', 'Dönem başı toplantısı', 'Ekip, listeden bu sprintte bitirebileceği kadarını seçer'],
+            ['Günlük Scrum', '15 dakikalık ayaküstü toplantı', 'Herkes söyler: dün ne yaptım, bugün ne yapacağım, engelim ne?'],
+            ['Sprint Gözden Geçirme', 'Dönem sonu gösterimi', 'Biten iş müşteriye canlı gösterilir, geri bildirim alınır'],
+            ['Retrospektif', 'Ekibin ayna toplantısı', 'Ekip işi değil kendini konuşur: neyi iyi yaptık, neyi değiştirelim?'],
+          ]},
+          { t: 'p', text: 'Sprint\'in en önemli kuralı dokunulmazlığıdır: sprint başladıktan sonra kapsam değişmez. Yeni fikirler çöpe gitmez, listeye yazılır ve bir sonraki sprint planlamasında sıraya girer. Bu kural ekibi "her gün fikir değiştiren patron" kaosundan korur; patronun fikirleri de en fazla iki hafta bekler, yani kimse mağdur olmaz.' },
+          { t: 'p', text: 'Scrum\'ın gücü toplantı sayısında değil, teslim ritmindedir: her sprint sonunda ortada çalışan, gösterilebilir bir parça vardır. "Yüzde doksanı bitti" gibi ölçülemeyen ilerleme cümleleri yerine, "şu üç şey bitti ve çalışıyor, şu beşi listede" gibi herkesin görebildiği bir durum vardır.' },
+        ],
+      },
+      {
+        slug: 'uygulama',
+        title: 'Nasıl Uygulanır',
+        blocks: [
+          { t: 'steps', items: [
+            { title: 'Tek bir sıralı liste yap', text: 'Projede yapılacak her şeyi tek listeye yaz ve önem sırasına diz. Sıralamayı tek kişi (ürün sahibi) yapar; herkesin ayrı listesi olan projede Scrum işlemez.' },
+            { title: 'Sprint uzunluğunu seç ve sabitle', text: 'İki hafta çoğu iş için iyi bir başlangıçtır. Uzunluğu seçtikten sonra değiştirme: ritmin faydası tekrarındadır, tıpkı haftanın hep yedi gün olması gibi.' },
+            { title: 'Sprint başında seç, sonunda göster', text: 'Ekip listeden bu sprintte bitirebileceğine inandığı kadarını seçsin. Sprint sonunda biten iş müşteriye veya patrona canlı gösterilsin; sunum dosyası değil, çalışan işin kendisi.' },
+            { title: 'Her sprint sonunda retro yap', text: 'Yarım saat yeter: neyi iyi yaptık, ne aksadı, önümüzdeki sprintte tek bir şeyi değiştirsek ne olurdu? Retro yapılmayan Scrum, hatalarını tekrarlayan Scrum\'dır.' },
+          ]},
+          { t: 'callout', kind: 'tip', title: 'İpucu', text: 'Günlük toplantıyı gerçekten 15 dakikada ve ayakta yap; oturulan toplantı uzar. Sorun çözme toplantı sonrasına bırakılır: toplantıda sadece durum ve engel söylenir, çözümü ilgili iki kişi ayrıca konuşur.' },
+          { t: 'callout', kind: 'warn', title: 'Dikkat', text: 'En yaygın hata "Scrum kelimeleriyle eski düzen" kurmaktır: sprint var ama sonunda teslim yok, günlük toplantı var ama rapor seansına dönmüş, ürün sahibi var ama her yönetici listeye iş sokuyor. Törenler değil ilkeler önemlidir: kısa dönem, dokunulmaz kapsam, her dönem sonunda çalışan teslimat.' },
+        ],
+      },
+      {
+        slug: 'vaka',
+        title: 'Gerçek Vaka & Fayda',
+        blocks: [
+          { t: 'callout', kind: 'case', title: 'Vaka: Easel\'dan dünyaya', text: 'Scrum\'ın adını koyan fikir, 1986\'da Hirotaka Takeuchi ve Ikujiro Nonaka\'nın Harvard Business Review\'da yayımlanan "The New New Product Development Game" makalesidir: yazarlar, Honda ve Canon gibi Japon şirketlerinde en hızlı ürün geliştiren ekiplerin bayrak yarışı gibi sırayla değil, ragbi takımı gibi hep birlikte çalıştığını gözlemledi. Jeff Sutherland bu fikri 1993\'te Easel şirketinde ilk Scrum ekibine dönüştürdü; Ken Schwaber ile birlikte yöntemi 1995\'te resmi olarak sundular ve 2001\'de Çevik Manifesto\'nun (Agile Manifesto) imzacıları arasında yer aldılar. Bugün Scrum, dünyada en yaygın kullanılan çevik çerçevedir: yazılım devlerinden bankalara, hatta Sutherland\'in kitabında anlattığı gibi FBI\'ın dev Sentinel projesinin kurtarılmasına kadar sayısız belgelenmiş kullanımı vardır.' },
+          { t: 'h2', text: 'Gerçek fayda' },
+          { t: 'ul', items: [
+            'Riski erken gösterir: yanlış anlaşılan iş aylar sonra değil, ilk sprint sonunda ortaya çıkar; düzeltme ucuzken yapılır.',
+            'İlerlemeyi ölçülebilir yapar: "yüzde doksan bitti" lafı yerine her iki haftada bir gözle görülen, çalışan teslimat vardır.',
+            'Ekibi korur ve olgunlaştırır: dokunulmaz sprint ekibi günlük fikir değişikliklerinden korur; retro alışkanlığı ekibi her dönem biraz daha iyi yapar.',
+          ]},
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'kanban',
+    section: 'proje-urun',
+    title: 'Kanban',
+    question: 'İş yığılmasını nasıl görünür kılar ve önlerim?',
+    summary: 'İşleri bir panoda "yapılacak-yapılıyor-bitti" kolonlarında görünür kılan ve aynı anda yürüyen iş sayısını (WIP) sınırlayan akış yöntemi.',
+    tags: ['akış', 'WIP limiti', 'görsel yönetim'],
+    areas: ['Destek ve bakım ekipleri', 'Üretim atölyeleri', 'Operasyon süreçleri', 'Kişisel iş takibi'],
+    viz: {
+      kind: 'table',
+      head: ['Yapılacak', 'Yapılıyor (en çok 3)', 'Kontrol (en çok 2)', 'Bitti'],
+      rows: [
+        ['Sipariş F', 'Sipariş C', 'Sipariş B', 'Sipariş A'],
+        ['Sipariş G', 'Sipariş D', '', 'Sipariş E'],
+        ['Sipariş H', '', '', ''],
+      ],
+      accentCol: 1,
+      note: 'Kolon başlıklarındaki sayılar WIP limitidir: kolon doluysa yeni iş alınmaz, önce eldeki bitirilir.',
+    },
+    pages: [
+      {
+        slug: 'kavram',
+        title: 'Kavram',
+        blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Kanban, bütün işleri bir panoda herkesin gözü önüne serer ve tek bir altın kural koyar: aynı anda yürüyen iş sayısına sınır koy (WIP limiti); yeni işe başlamak yerine eldeki işi bitir.' },
+          { t: 'callout', kind: 'ornek', title: 'Atölyeden örnek', text: 'Oto tamircisi Veli\'nin dükkanında sekiz araba var, hepsi "yapılıyor": birinin motoru sökük parça bekliyor, birinin boyası yarım, hiçbiri çıkmıyor, her müşteri arıyor. Veli duvara üç kolonlu bir pano asıyor: Sıra, Serviste, Teslim. Ve kural koyuyor: Serviste kolonunda aynı anda en fazla üç araba kartı olabilir. Artık yeni araba, ancak biri bitince içeri alınıyor. Sonuç: araba başına bekleme süresi düşüyor, çünkü kimse sekiz yarım iş arasında mekik dokumuyor; üç işe odaklanıp bitiriyor. Aynı emek, daha hızlı teslim.' },
+          { t: 'p', text: 'Kanban, Japonca "işaret kartı" demektir; kökü Toyota\'nın üretim hattındaki sipariş kartlarına dayanır. Bilgi işlerine uyarlanmış hali ise basit bir panodur: her iş bir kart, her aşama bir kolon. Kartlar soldan sağa akar ve herkes bir bakışta görür: ne bekliyor, ne yürüyor, ne bitti, nerede yığılma var.' },
+          { t: 'h2', text: 'Kanban\'ın üç temel kuralı' },
+          { t: 'table', head: ['Kural', 'Ne demek?', 'Atölyede karşılığı'], rows: [
+            ['İşi görünür yap', 'Her iş bir kart, her aşama bir kolon', 'Duvarda pano: Sıra / Serviste / Teslim; her araba bir kart'],
+            ['Yürüyen işi sınırla (WIP limiti)', 'Bir kolonda aynı anda en fazla şu kadar kart olabilir', '"Serviste en çok 3 araba"; dördüncü, biri bitmeden giremez'],
+            ['Akışı yönet ve iyileştir', 'Kartların nerede beklediğine bak, tıkanıklığı çöz', 'Kartlar hep boya kolonunda yığılıyorsa sorun oradadır: oraya el ver'],
+          ]},
+          { t: 'p', text: 'WIP limiti (work in progress: yürüyen iş) yöntemin kalbidir ve ilk bakışta terstir: "daha az işe başlarsan daha çok iş bitirirsin." Sebebi basittir: yarım iş, hiç kimseye teslim edilmemiş emektir ve her yarım iş arasında geçiş yapmak zaman yer. On işi yüzde ellisinde tutan atölye hiçbir şey teslim etmemiştir; beş işi bitiren atölye beş müşteriyi memnun etmiştir.' },
+          { t: 'p', text: 'Kanban ile Scrum kardeştir ama farklıdır: Scrum sabit dönemlerle (sprint) çalışır ve dönem başında iş seçilir; Kanban\'da dönem yoktur, iş sürekli akar ve kapasite açıldıkça yeni kart çekilir. Bu yüzden Kanban, ne zaman geleceği belli olmayan işlerde (tamir, destek, sipariş) özellikle iyidir; Scrum ise planlanabilir proje işlerinde parlar.' },
+        ],
+      },
+      {
+        slug: 'uygulama',
+        title: 'Nasıl Uygulanır',
+        blocks: [
+          { t: 'steps', items: [
+            { title: 'Bugünkü akışını olduğu gibi panoya dök', text: 'İşin gerçekte geçtiği aşamaları kolon yap; ideal süreci değil, mevcut süreci çiz. Her işi bir karta yaz ve bulunduğu kolona as. İlk gün sadece bu: değişiklik yok, görünürlük var.' },
+            { title: 'Her kolona WIP limiti koy', text: 'Basit bir başlangıç: o işte çalışan kişi sayısı artı bir. Limit dolunca yeni kart alınmaz; ekip eldeki işi bitirmeye veya tıkanan arkadaşa yardıma gider.' },
+            { title: 'Kısa bir pano toplantısı rutini kur', text: 'Günde bir kez panonun önünde beş-on dakika: kişiler değil kartlar konuşulur. Soru "sen ne yaptın?" değil, "bu kart neden üç gündür burada?" sorusudur.' },
+            { title: 'Bekleme sürelerini ölç ve tıkanıklığı çöz', text: 'Kartın panoya girişinden çıkışına geçen süreyi not et. Kartlar hep aynı kolonda bekliyorsa darboğaz oradadır: oraya kişi, alet veya yetki ekle; başka yeri hızlandırmak boşunadır.' },
+          ]},
+          { t: 'callout', kind: 'tip', title: 'İpucu', text: 'Bloke olan kartı görünür işaretle: kırmızı bir mıknatıs veya "parça bekliyor" etiketi. Panonun en değerli hizmeti, beklemenin nerede ve neden olduğunu herkese aynı anda göstermesidir; görünen bekleme tartışılır, tartışılan bekleme çözülür.' },
+          { t: 'callout', kind: 'warn', title: 'Dikkat', text: 'WIP limitsiz pano Kanban değildir; sadece süslü bir yapılacaklar listesidir. Limit ilk haftalarda rahatsızlık verir: "boş duracağıma yeni işe başlayayım" itirazı gelir. Direnme: boş görünen o an, ya eldeki işi bitirme ya da tıkanıklığa yardım etme anıdır. Limiti delen ekip, eski yığılmaya geri döner.' },
+        ],
+      },
+      {
+        slug: 'vaka',
+        title: 'Gerçek Vaka & Fayda',
+        blocks: [
+          { t: 'callout', kind: 'case', title: 'Vaka: Toyota\'nın kartlarından Microsoft\'un XIT ekibine', text: 'Kanban\'ın kökü Toyota\'dadır: Taiichi Ohno\'nun kurduğu sistemde her parça kutusunun üzerindeki kart, "bundan şu kadar daha üret" diyen bir sipariş fişiydi; üretim tahminle değil, gerçek çekişle tetikleniyordu. Yöntemin bilgi işlerine geçişinin en bilinen belgeli vakası ise Microsoft\'tur: 2004\'te David J. Anderson, şirketin XIT adlı küçük bakım-destek ekibiyle çalıştı. Ekip talepler altında boğuluyor, işlerin çoğu aylarca sürüyordu. Anderson tahmin ve planlama seanslarını kaldırıp basit bir çekme sistemi kurdu: görünür iş listesi, sınırlı sayıda yürüyen iş, biten işin yerine yenisini çekme. Anderson\'ın yayımladığı vaka çalışmasına göre teslim süreleri çarpıcı biçimde kısaldı ve ekibin verimi katlandı. Bu deneyim, Anderson\'ın 2010\'daki "Kanban" kitabıyla yöntemin dünyaya yayılmasının başlangıcı oldu.' },
+          { t: 'h2', text: 'Gerçek fayda' },
+          { t: 'ul', items: [
+            'Yığılmayı görünür yapar: "işler nerede?" sorusunun cevabı kimsenin kafasında değil, herkesin gözü önündeki panodadır.',
+            'Teslim süresini kısaltır: az işe odaklanıp bitirmek, çok işi yarım sürüklemekten her zaman daha hızlı teslimat üretir.',
+            'Kavgasız iyileştirme sağlar: tartışma kişiler üzerinden değil, panodaki kartların nerede beklediği üzerinden yürür; suçlu değil darboğaz aranır.',
+          ]},
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'ceviklik-ve-selale',
+    section: 'proje-urun',
+    title: 'Çeviklik ve Şelale (Agile vs Waterfall)',
+    question: 'Baştan planlayıp mı yürümeliyim, adım adım mı ilerlemeliyim?',
+    summary: 'İki proje yaklaşımının karşılaştırması: şelale (waterfall) her şeyi baştan planlayıp sırayla yürür, çevik (agile) kısa dönemlerle ilerleyip yol boyunca öğrenir; doğru seçim işin belirsizliğine bağlıdır.',
+    tags: ['proje yaklaşımı', 'planlama', 'belirsizlik'],
+    areas: ['Yazılım projeleri', 'İnşaat ve imalat', 'Yeni ürün geliştirme', 'Kamu ihaleleri'],
+    viz: {
+      kind: 'table',
+      head: ['Soru', 'Şelale (Waterfall)', 'Çevik (Agile)'],
+      rows: [
+        ['İş nasıl ilerler?', 'Aşamalar sırayla: analiz, tasarım, yapım, test, teslim', 'Kısa dönemlerle: her dönemde küçük bir parça baştan sona biter'],
+        ['Plan ne zaman yapılır?', 'En başta, ayrıntılı ve bir kez', 'Kabaca başta, ayrıntı yol boyunca'],
+        ['Değişikliğe bakış', 'İstenmez; değişiklik pahalıdır', 'Beklenir; plan her dönem güncellenir'],
+        ['Müşteri ne zaman görür?', 'En sonda, bitince', 'Her dönem sonunda, parça parça'],
+        ['Ne zaman doğru seçim?', 'İş belli, gereksinim sabit, hata pahalı (köprü, bina)', 'İş belirsiz, gereksinim değişken (yeni ürün, yazılım)'],
+      ],
+      accentCol: 2,
+      note: 'İki yaklaşım rakip değil, iki farklı alettir: belirsizlik azsa şelale, çoksa çevik kazanır.',
+    },
+    pages: [
+      {
+        slug: 'kavram',
+        title: 'Kavram',
+        blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Şelale, "ne yapılacağı baştan bilinebilir" varsayımıyla her şeyi önceden planlayıp sırayla yürümektir; çeviklik ise "yol boyunca öğreneceğiz" varsayımıyla kısa adımlarla ilerleyip her adımda planı güncellemektir; hangisinin doğru olduğunu işin belirsizliği söyler.' },
+          { t: 'callout', kind: 'ornek', title: 'Şantiyeden örnek', text: 'Müteahhit Osman iki iş alıyor. Birincisi dört katlı bir apartman: projesi çizili, ruhsatı alınmış, malzemesi belli. Burada şelale doğrudur: temel atılmadan kolon dökülmez, sıra bellidir, planı değiştirmek felakettir. İkinci iş bir kafenin iç tasarımı: müşteri "modern bir şey istiyorum ama görmeden bilemem" diyor. Burada şelale intihardır: üç ay çalışıp bitmiş kafeyi gösterirsen beğenmeme riski dev olur. Osman çevik gidiyor: önce bir köşeyi bitirip gösteriyor, geri bildirimle devam ediyor. Aynı usta, iki iş, iki farklı yöntem; hüner ikisini ayırt etmekte.' },
+          { t: 'p', text: 'Şelale (İngilizce waterfall) adını aşamaların şelale gibi hep aşağı, tek yönde akmasından alır: önce bütün gereksinimler yazılır, sonra tasarım, sonra yapım, sonra test, en sonda teslim. Kavramın klasik kaynağı Winston Royce\'un 1970 tarihli makalesidir; ilginç olan şudur ki Royce bu saf sıralı modeli anlatırken riskli olduğu konusunda da uyarmıştı. Çevik yaklaşım ise 2001\'de on yedi yazılımcının yayımladığı Çevik Manifesto ile isim kazandı: kapsamlı dokümandan çok çalışan iş, sözleşme pazarlığından çok müşteriyle iş birliği, planı izlemekten çok değişime cevap vermek.' },
+          { t: 'h2', text: 'Seçimi belirleyen soru: belirsizlik ne kadar?' },
+          { t: 'table', head: ['İşin özelliği', 'Uygun yaklaşım', 'Neden?'], rows: [
+            ['Gereksinim baştan net ve sabit', 'Şelale', 'Öğrenilecek az şey var; planın gücü kullanılır'],
+            ['Müşteri ne istediğini görmeden bilemiyor', 'Çevik', 'Erken gösterip geri bildirim almak şarttır'],
+            ['Değişikliğin maliyeti çok yüksek (beton, kalıp, ihale)', 'Şelale', 'Deneme-yanılma lüksü yok; ölç, planla, bir kez yap'],
+            ['Değişiklik ucuz ve hızlı (yazılım, tasarım, içerik)', 'Çevik', 'Denemek ucuzsa öğrene öğrene ilerlemek kazandırır'],
+            ['Sabit bütçe ve resmi taahhüt var', 'Şelale ağırlıklı', 'Sözleşme, kapsamın baştan tanımlanmasını gerektirir'],
+            ['Pazar ve rakip hızla değişiyor', 'Çevik', 'Bir yıllık plan, altı ayda çöp olur'],
+          ]},
+          { t: 'p', text: 'Gerçek hayatta çoğu iş karmadır (buna hibrit denir): apartmanın kaba inşaatı şelaleyle, satış ofisinin dekorasyonu çevikle yürür. Yanlış olan yaklaşımların kendisi değil, yanlış işe uygulanmasıdır: belirsiz işe şelale dayatmak yıl sonunda büyük hayal kırıklığı, belirli işe çevik dayatmak ise gereksiz toplantı ve dağınıklık üretir.' },
+          { t: 'p', text: 'Bir de dürüstlük ölçütü vardır: şelale, ilerlemeyi plana göre ölçer ("takvimin neresindeyiz?"), çevik ise teslim edilene göre ölçer ("ne çalışıyor?"). Belirsiz işlerde plan yanılacağı için, plana göre "yüzde yetmişteyiz" demek çoğu zaman kendini kandırmaktır; çalışan teslimat yalan söylemez.' },
+        ],
+      },
+      {
+        slug: 'uygulama',
+        title: 'Nasıl Uygulanır',
+        blocks: [
+          { t: 'steps', items: [
+            { title: 'Projeyi belirsizlik gözüyle tart', text: 'İki soruya puan ver: gereksinimler ne kadar net, değişiklik ne kadar pahalı? Net ve pahalıysa şelaleye, belirsiz ve ucuzsa çeviğe yaklaş.' },
+            { title: 'Şelale seçtiysen aşama kapıları koy', text: 'Her aşamanın sonuna bir kontrol kapısı yerleştir: gereksinim onayı, tasarım onayı, teslim kabulü. Kapıdan onaysız geçilmez; geri dönüşün pahalı olduğu her yerde bu kapılar sigortadır.' },
+            { title: 'Çevik seçtiysen teslim ritmi kur', text: 'İki-dört haftalık dönemler belirle ve her dönem sonunda gösterilebilir bir parça teslim et. Gösterilemeyen dönem, kaybolmuş dönemdir.' },
+            { title: 'Karma işte sınırı açıkça çiz', text: 'Projenin hangi bölümü hangi yöntemle yürüyecek, baştan yaz: "kaba yapı şelale, iç mekan çevik" gibi. Sınırı çizilmeyen karma, iki yöntemin de kötü taraflarını toplar.' },
+          ]},
+          { t: 'callout', kind: 'tip', title: 'İpucu', text: 'Kararsız kaldığında şu soruyu sor: "Bu işte yanıldığımı en erken ne zaman öğrenebilirim?" Cevap "ancak sonunda" ise ve bu kabul edilemezse, işi çevikleştirmenin bir yolunu ara: maket, örnek parça, pilot bölge. Erken öğrenme neredeyse her zaman ucuzdur.' },
+          { t: 'callout', kind: 'warn', title: 'Dikkat', text: 'İki sahte sürüm vardır. Sahte şelale: plan var ama kimse güncel tutmuyor, kapılardan kağıt üstünde geçiliyor. Sahte çevik: toplantılar ve panolar var ama dönem sonlarında teslim yok; buna "çevik tiyatrosu" denir. İkisinde de kelimeler var, disiplin yok; yöntemin adı değil disiplini sonuç üretir.' },
+        ],
+      },
+      {
+        slug: 'vaka',
+        title: 'Gerçek Vaka & Fayda',
+        blocks: [
+          { t: 'callout', kind: 'case', title: 'Vaka: FBI\'ın Sentinel projesi: aynı iş, iki yöntem', text: 'İki yaklaşımın farkını aynı proje üzerinde gösteren en ünlü belgeli vaka, FBI\'ın dosya yönetim sistemi Sentinel\'dir. FBI önce 2000\'lerin başında Virtual Case File projesini klasik büyük-plan yaklaşımıyla yürüttü; proje yaklaşık 170 milyon dolar harcandıktan sonra kullanılamaz bulunarak iptal edildi. Ardından başlayan Sentinel de yıllarca şelale tarzı büyük sözleşmeyle ilerledi ve yüzlerce milyon dolar harcanmasına rağmen bitirilemedi. 2010\'da FBI yönetimi rotayı değiştirdi: dev yüklenici kadrosu küçültüldü, iş kurum içinde küçük bir ekibe verildi ve proje Scrum ile kısa dönemler halinde yeniden kuruldu. Sistem 2012\'de kullanıma açıldı; vaka, Jeff Sutherland\'in kitabında ve kamu denetim raporlarında ayrıntısıyla anlatılır. Ders yöntem taassubu değildir: gereksinimi bu kadar belirsiz ve değişken bir işte, baştan yazılmış dev plan iki kez yenilmiş, adım adım teslim kazanmıştır.' },
+          { t: 'h2', text: 'Gerçek fayda' },
+          { t: 'ul', items: [
+            'Yanlış yöntem israfını önler: işin doğasına uyan yaklaşım seçilince ne belirsiz iş dev planlara gömülür ne de belirli iş toplantı bolluğunda dağılır.',
+            'Beklentiyi doğru kurar: şelalede müşteri "sonda göreceğim", çevikte "her ay göreceğim" diye bilir; hayal kırıklığının çoğu yanlış beklentiden çıkar.',
+            'Riski yönetilir kılar: belirsizlik yüksekken küçük adımlar, kesinlik yüksekken sağlam plan; her iki durumda da sürpriz küçülür.',
+          ]},
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'gantt-semasi',
+    section: 'proje-urun',
+    title: 'Gantt Şeması',
+    question: 'Hangi iş ne zaman başlayıp ne zaman bitecek?',
+    summary: 'Her görevi zaman ekseninde bir çubukla gösteren, kimin ne zaman ne yapacağını ve işlerin birbirini nasıl beklediğini tek bakışta anlatan planlama şeması.',
+    tags: ['zaman planı', 'görselleştirme', 'takvim'],
+    areas: ['İnşaat şantiyeleri', 'Etkinlik organizasyonu', 'Üretim planlama', 'Proje raporlama'],
+    viz: {
+      kind: 'table',
+      head: ['Görev', 'Hafta 1', 'Hafta 2', 'Hafta 3', 'Hafta 4', 'Hafta 5', 'Hafta 6'],
+      rows: [
+        ['Temel kazısı', '███', '███', '', '', '', ''],
+        ['Kalıp ve demir', '', '███', '███', '', '', ''],
+        ['Beton dökümü', '', '', '', '███', '', ''],
+        ['Duvar örümü', '', '', '', '', '███', '███'],
+        ['Elektrik tesisatı', '', '', '', '', '███', '███'],
+      ],
+      note: 'Her satır bir görev, her dolu hücre o haftaki çalışmadır; alt alta bakınca hangi işlerin aynı anda yürüdüğü görülür.',
+    },
+    pages: [
+      {
+        slug: 'kavram',
+        title: 'Kavram',
+        blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Gantt şeması, projenin takvimini bir resme çevirir: her görev bir yatay çubuktur, çubuğun başı işin başlama, sonu bitiş tarihidir; alt alta dizilen çubuklara bakan herkes, hangi işin ne zaman yürüdüğünü ve hangisinin hangisini beklediğini tek bakışta görür.' },
+          { t: 'callout', kind: 'ornek', title: 'Şantiyeden örnek', text: 'Usta Ramazan bir ev tadilatı alıyor: sıva, elektrik, boya, parke. Kafasında plan var ama boyacı salı günü gelince sıvanın daha kurumadığını görüyor; iki gün boşta bekliyor, sonra parkeci ile boyacı aynı odaya denk geliyor. Ramazan bir dahaki işte kağıda çiziyor: satırlarda işler, sütunlarda günler, her işin süresi bir çubuk. Çizince görünüyor: sıva bitmeden boya başlayamaz, ama elektrik sıvayla aynı anda başka katta yürüyebilir. Herkes çizelgeye bakıp kendi tarihini biliyor; kimse kimseyi beklemiyor, kimse kimsenin ayağına basmıyor.' },
+          { t: 'p', text: 'Şemanın adı, 1910\'larda bu gösterimi geliştirip yaygınlaştıran Amerikalı makine mühendisi ve yönetim danışmanı Henry Gantt\'tan gelir. Fikir çıplak gözle bakınca basittir; devrim yarattığı nokta şudur: zamanı görünür yapar. Yazılı bir iş listesi "ne yapılacak" der ama "ne zaman ve aynı anda ne" sorusuna cevap vermez; Gantt şeması tam bu soruya cevaptır.' },
+          { t: 'h2', text: 'Şemayı okumak: dört temel öğe' },
+          { t: 'table', head: ['Öğe', 'Şemada nasıl görünür?', 'Ne anlatır?'], rows: [
+            ['Görev çubuğu', 'Yatay bir çubuk', 'İşin başlangıcı, bitişi ve süresi'],
+            ['Bağımlılık', 'Bir çubuğun ancak diğeri bitince başlaması', '"Sıva bitmeden boya başlamaz" ilişkisi'],
+            ['Kilometre taşı', 'Tek bir işaret noktası (süresiz)', 'Önemli an: ruhsat alındı, kaba yapı bitti'],
+            ['Bugün çizgisi', 'Şemayı kesen dikey çizgi', 'Plana göre neredeyiz: çizginin solunda bitmemiş çubuk gecikmedir'],
+          ]},
+          { t: 'p', text: 'Şemanın en değerli hizmeti paralel işleri göstermesidir: hangi işler birbirini beklemek zorunda, hangileri aynı anda yürüyebilir? Elektrikçiyle sıvacıyı aynı anda farklı katlarda çalıştırabilmek, projeyi kısaltan asıl hünerdir ve bu fırsat en kolay şemada görünür.' },
+          { t: 'p', text: 'Gantt şeması bir plan resmidir, planın kendisi değildir: hangi işin hangi işi beklediğine dair kararlar (ve en uzun zorunlu zincirin hesabı) kritik yol yöntemine aittir. İkisi birlikte çalışır: kritik yol hesabı planı kurar, Gantt şeması planı herkesin anlayacağı resme çevirir.' },
+        ],
+      },
+      {
+        slug: 'uygulama',
+        title: 'Nasıl Uygulanır',
+        blocks: [
+          { t: 'steps', items: [
+            { title: 'İşleri listele ve sürelerini tahmin et', text: 'Projeyi görevlere böl; her görev birkaç günle birkaç hafta arasında olsun. Çok iri görev şemayı anlamsız, çok ufak görev okunmaz yapar. Her görevin yanına tahmini süresini yaz.' },
+            { title: 'Bağımlılıkları belirle', text: 'Her görev için tek soru: "Bu iş başlamadan önce hangisi bitmiş olmalı?" Gerçek zorunlulukları yaz (sıva kurumadan boya olmaz); alışkanlıkları yazma (elektrik boyadan önce şart değilse bağlama).' },
+            { title: 'Çubukları yerleştir ve paralelleri bul', text: 'Bağımlı işleri ardışık, bağımsızları paralel çiz. Çizim bitince sor: "Bu paralel yürüyebilecek işleri boşuna sıraya mı koymuşum?" Çoğu projede ilk kazanç buradan çıkar.' },
+            { title: 'Şemayı canlı tut', text: 'Haftada bir gerçekleşeni işle: biten çubukları işaretle, kayanları kaydır. Güncellenmeyen Gantt şeması ilk haftadan sonra süs olur; duvarda asılı yalan söyler.' },
+          ]},
+          { t: 'callout', kind: 'tip', title: 'İpucu', text: 'Küçük iş için yazılım şart değil: kareli kağıt, satırlar iş, sütunlar hafta. Şemayı herkesin geçtiği duvara as; ustaların çizelgeye bakıp kendi tarihini kendisinin bulması, yüz telefon konuşmasından değerlidir.' },
+          { t: 'callout', kind: 'warn', title: 'Dikkat', text: 'İki tuzak: birincisi, her şeyi ardışık çizmek; gereksiz sıraya konan işler projeyi boş yere uzatır. İkincisi, süreleri iyimser yazmak; her çubuğu "her şey yolunda giderse" süresiyle çizersen ilk aksilikte bütün şema kayar. Kritik işlere pay bırak.' },
+        ],
+      },
+      {
+        slug: 'vaka',
+        title: 'Gerçek Vaka & Fayda',
+        blocks: [
+          { t: 'callout', kind: 'case', title: 'Vaka: Savaş gemilerinden Hoover Barajı\'na', text: 'Henry Gantt şemasını 1910\'larda geliştirdi ve yöntem ilk büyük sınavını Birinci Dünya Savaşı\'nda verdi: ABD\'nin savaş üretiminde, özellikle Emergency Fleet Corporation\'ın dev gemi inşa programında iş yükünün ve gecikmelerin izlenmesi için Gantt tipi çizelgeler kullanıldı; Gantt bu dönemde ordunun ve donanmanın üretim planlamasına danışmanlık yaptı. Savaştan sonra yöntem dev inşaat projelerine taşındı: 1931-1936 arasında yapılan Hoover Barajı, Amerikan mühendislik tarihinin en büyük işlerinden biriydi ve bu ölçekteki işlerin klasik planlama aracı Gantt tipi zaman çizelgeleriydi; baraj, Büyük Buhran\'ın ortasında planlanan tarihten önce bitirilmesiyle ünlüdür. Bilgisayarsız bir çağda binlerce işçinin ve yüzlerce işin eşgüdümü, büyük ölçüde kağıt üzerindeki bu çubuklarla sağlandı.' },
+          { t: 'h2', text: 'Gerçek fayda' },
+          { t: 'ul', items: [
+            'Takvimi ortak dile çevirir: "yakında biter" yerine herkesin aynı resme bakıp aynı tarihi gördüğü bir plan olur.',
+            'Paralel çalışmayı ortaya çıkarır: birbirini beklemek zorunda olmayan işler görünür; proje kısaltmanın en ucuz yolu budur.',
+            'Gecikmeyi erken haber verir: bugün çizgisinin gerisinde kalan çubuk, sorun büyümeden yerini ve boyunu gösterir.',
+          ]},
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'kritik-yol-yontemi',
+    section: 'proje-urun',
+    title: 'Kritik Yol Yöntemi (CPM ve PERT)',
+    question: 'Projeyi asıl geciktirecek işler hangileri?',
+    summary: 'Projedeki en uzun zorunlu iş zincirini (kritik yolu) bulan yöntem: bu zincirdeki bir günlük gecikme projeyi bir gün geciktirir; CPM süreleri kesin, PERT üç tahminle belirsiz işler için hesaplar.',
+    tags: ['kritik yol', 'zaman hesabı', 'darboğaz'],
+    areas: ['Büyük inşaat projeleri', 'Fabrika bakım duruşları', 'Ürün lansmanları', 'Etkinlik planlama'],
+    viz: {
+      kind: 'process',
+      steps: [
+        { title: 'İşleri ve bağımlılıkları listele', text: 'Hangi iş hangisini bekliyor?' },
+        { title: 'Süreleri yaz', text: 'CPM: tek süre; PERT: iyimser + olası + kötümser' },
+        { title: 'Bütün yolları hesapla', text: 'Baştan sona her zorunlu iş zincirinin toplam süresi' },
+        { title: 'En uzun zinciri işaretle', text: 'Bu kritik yoldur: proje süresini o belirler' },
+        { title: 'Kritik yolu koru ve kısalt', text: 'Kaynağı buraya ver; diğer işlerin bolluğu vardır' },
+      ],
+      note: 'Kritik yoldaki bir gün gecikme = projede bir gün gecikme. Diğer işlerin oynama payı (bolluk) vardır.',
+    },
+    pages: [
+      {
+        slug: 'kavram',
+        title: 'Kavram',
+        blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Bir projede bütün işler eşit önemde değildir: baştan sona uzanan en uzun zorunlu iş zinciri (kritik yol) projenin süresini belirler; bu zincirdeki bir günlük gecikme projeyi bir gün geciktirir, zincir dışındaki işlerin ise oynama payı vardır.' },
+          { t: 'callout', kind: 'ornek', title: 'Şantiyeden örnek', text: 'Bir ev inşaatında usta Faruk\'un işleri: temel (10 gün), duvarlar (15 gün, temeli bekler), çatı (7 gün, duvarı bekler), bahçe duvarı (5 gün, sadece temeli bekler). İki zincir var: temel-duvar-çatı zinciri 10+15+7 = 32 gün; temel-bahçe duvarı zinciri 10+5 = 15 gün. Kritik yol birincisidir: ev en erken 32 günde biter. Bahçe duvarcısı iki gün geç gelse hiçbir şey olmaz, 17 gün bolluğu var; ama çatıcı bir gün geç gelirse teslim bir gün kayar. Faruk artık kime kızacağını biliyor: gözü hep kritik zincirdeki ustalarda.' },
+          { t: 'p', text: 'Kritik yol yöntemi (Critical Path Method, CPM), her işin süresi ve hangi işi beklediği bilindiğinde, baştan sona uzanan bütün iş zincirlerini toplayıp en uzununu bulur. Bu en uzun zincir "kritik yol"dur; proje ondan kısa sürede bitemez. Kritik yol dışındaki işlerin "bolluk" (float) denen oynama payı vardır: bir miktar gecikseler de teslimi etkilemezler.' },
+          { t: 'h2', text: 'CPM ile PERT: iki kardeş hesap' },
+          { t: 'table', head: ['Özellik', 'CPM', 'PERT'], rows: [
+            ['Süre tahmini', 'Her iş için tek ve bilinen süre', 'Üç tahmin: iyimser, en olası, kötümser'],
+            ['Uygun olduğu iş', 'Daha önce yapılmış, süresi bilinen işler (inşaat, bakım)', 'İlk kez yapılan, belirsiz işler (Ar-Ge, yeni ürün)'],
+            ['Hesap', 'Süreleri topla, en uzun zinciri bul', 'Üç tahminden beklenen süre: (iyimser + 4 x olası + kötümser) / 6'],
+            ['Doğduğu yer', 'DuPont, 1957: fabrika bakım projeleri', 'ABD Donanması, 1958: Polaris füze programı'],
+            ['Verdiği cevap', '"Proje şu tarihte biter"', '"Proje şu tarihe kadar bitme olasılığı şudur"'],
+          ]},
+          { t: 'p', text: 'İki yöntem aynı omurgayı paylaşır: işler, bağımlılıklar, zincirler, en uzun zincir. Fark süre tahminindedir. Bakım, inşaat gibi bilinen işlerde tek süre yeter (CPM); hiç yapılmamış işlerde tek sayı yalan olur, bu yüzden PERT üç tahminin ağırlıklı ortalamasını alır ve kötümser senaryoyu hesaba katar. Pratikte ikisi çoktan iç içe geçmiştir; önemli olan etiket değil fikirdir.' },
+          { t: 'p', text: 'Yöntemin asıl yönetim dersi şudur: her işe eşit dikkat göstermek, hiçbir işe yeterli dikkat göstermemektir. Kritik yol, dikkatin ve kaynağın nereye akması gerektiğini söyler: en iyi ustayı, yedek malzemeyi ve sabah telefonunu kritik zincire ayır; bolluğu olan işler biraz beklemeyi kaldırır.' },
+        ],
+      },
+      {
+        slug: 'uygulama',
+        title: 'Nasıl Uygulanır',
+        blocks: [
+          { t: 'steps', items: [
+            { title: 'İş, süre ve bağımlılık tablosu kur', text: 'Üç sütun: iş, tahmini süre, beklediği işler. Belirsiz işlerde tek süre yerine üç tahmin yaz (iyimser, olası, kötümser) ve PERT ortalamasını kullan.' },
+            { title: 'Zincirleri çiz ve topla', text: 'Baştan (proje başlangıcı) sona (teslim) giden her zorunlu iş dizisini yaz ve sürelerini topla. Küçük projede bu kağıt üstünde on dakikalık iştir.' },
+            { title: 'Kritik yolu işaretle, bollukları not et', text: 'En uzun zincir kritik yoldur; kalın kalemle çiz. Diğer işlerin ne kadar gecikebileceğini (bolluğunu) yanlarına yaz: bu, kriz gününde kimin bekletilebileceğinin listesidir.' },
+            { title: 'Kısaltmak istiyorsan sadece kritik yola yüklen', text: 'Projeyi hızlandırmanın tek yolu kritik yoldaki işleri kısaltmaktır: oraya usta ekle, paralel çalışma imkanı ara. Dikkat: kritik olmayan iş kısalınca hiçbir şey kazanılmaz, ve kritik yol kısalınca başka bir zincir kritik hale gelebilir; hesabı yenile.' },
+          ]},
+          { t: 'callout', kind: 'tip', title: 'İpucu', text: 'Kritik yoldaki işleri herkese duyur: "bu beş iş gecikirse teslim gecikir." Ustalar hangi işin şakaya gelmediğini bilince öncelik tartışması kendiliğinden biter; bolluğu olan iş rica ile ertelenir, kritik iş ertelenmez.' },
+          { t: 'callout', kind: 'warn', title: 'Dikkat', text: 'Bolluğu olan işi sonsuz erteleme: bolluk eriyen bir kumbaradır ve tamamı harcanınca o iş de kritikleşir. İkinci tuzak iyimser tek tahmindir: hiç yapılmadık işe "üç gün sürer" demek planı değil temenniyi yazmaktır; belirsiz işte üç tahmin kuralını uygula.' },
+        ],
+      },
+      {
+        slug: 'vaka',
+        title: 'Gerçek Vaka & Fayda',
+        blocks: [
+          { t: 'callout', kind: 'case', title: 'Vaka: DuPont\'un fabrikaları ve Polaris füzesi', text: 'İki kardeş yöntem, birbirinden habersiz, bir yıl arayla doğdu. CPM\'i 1957\'de kimya devi DuPont\'tan Morgan Walker ile Remington Rand\'dan James Kelley geliştirdi: dert, fabrika bakım duruşlarıydı; fabrika dururken her gün servet kaybediliyordu ve hangi bakım işlerinin duruş süresini gerçekten belirlediğini bilmek gerekiyordu. Yöntem, bakım duruşlarının anlamlı ölçüde kısaltılmasında kullanıldı. PERT ise 1958\'de ABD Donanması\'nın Özel Projeler Ofisi\'nde, Booz Allen Hamilton danışmanlığında, Polaris denizaltı füzesi programı için geliştirildi: binlerce yüklenicinin çalıştığı, çoğu işin daha önce hiç yapılmadığı dev bir programda tek süre tahmini imkansızdı; üç tahminli hesap bu çaresizlikten doğdu. Polaris programının planlanandan önce sonuç vermesi PERT\'e efsane ünü kazandırdı ve yöntem kısa sürede dünyada büyük projelerin standart aracı oldu.' },
+          { t: 'h2', text: 'Gerçek fayda' },
+          { t: 'ul', items: [
+            'Dikkati doğru yere yöneltir: yüz işlik projede gözlenecek asıl işlerin kısa listesini verir; yönetici her şeyi değil, kritik zinciri izler.',
+            'Gerçekçi teslim tarihi verir: tarih temenniyle değil, en uzun zorunlu zincirin toplamıyla hesaplanır; söz verilen tarih savunulabilir olur.',
+            'Hızlandırma parasını boşa harcatmaz: fazla mesai ve ek usta sadece kritik yola verilir; kritik olmayan işi hızlandırmaya harcanan her kuruş çöptür.',
+          ]},
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'raci-matrisi',
+    section: 'proje-urun',
+    title: 'RACI Matrisi',
+    question: 'Bu işten asıl sorumlu kim?',
+    summary: 'Her iş için dört rolü netleştiren sorumluluk tablosu: Sorumlu (yapan), Onaylayan (hesabını veren), Danışılan (görüşü alınan), Bilgilendirilen (haberdar edilen).',
+    tags: ['sorumluluk', 'roller', 'ekip düzeni'],
+    areas: ['Proje ekipleri', 'Departmanlar arası işler', 'Aile şirketlerinde görev dağılımı', 'Süreç tasarımı'],
+    viz: {
+      kind: 'table',
+      head: ['İş', 'Usta Cavit', 'Muhasebeci Sevim', 'Patron Nihat', 'Satışçı Ali'],
+      rows: [
+        ['Malzeme siparişi', 'S (yapar)', 'D (danışılır)', 'O (onaylar)', 'B (bilgilenir)'],
+        ['Fiyat teklifi', 'D (danışılır)', 'S (yapar)', 'O (onaylar)', 'B (bilgilenir)'],
+        ['Müşteri teslimi', 'S (yapar)', 'B (bilgilenir)', 'B (bilgilenir)', 'O (onaylar)'],
+        ['Şikayet çözümü', 'D (danışılır)', 'B (bilgilenir)', 'B (bilgilenir)', 'S+O (yapar ve onaylar)'],
+      ],
+      note: 'Kural: her satırda tam bir O (Onaylayan) ve en az bir S (Sorumlu) olmalı; O birden fazlaysa kimse hesap vermez.',
+    },
+    pages: [
+      {
+        slug: 'kavram',
+        title: 'Kavram',
+        blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'RACI, her iş için dört soruyu tek tabloda cevaplar: kim yapacak (Sorumlu), kim hesabını verecek (Onaylayan), kimin görüşü alınacak (Danışılan), kime haber verilecek (Bilgilendirilen); ve altın kural şudur: her işin hesabını veren tam olarak bir kişi olmalıdır.' },
+          { t: 'callout', kind: 'ornek', title: 'Atölyeden örnek', text: 'Döşeme atölyesinde bir müşterinin koltuğu iki hafta ortada kalıyor. Usta "kumaşı Ali seçecekti", satışçı Ali "ben müşteriye sordum, ustaya söyledim sandım", patron "benim haberim bile yok" diyor. İş yapılmamış ama kimse suçlu değil; çünkü kimse Sorumlu ilan edilmemiş. Patron bir tablo yapıyor: satırlarda işler (kumaş seçimi, kesim, dikim, teslim), sütunlarda kişiler; her hücreye tek harf. Kumaş seçimi: Ali Sorumlu, müşteri Danışılan, patron Bilgilendirilen. Artık iş ortada kaldığında bakılacak tek hücre var; "sandım" cümlesi atölyeden siliniyor.' },
+          { t: 'p', text: 'RACI, dört İngilizce kelimenin baş harfidir: Responsible (Sorumlu: işi fiilen yapan), Accountable (Onaylayan: işin hesabını veren, son kararı taşıyan), Consulted (Danışılan: işten önce görüşü alınan), Informed (Bilgilendirilen: sonuçtan haberdar edilen). Sorumluluk atama matrisi ailesinin en yaygın üyesidir ve on yıllardır kurumsal proje yönetiminin standart araçlarındandır.' },
+          { t: 'h2', text: 'Dört harf, dört farklı ilişki' },
+          { t: 'table', head: ['Harf', 'Rol', 'Sorusu', 'Kaç kişi olabilir?'], rows: [
+            ['S (R)', 'Sorumlu: işi yapan', '"Bu işi fiilen kim yapıyor?"', 'Bir veya birkaç kişi'],
+            ['O (A)', 'Onaylayan: hesabını veren', '"İş yapılmazsa kimin kapısı çalınır?"', 'Tam olarak bir kişi'],
+            ['D (C)', 'Danışılan: görüşü alınan', '"Karardan önce kimin fikri şart?"', 'Az sayıda; çift yönlü konuşulur'],
+            ['B (I)', 'Bilgilendirilen: haberdar edilen', '"Sonucu kim bilmeli?"', 'Gerektiği kadar; tek yönlü haber verilir'],
+          ]},
+          { t: 'p', text: 'En kritik ayrım Sorumlu ile Onaylayan arasındadır: Sorumlu işi yapar, Onaylayan işin yapılmasının hesabını verir. Çırak duvarı örer (Sorumlu), usta duvarın düzgünlüğünün hesabını verir (Onaylayan). Onaylayan asla birden fazla olamaz; iki kişinin hesap verdiği iş, hiç kimsenin hesap vermediği iştir. Herkesin bildiği cümle bunu anlatır: ortak sorumluluk, sorumsuzluktur.' },
+          { t: 'p', text: 'Danışılan ile Bilgilendirilen ayrımı da kavgaları önler: Danışılan karardan önce konuşulur ve görüşü işi etkileyebilir; Bilgilendirilen karardan sonra haber alır. Danışılması gerekirken sadece bilgilendirilen kişi kendini yok sayılmış hisseder; her konuda danışılan kalabalık ise kararı süründürür. Tabloda bu iki harfi doğru dağıtmak, işletme içi alınganlıkların yarısını yok eder.' },
+        ],
+      },
+      {
+        slug: 'uygulama',
+        title: 'Nasıl Uygulanır',
+        blocks: [
+          { t: 'steps', items: [
+            { title: 'Sürtüşme çıkaran işleri listele', text: 'Her işi değil, ortada kalan ve kavga çıkaran işleri seç: siparişler, onaylar, müşteri şikayetleri, teslimler. On-on beş satırlık bir liste başlangıç için yeter.' },
+            { title: 'Satırlara işleri, sütunlara kişileri yaz', text: 'Her hücreye en fazla bir-iki harf koy: S, O, D veya B. Hücre boş kalabilir; herkesin her işte harfi olması gerekmez, hatta olmaması sağlıklıdır.' },
+            { title: 'Her satırı iki kurala vur', text: 'Birinci kural: tam bir tane O var mı? Sıfırsa iş sahipsiz, ikiyse hesap belirsiz. İkinci kural: en az bir S var mı? Yoksa işi kimse yapmayacak demektir.' },
+            { title: 'Tabloyu ilgilileriyle birlikte onayla ve as', text: 'Tabloyu odanda tek başına doldurma; masaya koy ve tartıştır. "Ben bu işte danışılmalıyım" itirazları tam da aranan konuşmadır: gizli beklentiler görünür olur. Bitince tabloyu herkesin göreceği yere as.' },
+          ]},
+          { t: 'callout', kind: 'tip', title: 'İpucu', text: 'Sütunlara isim yaz, unvan değil: "üretim birimi" sorumlu olamaz, Cavit sorumlu olabilir. Bir işin O harfi tartışmada iki kişi arasında gidip geliyorsa, o iş muhtemelen iki ayrı iştir; satırı böl ve her parçaya kendi Onaylayanını ver.' },
+          { t: 'callout', kind: 'warn', title: 'Dikkat', text: 'İki hastalıktan sakın. Birincisi harf enflasyonu: her satırda beş D, altı B varsa her karar toplantıya döner; danışılan azaldıkça iş hızlanır. İkincisi ölü tablo: yapılıp dolaba kaldırılan RACI, hiç yapılmamış RACI\'dir. Yeni bir sürtüşme çıktığında ilk soru şu olmalı: "tabloda bu satır var mı, harfler doğru mu?"' },
+        ],
+      },
+      {
+        slug: 'vaka',
+        title: 'Gerçek Vaka & Fayda',
+        blocks: [
+          { t: 'callout', kind: 'case', title: 'Vaka: Kurumsal dünyanın sessiz standardı', text: 'RACI\'nin tek bir kahraman hikayesi yoktur; gücü tam da bundadır: yöntem, 1950\'lerden beri kullanılan karar-hakları ve sorumluluk atama şemalarından damıtılmış, on yıllar içinde küresel kurumsal standarda dönüşmüş bir araçtır. Proje yönetimi meslek kuruluşlarının rehberlerinde sorumluluk atama matrisinin başlıca örneği olarak yer alır; bilişim yönetişiminin yaygın çerçevelerinden ITIL ve COBIT, süreç rollerini tanımlarken RACI tipi tabloları resmen kullanır. Büyük danışmanlık şirketleri, birleşme sonrası karışan yetkileri ve departmanlar arası sahipsiz işleri ayıklarken ilk iş olarak RACI benzeri sorumluluk haritaları çıkarır; çünkü kurumsal verimsizliğin en pahalı türlerinden biri belgelidir ve hep aynıdır: herkesin "başkası yapıyor sanıyordum" dediği sahipsiz iş ile beş imza bekleyen süründürülmüş karar. RACI\'nin dünyadaki milyonlarca kullanımı, tek bir parlak vakadan değil, bu iki hastalığın her kurumda tekrar etmesinden doğar.' },
+          { t: 'h2', text: 'Gerçek fayda' },
+          { t: 'ul', items: [
+            'Sahipsiz işi bitirir: her satırda bir Onaylayan olduğu için "ben başkası yapıyor sandım" cümlesi geçersizleşir; ortada kalan iş kalmaz.',
+            'Kararları hızlandırır: kimin onayının şart, kimin görüşünün yeterli, kimin sadece haberdar edileceği belli olunca imza kuyrukları kısalır.',
+            'Alınganlıkları önler: kimin danışılacağı önceden yazılı olduğu için "bana sorulmadı" kırgınlıkları tabloda çözülür, koridorda değil.',
+          ]},
+        ],
+      },
+    ],
+  },
+]
