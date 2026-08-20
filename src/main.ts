@@ -158,6 +158,15 @@ function modelHtml(m: DecisionModel, pageSlug: string): string {
   const next = m.pages[idx + 1]
   const viz = allViz[m.slug]
   const showViz = viz && page.slug === 'kavram'
+  // Metodoloji sırası: hüküm (simple) → hikâye (ornek) → resim (figürler) → kalan anlatım.
+  let leadCount = 0
+  while (
+    leadCount < page.blocks.length &&
+    page.blocks[leadCount].t === 'callout' &&
+    ['simple', 'ornek'].includes((page.blocks[leadCount] as { kind: string }).kind)
+  ) leadCount++
+  const leadBlocks = showViz ? page.blocks.slice(0, leadCount) : []
+  const restBlocks = showViz ? page.blocks.slice(leadCount) : page.blocks
   return `
     <nav class="mb-5 flex flex-wrap items-center gap-1.5 text-base text-ink-400" aria-label="Breadcrumb">
       <a href="#/" class="hover:text-brand-600">Ana Sayfa</a><i class="ph ph-caret-right text-base" aria-hidden="true"></i>
@@ -195,6 +204,7 @@ function modelHtml(m: DecisionModel, pageSlug: string): string {
             </div>`
           : ''
       }
+      ${renderBlocks(leadBlocks)}
       ${
         showViz
           ? `<figure class="!mt-6 rounded-2xl border border-ink-100 bg-white p-2 xs:p-3">
@@ -217,7 +227,7 @@ function modelHtml(m: DecisionModel, pageSlug: string): string {
             </figure>`
           : ''
       }
-      ${renderBlocks(page.blocks)}
+      ${renderBlocks(restBlocks)}
     </div>
 
     <div class="mt-10 flex flex-col gap-3 border-t border-ink-100 pt-6 sm:flex-row sm:justify-between">
