@@ -140,8 +140,8 @@ function modelHtml(m: DecisionModel, pageSlug: string): string {
   const showViz = viz && page.slug === 'kavram'
   return `
     <nav class="mb-5 flex flex-wrap items-center gap-1.5 text-base text-ink-400" aria-label="Breadcrumb">
-      <a href="#/" class="hover:text-brand-600">Ana Sayfa</a><i class="ph ph-caret-right text-sm" aria-hidden="true"></i>
-      <a href="#/bolum/${sec.id}" class="hover:text-brand-600">${esc(sec.title)}</a><i class="ph ph-caret-right text-sm" aria-hidden="true"></i>
+      <a href="#/" class="hover:text-brand-600">Ana Sayfa</a><i class="ph ph-caret-right text-base" aria-hidden="true"></i>
+      <a href="#/bolum/${sec.id}" class="hover:text-brand-600">${esc(sec.title)}</a><i class="ph ph-caret-right text-base" aria-hidden="true"></i>
       <span class="text-ink-600">${esc(m.title)}</span>
     </nav>
 
