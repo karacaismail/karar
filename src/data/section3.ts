@@ -602,11 +602,13 @@ export const section3Models: DecisionModel[] = [
           ]},
           { t: 'p', text: 'Grafiğe döküldüğünde bu gelişim, bir salgının ilerleyişine benzeyen tipik bir eğri alır: önce yavaş yükselir, sonra her yeni ürünün kritik noktasına ulaşır — birçok ürünün başarısız olduğu yer. Her yenilik için kritik nokta, erken benimseyenlerden kuşkucu kitleye geçiştir; çünkü tam burada bir "uçurum" vardır. ABD\'li sosyolog Morton Grodzins\'e göre erken benimseyenler yeniliği uçurumun karşısına, kuşkucu kitleye taşımayı başarırsa salgın döngüsü devrilme noktasına ulaşır: eğri, kitle ürünü kabul ettiğinde keskin biçimde yükselir, geriye yalnızca ayak sürüyenler kaldığında yeniden düşer.' },
           { t: 'quote', text: 'Önce seni görmezden gelirler, sonra sana gülerler, sonra seninle savaşırlar; sonra sen kazanırsın. — Mahatma Gandhi' },
-          { t: 'table', head: ['Grup', 'Mahalledeki hâli', 'Onu ikna eden şey'], rows: [
-            ['Yenilikçiler', 'Genç kafeci: ilk deneyen', 'Yeniliğin kendisi'],
-            ['Erken benimseyenler', 'İşleri iyi giden iki esnaf', 'Öncünün deneyimi ve vizyon'],
-            ['Kuşkucu kitle', 'Kasap Rıza: "benim müşterim nakitçidir"', 'Kanıt, güvence, kaybolan müşteri'],
-            ['Ayak sürüyenler', 'Saim Amca: en son gelen', 'Başka çare kalmaması'],
+          { t: 'table', head: ['Grup', 'Nüfus payı (Rogers\'ın araştırması)', 'Mahalledeki hâli', 'Onu ikna eden şey'], rows: [
+            ['Yenilikçiler', 'Yüzde 2,5', 'Genç kafeci: ilk deneyen', 'Yeniliğin kendisi'],
+            ['Erken benimseyenler', 'Yüzde 13,5', 'İşleri iyi giden iki esnaf', 'Öncünün deneyimi ve vizyon'],
+            ['— UÇURUM —', 'Ürünlerin çoğu bu çizgide ölür', 'İlk yüzde 16 ile kalabalık arasındaki boşluk', 'Buradan sonrası kanıt ister, hayal değil'],
+            ['Erken çoğunluk', 'Yüzde 34', 'Kasap Rıza: "benim müşterim nakitçidir"', 'Kanıt, güvence, kaybolan müşteri'],
+            ['Geç çoğunluk', 'Yüzde 34', 'Komşu esnafın çoğu kullanınca gelenler', 'Mahallede standart hâline gelmesi'],
+            ['Ayak sürüyenler', 'Yüzde 16', 'Saim Amca: en son gelen', 'Başka çare kalmaması'],
           ]},
         ],
       },
