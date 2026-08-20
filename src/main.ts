@@ -313,8 +313,9 @@ function render(): void {
           </span>
           <span class="truncate text-base font-bold text-ink-900">Karar Kitabı</span>
         </a>
-        <span class="ml-auto inline-flex h-8 shrink-0 items-center gap-1 rounded-full bg-ink-100 px-3 text-base font-semibold tabular-nums text-ink-600" title="Küme / model sayısı">
+        <span tabindex="0" class="group relative ml-auto inline-flex h-8 shrink-0 cursor-help items-center gap-1 rounded-full bg-ink-100 px-3 text-base font-semibold tabular-nums text-ink-600 focus:outline-none" title="küme/item" aria-label="küme/item sayısı">
           ${sections.length}<span class="text-ink-400">/</span>${sections.reduce((a, s) => a + modelsBySection(s.id).length, 0)}
+          <span class="pointer-events-none absolute -bottom-9 left-1/2 z-50 hidden -translate-x-1/2 whitespace-nowrap rounded-lg bg-ink-900 px-3 py-1.5 text-base font-medium text-white group-hover:block group-focus:block">küme/item</span>
         </span>
         ${exportMenuHtml()}
       </div>
