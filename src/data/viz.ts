@@ -424,7 +424,7 @@ export const vizBySlug: Record<string, Viz> = {
     xLabel: 'Ürün sıralaması',
     yLabel: 'Satış',
     series: [{ name: 'Satış dağılımı', data: [[0, 100], [1, 55], [2, 32], [3, 20], [4, 13], [5, 9], [6, 7], [7, 5.5], [8, 4.5], [9, 4], [10, 3.5], [12, 3], [14, 2.6], [16, 2.3], [18, 2.1], [20, 2]] }],
-    marks: [{ x: 4, label: 'Hitler | Kuyruk' }],
+    marks: [{ x: 4, label: 'Çok satanlar | Uzun kuyruk' }],
     note: 'Anderson\'ın orijinal eğrisi: baştaki az sayıda hit ile sonsuza uzayan niş kuyruk. Dijital rafta kuyruğun toplamı gövdeyle yarışır.',
   },
   'catisma-cozumu-modeli': {
