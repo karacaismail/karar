@@ -83,6 +83,9 @@ export interface DecisionModel {
   pages: ModelPage[]
   /** Inline chart spec; falls back to the central vizBySlug map when absent. */
   viz?: Viz
+  /** Optional SECOND visual: models whose primary viz is a table/process flow also
+   *  carry a real chart, so every page ends with an actual graphic. */
+  viz2?: Viz
   /** Inline usage-area pills; falls back to the central areasBySlug map when absent. */
   areas?: string[]
 }

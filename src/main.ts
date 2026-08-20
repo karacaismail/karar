@@ -7,10 +7,12 @@ import './style.css'
 import { initFlowbite } from 'flowbite'
 import { sections, models, modelsBySection, findModel, newSlugs } from './data/content'
 import { vizBySlug } from './data/viz'
+import { viz2BySlug } from './data/viz2'
 import { areasBySlug } from './data/areas'
 
 /** Central specs + per-model inline specs merged; inline wins. */
 const allViz = { ...vizBySlug, ...Object.fromEntries(models.filter((m) => m.viz).map((m) => [m.slug, m.viz!])) }
+const allViz2: Record<string, import('./types').Viz> = { ...viz2BySlug, ...Object.fromEntries(models.filter((m) => m.viz2).map((m) => [m.slug, m.viz2!])) }
 const areasOf = (slug: string): string[] | undefined => findModel(slug)?.areas ?? areasBySlug[slug]
 import { mountCharts } from './chart'
 import { renderBlocks, staticVizHtml, esc } from './render'
@@ -200,6 +202,17 @@ function modelHtml(m: DecisionModel, pageSlug: string): string {
             </figure>`
           : ''
       }
+      ${
+        showViz && allViz2[m.slug]
+          ? `<figure class="!mt-4 rounded-2xl border border-ink-100 bg-white p-2 xs:p-3">
+              ${
+                staticVizHtml(allViz2[m.slug]) ??
+                `<div data-viz="${m.slug}::2" class="h-72 w-full xs:h-80" role="img" aria-label="${esc(m.title)} grafiği"></div>`
+              }
+              ${'note' in allViz2[m.slug] && allViz2[m.slug].note ? `<figcaption class="px-2 pb-1 pt-2 text-base leading-7 text-ink-500">${esc(allViz2[m.slug].note!)}</figcaption>` : ''}
+            </figure>`
+          : ''
+      }
       ${renderBlocks(page.blocks)}
     </div>
 
@@ -323,7 +336,8 @@ function render(): void {
     <footer class="border-t border-ink-100 py-8 lg:ml-80">
       <p class="px-4 text-center text-base leading-7 text-ink-400">
         Kaynak: <em>The Decision Book — 50 Models for Strategic Thinking</em>, Krogerus &amp; Tschäppeler.<br/>
-        Bu site kişisel çalışma amaçlı bir özet dokümantasyondur.
+        Bu site kişisel çalışma amaçlı bir özet dokümantasyondur.<br/>
+        Sürüm: ${typeof __BUILD_STAMP__ !== 'undefined' ? __BUILD_STAMP__ : 'gelistirme'}
       </p>
     </footer>`
 
@@ -331,7 +345,7 @@ function render(): void {
   bindDrawer()
   bindAccordion()
   bindExport(exportPayload(route))
-  mountCharts(allViz)
+  mountCharts({ ...allViz, ...Object.fromEntries(Object.entries(allViz2).map(([k, v]) => [k + '::2', v])) })
   window.scrollTo({ top: 0 })
 }
 
