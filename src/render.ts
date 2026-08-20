@@ -14,6 +14,8 @@ const calloutStyles: Record<string, { box: string; badge: string; label: string 
   warn: { box: 'border-amber-200 bg-amber-50', badge: 'bg-amber-100 text-amber-800', label: 'Dikkat' },
   case: { box: 'border-sky-200 bg-sky-50', badge: 'bg-sky-100 text-sky-800', label: 'Gerçek Vaka' },
   benefit: { box: 'border-brand-200 bg-brand-50', badge: 'bg-brand-100 text-brand-800', label: 'Fayda' },
+  simple: { box: 'border-violet-200 bg-violet-50', badge: 'bg-violet-100 text-violet-800', label: 'Kısaca' },
+  ornek: { box: 'border-teal-200 bg-teal-50', badge: 'bg-teal-100 text-teal-800', label: 'Günlük Hayattan' },
 }
 
 /** HTML renderers for the non-chart viz kinds: table, process flow, 3-set Venn. */
@@ -118,6 +120,27 @@ export function renderBlocks(blocks: Block[]): string {
               <p class="text-base leading-7 text-ink-700">${esc(b.text)}</p>
             </div>`
         }
+        case 'table':
+          return `
+            <div class="overflow-x-auto rounded-xl border border-ink-100">
+              <table class="w-full min-w-[24rem] border-collapse text-left">
+                <thead>
+                  <tr class="bg-ink-50">
+                    ${b.head.map((h) => `<th class="border-b border-ink-200 px-4 py-3 text-base font-semibold text-ink-800">${esc(h)}</th>`).join('')}
+                  </tr>
+                </thead>
+                <tbody>
+                  ${b.rows
+                    .map(
+                      (r, ri) => `
+                    <tr class="${ri % 2 ? 'bg-ink-50/50' : 'bg-white'}">
+                      ${r.map((c, ci) => `<td class="border-b border-ink-100 px-4 py-3 align-top text-base leading-7 ${ci === 0 ? 'font-semibold text-ink-900' : 'text-ink-700'}">${esc(c)}</td>`).join('')}
+                    </tr>`,
+                    )
+                    .join('')}
+                </tbody>
+              </table>
+            </div>`
         case 'steps':
           return `
             <ol class="!list-none !pl-0 space-y-4">

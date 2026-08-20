@@ -49,8 +49,9 @@ export type Block =
   | { t: 'ul'; items: string[] }
   | { t: 'ol'; items: string[] }
   | { t: 'quote'; text: string }
-  | { t: 'callout'; kind: 'tip' | 'warn' | 'case' | 'benefit'; title: string; text: string }
+  | { t: 'callout'; kind: 'tip' | 'warn' | 'case' | 'benefit' | 'simple' | 'ornek'; title: string; text: string }
   | { t: 'steps'; items: { title: string; text: string }[] }
+  | { t: 'table'; head: string[]; rows: string[][] }
 
 export interface DecisionModel {
   slug: string

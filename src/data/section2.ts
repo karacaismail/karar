@@ -13,6 +13,8 @@ export const section2Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'İş ne çok kolay ne çok zor olursa insan işe dalar ve zaman uçar; bu hâle akış denir.' },
+          { t: 'callout', kind: 'ornek', title: 'Atölyeden örnek', text: 'Kaynakçı Hasan ilk günlerde ince sacda hep delik açıyordu; iş zordu, eli titriyordu (kaygı). Beş yıl sonra aynı sac işi ona uyku getiriyor (sıkıntı). Ustabaşı ona paslanmaz çelik gövde işini verince Hasan saatlerin nasıl geçtiğini fark etmedi: iş tam becerisinin ucunda (akış).' },
           { t: 'p', text: 'Psikolog Mihaly Csikszentmihalyi\'nin araştırmalarına dayanan model, "akış" hâlini tanımlar: zamanın kaybolduğu, işin kendisinin ödül olduğu derin odak durumu.' },
           { t: 'p', text: 'Akış, iki eksenin kesişiminde doğar: işin zorluğu ve senin beceri düzeyin. Zorluk beceriyi çok aşarsa kaygı, beceri zorluğu çok aşarsa sıkıntı ortaya çıkar. Akış kanalı bu ikisinin arasındaki dar bölgedir.' },
           { t: 'quote', text: 'Mutluluk, aranınca bulunan bir şey değil; zorlu bir işe gömülmüşken yan ürün olarak ortaya çıkan bir hâldir.' },
@@ -33,6 +35,12 @@ export const section2Models: DecisionModel[] = [
             { title: 'Kaygı bölgesini küçült', text: 'Kaygı veren işleri parçala: zorluğu düşürmek yerine işi bölerek beceri–zorluk dengesini kur.' },
             { title: 'Sıkıntı bölgesini zorlaştır', text: 'Rutinleşen işlere kendi kısıtlarını ekle: süre sınırı, kalite çıtası, yeni yöntem.' },
             { title: 'Kesintiyi yönet', text: 'Akış ortalama 15–20 dakikada kurulur ve tek bildirimle yıkılır. Odak bloklarında bildirimleri kapat.' },
+          ]},
+          { t: 'table', head: ['İş', 'Zorluk', 'Beceri', 'His'], rows: [
+            ['İlk gün ince sac kaynağı', 'Yüksek', 'Düşük', 'Kaygı: el titrer, hata artar'],
+            ['Beş yıldır aynı sac işi', 'Düşük', 'Yüksek', 'Sıkıntı: akıl başka yerde'],
+            ['Yeni paslanmaz çelik gövde', 'Yüksek', 'Yüksek', 'Akış: zaman uçar'],
+            ['Basit çapak temizliği', 'Düşük', 'Düşük', 'Kayıtsızlık: iş sürüklenir'],
           ]},
           { t: 'callout', kind: 'warn', title: 'Sık yapılan hata', text: 'Akışı sadece "sevdiğim işi bulmak" sanmak. Csikszentmihalyi\'nin bulgusu tersidir: doğru yapılandırılmış herhangi bir iş akış üretebilir; yapılandırılmamış hiçbir iş üretemez.' },
         ],
@@ -65,6 +73,8 @@ export const section2Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Senin bildiğin ve başkalarının bildiği şeyler her zaman aynı değildir; bu model aradaki farkı dört pencerede gösterir.' },
+          { t: 'callout', kind: 'ornek', title: 'Şantiyeden örnek', text: 'Kalıpçı Recep usta kendini sabırlı bilir. Ama ekip onu "çırağa bağıran adam" olarak tanır; Recep bunu görmez (kör nokta). Recep\'in gençken müteahhitlikte battığını ise kimse bilmez, o saklar (gizli alan). Bir akşam çırağına battığı dönemi anlatır, çırak da bağırma huyunu söyler: iki pencere de küçülür, aralarındaki güven büyür.' },
           { t: 'p', text: 'Joseph Luft ve Harry Ingham\'ın (Jo+Hari) geliştirdiği model, kişiliğini dört pencereye ayırır: senin bildiklerin/bilmediklerin ile başkalarının bildikleri/bilmedikleri.' },
           { t: 'ul', items: [
             'Açık alan: herkesin bildiği yönlerin.',
@@ -84,6 +94,12 @@ export const section2Models: DecisionModel[] = [
             { title: 'Pencereleri doldur', text: 'Ortak seçilenler açık alana, sadece başkalarının seçtikleri kör noktaya, sadece senin seçtiklerin gizli alana gider.' },
             { title: 'Kör noktayı konuş', text: 'Kör noktadaki sıfatlar için örnek iste: "Bunu hangi davranışımda gördün?" Savunma yapma, sadece dinle.' },
             { title: 'Bilinçli açıl', text: 'Gizli alandan bir şeyi paylaşmayı seç. Güven, karşılıklı açılmanın yan ürünüdür.' },
+          ]},
+          { t: 'table', head: ['Sıfat', 'Sen seçtin mi?', 'Ekip seçti mi?', 'Hangi pencere'], rows: [
+            ['Titiz', 'Evet', 'Evet', 'Açık alan'],
+            ['Sabırsız', 'Hayır', 'Evet', 'Kör nokta'],
+            ['Endişeli', 'Evet', 'Hayır', 'Gizli alan'],
+            ['Lider ruhlu', 'Hayır', 'Hayır', 'Bilinmeyen (belki potansiyel)'],
           ]},
           { t: 'callout', kind: 'tip', title: 'Ekip versiyonu', text: 'Aynı egzersiz ekip için de çalışır: ekibin kendini nasıl gördüğü ile diğer ekiplerin onu nasıl gördüğü arasındaki fark, işbirliği sorunlarının haritasıdır.' },
         ],
@@ -115,6 +131,8 @@ export const section2Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Yaptığımız şey ile inandığımız şey çakışınca çoğu zaman davranışı değil, kafamızdaki hikâyeyi değiştiririz.' },
+          { t: 'callout', kind: 'ornek', title: 'Pazardan örnek', text: 'Manav Salih, komşu dükkânın kart okuma cihazı sayesinde daha çok sattığını görür. "Benim müşterim nakitçidir, cihaz bize göre değil" der. Aslında cihaz almaya üşenmektedir; ama bunu kabul etmek yerine kendine bir hikâye üretir. Yıl sonunda müşterisinin yarısı komşuya geçince hikâye çöker: davranış değişmedi, gerekçe üretildi.' },
           { t: 'p', text: 'Leon Festinger\'in kuramı: inançlarımız ile davranışlarımız çeliştiğinde rahatsızlık duyarız (bilişsel çelişki). Ancak çoğu zaman davranışı düzeltmek yerine inancı davranışa uyduracak bir gerekçe üretiriz.' },
           { t: 'p', text: 'Sigara içen kişi "sigara zararlıdır" bilgisini reddetmez; "dedem 90 yaşına kadar içti" hikâyesini üretir. Çelişki çözülmez, sadece susturulur.' },
           { t: 'h2', text: 'Kurumsal versiyonu' },
@@ -130,6 +148,11 @@ export const section2Models: DecisionModel[] = [
             { title: 'İnanç mı davranış mı?', text: 'Çelişkiyi çözmenin iki dürüst yolu var: davranışı değiştir ya da inancı gerçekten güncelle. Üçüncü yol (gerekçe üretmek) çözüm değildir.' },
             { title: 'Karar öncesi kayıt al', text: 'Büyük kararlardan önce "hangi kanıt gelirse fikrimi değiştiririm?" sorusunun cevabını yaz. Çelişki geldiğinde bu kayıt seni hikâye üretmekten korur.' },
             { title: 'Şeytanın avukatını kurumsallaştır', text: 'Toplantıda birine resmî görev ver: kararın aleyhindeki en güçlü savunmayı yapmak.' },
+          ]},
+          { t: 'table', head: ['Çelişki', 'Üretilen hikâye', 'Dürüst çözüm'], rows: [
+            ['Sigara zararlı ama içiyorum', '"Dedem 90\'ına kadar içti"', 'Bırakmayı dene ya da riski açıkça kabul et'],
+            ['Kask şart ama takmıyorum', '"Bu iskelede kask ayak bağı"', 'Kaskı tak; alışkanlık üç günde oturur'],
+            ['Ürün satmıyor ama üretiyoruz', '"Müşteri henüz anlamadı"', 'Veriyi kabul et, ürünü değiştir ya da bırak'],
           ]},
         ],
       },
@@ -160,6 +183,8 @@ export const section2Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Bazı şeylere kanıt olmadan inanırız; bu model "bunu kanıtlayabilir miyim, tersini hayal edebilir miyim?" diye sordurur.' },
+          { t: 'callout', kind: 'ornek', title: 'Şantiyeden örnek', text: 'İnşaat ustası Kemal, "beton en az bir hafta sulanmazsa çatlar" diye bilir; bunu ölçüp görmüştür, kanıtlıdır. Bir de "cuma günü kalıp sökülmez, uğursuzluk getirir" diye bilir; bunu kimse ölçmemiştir ama kimse de sorgulamaz. Model tam bu ikisini ayırmayı öğretir: hangisi gözlem, hangisi alışkanlıkla taşınan inanç?' },
           { t: 'p', text: 'Modeller her şeyin nasıl bağlantılı olduğunu, nasıl davranmamız gerektiğini anlatır. Peki bizi gerçeği olduğu gibi görmekten alıkoyuyorlar mı? Bu model, tam da diğer modellerin körlüğünü sorgular.' },
           { t: 'p', text: 'Daha 18. yüzyılda Adam Smith, soyut sistemlere duyulan aşka kapılmaya karşı uyarmıştı. İki yüzyıl sonra Einstein, modellerin ve "mantıklı" sistemlerin son tahlilde bir inanç meselesi olduğunu gördü. Bilim tarihçisi Thomas Kuhn ise bilimin çoğunlukla kendi modellerini doğrulamaya çalıştığını, modeller gerçeklikle örtüşmediğinde — ki bu sık olur — görmezden gelmeyle tepki verdiğini savundu.' },
           { t: 'p', text: 'Modellere çoğu zaman o kadar güçlü inanırız ki gerçeklik statüsü kazanırlar. Kant\'ın incelediği ontolojik Tanrı kanıtı buna örnektir: Tanrı kadar kusursuz bir varlığı hayal edebiliyorsak, o hâlde var olmalıdır. Gündelik hayatta da modelleri körü körüne "gerçek" kabul ederiz: insanlığın açgözlü ve bencil olduğu söylenirse, bu davranış modeli içselleştirilir ve farkında olmadan taklit edilir.' },
@@ -179,6 +204,12 @@ export const section2Models: DecisionModel[] = [
             { title: 'İnanç envanteri çıkar', text: 'İş ve özel hayatındaki temel varsayımlarını listele: "müşteri her zaman fiyata bakar", "bu pazar büyüyecek", "ben sunumda kötüyüm".' },
             { title: 'İki soruyla sınıfla', text: 'Her varsayım için sor: bunu kanıtlayabilir miyim? Bunun tersini hayal edebiliyor muyum? Kanıtsız ama sarsılmaz inançlarını işaretle.' },
             { title: 'Modeli gerçeklikten ayır', text: 'İşaretlediğin inançlar için "bu bir gözlem mi, yoksa içselleştirdiğim bir model mi?" diye sor. Modeli adlandırmak, ondan özgürleşmenin ilk adımıdır.' },
+          ]},
+          { t: 'table', head: ['İnanç', 'Kanıtlanabilir mi?', 'Tersi hayal edilebilir mi?', 'Ne yapmalı'], rows: [
+            ['Sulanmayan beton çatlar', 'Evet, ölçüldü', 'Evet', 'Gözlem: güvenle kullan'],
+            ['Cuma günü kalıp sökülmez', 'Hayır', 'Evet', 'Alışkanlık: sorgula'],
+            ['Müşteri hep en ucuzu alır', 'Kısmen', 'Evet', 'Varsayım: veriyle sına'],
+            ['Ben satıştan anlamam', 'Hayır', 'Evet', 'İçselleşmiş model: dene ve gör'],
           ]},
           { t: 'callout', kind: 'warn', title: 'Sık yapılan hata', text: 'Modelin dersini "hiçbir modele güvenme" diye okumak. Mesele modelleri atmak değil; modelin harita olduğunu, arazinin kendisi olmadığını hatırlamaktır.' },
           { t: 'callout', kind: 'tip', title: 'Karşı kanıt egzersizi', text: 'En güçlü inancın için bir hafta boyunca sadece aleyhte kanıt topla. Hiç bulamıyorsan, muhtemelen aramıyorsundur.' },
@@ -211,6 +242,8 @@ export const section2Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Kendini birkaç karşıt özellik üzerinde puanlarsın; çıkan çizgi, o günkü fotoğrafını gösterir.' },
+          { t: 'callout', kind: 'ornek', title: 'Atölyeden örnek', text: 'Tornacı Veli kendini "tam takım adamı" diye puanlar: takıma 8, bireyselliğe 2. Aynı kağıdı çırağına verir; çırak ustasına takım için 3 yazar: "Usta kimseye tezgâh emanet etmez." İki kağıt yan yana gelince Veli ilk kez fark eder: kendini gördüğü gibi görünmüyor. Konuşma tam oradan başlar.' },
           { t: 'p', text: 'Kendin ve başkaları hakkında genel bir kavrayış edinmek istiyorsan, Danimarkalı Uffe Elbæk\'in kamuoyu barometresi iyi bir başlangıçtır. Model, davranış özelliklerini ve eğilimleri görünür kılar.' },
           { t: 'p', text: 'Modelin çıkış noktası şudur: her zaman dört farklı bakış açısına tabisin.' },
           { t: 'ul', items: [
@@ -232,6 +265,12 @@ export const section2Models: DecisionModel[] = [
             { title: 'İdealini çiz', text: 'Farklı renkte bir kalemle bu kez kendini nasıl görmek istediğini işaretle. İki profil arasındaki fark, gelişim gündemin ya da kendinle barışman gereken alandır.' },
             { title: 'Dışarıya sor', text: 'Aynı barometreyi eşine ya da yakın bir arkadaşına ver: seni puanlasın. Senin profilinle karşılaştır.' },
             { title: 'Kendi eksenlerini tanımla', text: 'Model esnektir: zengin–yoksul, mutlu–hüzünlü, dışadönük–içedönük gibi kendi karşıtlıklarını ekle.' },
+          ]},
+          { t: 'table', head: ['Eksen', 'Veli\'nin puanı', 'Çırağın Veli\'ye puanı', 'Fark ne anlatıyor'], rows: [
+            ['Takım insanı / bireyci', '8 / 2', '3 / 7', 'Kör nokta: tezgâhı paylaşmıyor'],
+            ['İçerik / biçim', '9 / 1', '8 / 2', 'Uyum: işin özüne odaklı'],
+            ['Beden / zihin', '7 / 3', '7 / 3', 'Uyum: el işçiliği baskın'],
+            ['Küresel / yerel', '2 / 8', '2 / 8', 'Uyum: mahallesine bağlı'],
           ]},
           { t: 'callout', kind: 'warn', title: 'Anlık görüntü uyarısı', text: 'Sonuç bir teşhis değil, o günkü fotoğraftır. Profili kimlik ilan etme; birkaç ay sonra tekrarla ve değişimi izle.' },
         ],
@@ -263,6 +302,8 @@ export const section2Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Kafanın içindeki düşünceler ya geçmişte, ya şimdide, ya gelecektedir; bu model o payları görmeni sağlar.' },
+          { t: 'callout', kind: 'ornek', title: 'Mutfaktan örnek', text: 'Lokantacı Ayşe teyze gün boyu tencere başındadır ama aklı başkadır: sabah dünkü bozuk siparişi düşünür (geçmiş), öğlen kirayı nasıl ödeyeceğini kurar (gelecek), yemeğin tuzuna ancak arada bakar (şimdi). Akşam yorgunluğu işten değil, zihninin gün boyu üç zamanda koşturmasındandır.' },
           { t: 'p', text: 'Hep "anı yaşa" denir. Ama neden? İsviçreli yazar Pascal Mercier buna itiraz eder: özü yakalayacağı inancıyla yalnızca şimdiye odaklanmak ona göre bir hata, anlamsız bir zorlamadır. Önemli olan, geçmişi ve geleceğiyle birlikte kendi iç manzaramızda sakin ve emin adımlarla ilerlemektir.' },
           { t: 'p', text: 'Model yargılamayan bir soru sorar: zamanının ne kadarını geçmişi düşünerek, ne kadarını şimdiye odaklanarak, ne kadarını geleceği hayal ederek ya da gelecekten endişe ederek geçiriyorsun?' },
           { t: 'h2', text: 'Üç tip' },
@@ -282,6 +323,11 @@ export const section2Models: DecisionModel[] = [
             { title: 'Pastayı çiz', text: 'Bir daire çiz ve dürüstçe böl: zihinsel enerjinin yüzde kaçı geçmişte, kaçı şimdide, kaçı gelecekte?' },
             { title: 'İçeriğini etiketle', text: 'Her dilim için tonu yaz: geçmiş dilimi minnet mi pişmanlık mı, gelecek dilimi plan mı kaygı mı? Aynı dilim çok farklı yaşanabilir.' },
             { title: 'Bilinçli kaydır', text: 'Sorun dilimin büyüklüğü değil, istemeden orada olmandır. Kaygı dilimini plana, pişmanlık dilimini derse çevirecek tek bir küçük alışkanlık seç.' },
+          ]},
+          { t: 'table', head: ['Zaman dilimi', 'İyi hâli', 'Yıpratan hâli'], rows: [
+            ['Geçmiş', 'Minnet, alınan ders', 'Pişmanlık, eski kavgaları tekrar oynamak'],
+            ['Şimdi', 'İşe odaklanmak, tadını çıkarmak', 'Dağınıklık, otomatik pilot'],
+            ['Gelecek', 'Plan, hazırlık', 'Kaygı, felaket senaryoları'],
           ]},
           { t: 'callout', kind: 'tip', title: 'İkili egzersiz', text: 'Aynı pastayı eşine ya da bir arkadaşına da çizdir ve karşılaştırın. Zaman yönelimi farkı, birçok ilişki tartışmasının gizli kaynağıdır: biri plan yaparken diğeri anıda yaşıyordur.' },
           { t: 'callout', kind: 'warn', title: 'Sık yapılan hata', text: '"Şimdide yaşamak" dilimini büyütmeyi ahlaki hedef sanmak. Modelin amacı ideal bir oran dayatmak değil, mevcut dağılımının farkına varmandır.' },
@@ -314,6 +360,8 @@ export const section2Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Siyasi görüş tek çizgiye sığmaz; bu model iki ayrı soru sorar: parayı kim yönetsin, kurallara kim karar versin?' },
+          { t: 'callout', kind: 'ornek', title: 'Kahvehaneden örnek', text: 'Kahvede Musa ile Cemal hep kavga eder: biri "sağcı", biri "solcu". Ama iki soru ayrı ayrı sorulunca şaşırırlar: ikisi de esnafa devlet desteği ister (ekonomide aynı taraf), ama biri sokağa kamera ister, öbürü istemez (özgürlük ekseninde ayrılar). Kavga ettikleri konu, sandıkları konu değilmiş.' },
           { t: 'p', text: 'Siyaseti hâlâ "sol" ve "sağ" diye düşünme eğilimindeyiz; ama bu kutuplaşma, bugünün karmaşık siyasi manzarasını anlatmak için fazla basittir. Kitabın verdiği örnek Birleşik Krallık\'tır: geleneksel olarak karşı kutuplarda duran İşçi Partisi ile Muhafazakârlar 2000\'lerde ekonomik ve sosyal politikalarda birbirine yaklaştı; radikal sağ sayılan UKIP, bazı sosyal konularda Muhafazakârların solunda kaldı.' },
           { t: 'p', text: 'Geçmişin keskin siyasi ayrımları bulanıklaşmış olabilir; ama görüş ve tutumları ölçmek için modeller vardır. En ünlülerinden biri siyasi pusuladır: konumunu iki eksende işaretlersin.' },
           { t: 'h2', text: 'İki eksen' },
@@ -332,6 +380,12 @@ export const section2Models: DecisionModel[] = [
             { title: 'Kendini işaretle', text: 'İki soruyu ayrı ayrı cevapla: ekonomide devlet mi piyasa mı; bireysel özgürlük mü toplumsal düzen mi? Kesişimde kendini işaretle.' },
             { title: 'Zamanda karşılaştır', text: 'On yıl önce nerede durduğunu da işaretle. Fark, hangi yaşantıların görüşünü değiştirdiğini konuşmak için iyi bir başlangıçtır.' },
             { title: 'Partileri yerleştir', text: 'Ülkendeki partileri söylemlerine değil, somut politika tercihlerine göre pusulaya koy. Etiketle konum arasındaki fark çoğu zaman şaşırtır.' },
+          ]},
+          { t: 'table', head: ['Konum', 'Ekonomi görüşü', 'Özgürlük görüşü', 'Günlük örnek'], rows: [
+            ['Sol + özgürlükçü', 'Devlet desteklesin', 'Birey karar versin', 'Ücretsiz sağlık ister, yasaklara karşı'],
+            ['Sol + otoriter', 'Devlet desteklesin', 'Devlet denetlesin', 'Devlet fabrikası ve sıkı kural ister'],
+            ['Sağ + özgürlükçü', 'Piyasa çalışsın', 'Birey karar versin', 'Az vergi, az yasak ister'],
+            ['Sağ + otoriter', 'Piyasa çalışsın', 'Devlet denetlesin', 'Serbest ticaret, sıkı düzen ister'],
           ]},
           { t: 'callout', kind: 'warn', title: 'Sık yapılan hata', text: 'Pusulayı kimlik testi gibi kullanmak. Model insanları kutulamak için değil, "sol/sağ" etiketinin sakladığı iki ayrı soruyu (ekonomi ve özgürlük) ayrıştırmak içindir.' },
           { t: 'callout', kind: 'tip', title: 'Tartışma aracı olarak', text: 'Siyasi tartışma kilitlendiğinde karşındakine etiket yerine iki ekseni sor. "Sen sağcısın" suçlaması biterken "devletin ekonomideki rolü ne olmalı?" sorusu konuşma açar.' },
@@ -364,6 +418,8 @@ export const section2Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Üç hafta boyunca her akşam işine üç puan verirsin: mecbur muyum, yapabiliyor muyum, istiyor muyum?' },
+          { t: 'callout', kind: 'ornek', title: 'Atölyeden örnek', text: 'CNC operatörü Murat "işimden bıktım" der ama nedenini bilemez. Üç hafta her akşam üç soruya puan verir. Desen ortaya çıkar: yeteneği yüksek, isteği fena değil; ama "mecburum" puanı hep tavanda, çünkü vardiyaları hep ona yıkıyorlar. Sorun meslek değil, iş dağılımıymış. Ustabaşıyla konuşacağı şey artık belli.' },
           { t: 'p', text: 'Birçok insan işinde mutsuzdur. Ama iş tatminsizliği nasıl ölçülür? Bu model, iş durumunu duygudan sayıya çevirir: üç hafta boyunca her akşam kendine üç soru sorar ve cevaplarını birden ona kadar puanlarsın.' },
           { t: 'h2', text: 'Üç eksen' },
           { t: 'ul', items: [
@@ -384,6 +440,11 @@ export const section2Models: DecisionModel[] = [
             { title: 'Yelkenleri çiz', text: 'Her günün üç puanını üç eksenli grafiğe işle. Haftalık olarak şekilleri yan yana koy.' },
             { title: 'Deseni oku', text: 'Şekil değişkense işin çeşitlilik sunuyor. Sürekli aynıysa ve "mecburum" ekseni baskınsa, tatminsizliğin kaynağı belirginleşmiş demektir.' },
             { title: 'Dört soruyu cevapla', text: 'Sabit yelken hâlinde büyük soruları yaz: ne istiyorsun, istediğini yapabiliyor musun, ne yapabiliyorsun, yapabildiğini istiyor musun?' },
+          ]},
+          { t: 'table', head: ['Gün', 'Mecburum', 'Yapabilirim', 'İstiyorum', 'Okuma'], rows: [
+            ['Pazartesi', '9', '7', '4', 'Dayatma yüksek, istek düşük'],
+            ['Çarşamba', '8', '8', '3', 'Yetenek var, istek yok'],
+            ['Cuma', '9', '7', '4', 'Desen aynı: sorun süreklilik kazandı'],
           ]},
           { t: 'callout', kind: 'warn', title: 'Tek güne güvenme', text: 'Kötü tek gün veri değildir; model bilerek üç hafta ister. Karar, tek akşamın öfkesiyle değil, üç haftalık desenle verilir.' },
         ],
@@ -415,6 +476,8 @@ export const section2Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Geleceğini planlamadan önce geçmişini bir çizgiye dökersin: hedefler, dersler, engeller, başarılar ve insanlar.' },
+          { t: 'callout', kind: 'ornek', title: 'Esnaftan örnek', text: 'Mobilyacı Osman ikinci dükkânı açmak ister ama tedirgindir. Bir kağıda on yılını çizer: ilk yıl hedefi neydi, neyi öğrendi, hangi engeli aştı, kimler yanındaydı. Çizince görür: en zor yıllarını hep yanındaki kalfa Şükrü ile atlatmış, en büyük kaybı ise aceleyle girdiği ortaklıkta yaşamış. Yeni dükkân kararına iki not düşer: Şükrü\'yü ortak et, aceleci ortaklıktan uzak dur.' },
           { t: 'p', text: 'Stratejik kararlarda genellikle geleceğe odaklanırız: hayallerimiz gelecekte sahnelenir, umutlarımız onların gerçekleşmesine bağlanır. Peki neden? Belki geleceğimizi belirleyebileceğimizi düşündüğümüz için. Oysa her geleceğin bir geçmişi olduğunu ve geleceğimizin geçmişimizin üzerine inşa edildiğini unutma eğilimindeyiz.' },
           { t: 'p', text: 'Bu yüzden asıl soru "geleceğimi nasıl hayal ediyorum?" değil, "geçmiş ile gelecek arasında nasıl bir köprü kurarım?" sorusudur. The Grove danışmanlık ajansının geliştirdiği görsel planlama sisteminden esinlenen bu model, geçmişinde neyin önemli olduğunu, neyi unutabileceğini ve neyi yanına alman gerektiğini ayıklamana yardım eder.' },
           { t: 'h2', text: 'Zaman çizgisine eklenenler' },
@@ -437,6 +500,13 @@ export const section2Models: DecisionModel[] = [
             { title: 'Başa dön ve doldur', text: 'Dönemin başına zihnen geri git; zaman çizgisine beş şeridi işle: hedefler, öğrenilenler, aşılan engeller, başarılar, insanlar.' },
             { title: 'Deseni oku', text: 'Dolu model, geçmişine atfettiğin önemi gösterir: hangi şerit dolu, hangisi boş? Engeller şeridi taşarken başarılar şeridi boşsa bu da bir cevaptır.' },
             { title: 'Köprüyü kur', text: 'Son soruyu cevapla: bu dönemden geleceğe ne taşıyacaksın, neyi bilinçli olarak geride bırakacaksın?' },
+          ]},
+          { t: 'table', head: ['Şerit', 'Soru', 'Osman\'ın örneği'], rows: [
+            ['Hedefler', 'O dönem neyi istiyordum?', 'Kendi dükkânımı açmak'],
+            ['Öğrenilenler', 'Ne öğrendim?', 'Peşin mal almanın gücü'],
+            ['Engeller', 'Neyi aştım?', '2018 kur krizi, kötü ortaklık'],
+            ['Başarılar', 'Neyle gurur duyuyorum?', 'Sadık müşteri çevresi'],
+            ['İnsanlar', 'Kimler yanımdaydı?', 'Kalfa Şükrü, ilk büyük müşteri'],
           ]},
           { t: 'callout', kind: 'tip', title: 'Ekip versiyonu', text: 'Projeye başlarken ekibe önceki projenin making-of\'unu çizdir. Ortak hafıza, yeni planın en ucuz risk analizidir.' },
         ],
@@ -468,6 +538,8 @@ export const section2Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Herkes senden çok şey bekler ama yaptıkların o beklentiye yetişemezse tuzağa düşersin; çare az söz verip çok iş çıkarmaktır.' },
+          { t: 'callout', kind: 'ornek', title: 'Atölyeden örnek', text: 'Çırak Emre daha ilk ay herkesi şaşırtır: eli yatkın, kafası hızlı. "Bu çocuk usta olur" diye dilden dile yayılır. Emre övgüye alışır, zor işlerden kaçar; nasılsa yetenekli ya. Üç yıl sonra "yeteneksiz" denen İbrahim, her akşam bir saat fazla çalışa çalışa Emre\'yi geçer. Beklenti yüksekte, başarı yerde kalınca herkes hayal kırıklığından bahseder. Oysa sorun yetenek değil, beklenti makasıydı.' },
           { t: 'p', text: '"Ne kadar umut vadeden bir çocuk" — bu cümleyi hakkında duyan herkes, kişisel potansiyel tuzağının arkasında ne yattığını tahmin edebilir: bu vaadi yerine getirmeye çalışmakla geçen bir ömür.' },
           { t: 'p', text: 'Bu, yetenekli insanların lanetidir. "Sadece gerçekten ne istediğini bulması gerek" denir; eksikleri görmezden gelinir, başarıları elde edilişlerindeki kolaylıkla hayranlık toplar. Başlangıçta bu çekici ama ölümcül yetenek-karizma karışımından kâr eder. Ta ki "aptal" denenler çalışkanlaşana kadar: o zaman, bir zamanlar ona imrenerek bakanlar tarafından geçilişini kenardan izlemek zorunda kalır.' },
           { t: 'h2', text: 'Üç eğri' },
@@ -489,6 +561,11 @@ export const section2Models: DecisionModel[] = [
             { title: 'Vaadini küçült', text: 'Söz verirken bilinçli olarak yapabileceğinin altını söyle: 80 vadet. Beklenti eğrisini sen yönetmezsen başkaları şişirir.' },
             { title: 'Teslimatı büyüt', text: 'Verdiğin sözün üstüne çık: 120 teslim et. İtibar, vaat–teslimat farkının işaretinden doğar; büyüklüğünden değil.' },
             { title: 'Krizde yön değiştir', text: 'Makas kapanmıyorsa kriz bir sinyaldir: konsolidasyon ve yön değişikliği, tuzakta oyalanmaktan iyidir.' },
+          ]},
+          { t: 'table', head: ['Strateji', 'Vaat', 'Teslimat', 'Sonuç'], rows: [
+            ['Şişirme', '120 söz ver', '80 yap', 'Hayal kırıklığı, güven erir'],
+            ['Denk gitme', '100 söz ver', '100 yap', 'Nötr: kimse etkilenmez'],
+            ['80/120 kuralı', '80 söz ver', '120 yap', 'Güven ve itibar birikir'],
           ]},
           { t: 'callout', kind: 'warn', title: 'Yetenek yalanı', text: '"Çok yeteneklisin" iltifatı bir avans, faiziyle geri istenir. Yeteneği kimlik değil başlangıç sermayesi olarak gör; çalışkanlık eğrisi uzun vadede yetenek eğrisini keser.' },
         ],
@@ -520,6 +597,8 @@ export const section2Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Önce kararın küçük mü büyük mü, seçeneklerin kıyaslanabilir mi olduğuna bak; gerçek zor seçimlerde cevabı listede değil, kendi içinde bulursun.' },
+          { t: 'callout', kind: 'ornek', title: 'Mutfaktan örnek', text: 'Aşçı Fatma iki teklif alır: köklü bir otelin mutfağında garanti maaş, ya da kendi küçük lokantasını açmak. Artı–eksi listesi yapar, liste hep berabere biter; çünkü ikisi farklı türden iyidir, terazide tartılmaz. Sonunda soruyu değiştirir: "Ben hangi kararın arkasında duran kadın olmak istiyorum?" Lokantayı seçer; gerekçe dışarıdan değil, içinden gelmiştir.' },
           { t: 'p', text: 'Teknik olarak her kararın iki parametresi vardır: seçenekler ne kadar kıyaslanabilir ve kararın sonucu ne kadar büyük? Bunlar bir matrise dizildiğinde dört farklı karar tipi ortaya çıkar.' },
           { t: 'ul', items: [
             'Kolay kıyas, küçük sonuç ("no-brainer"): bir seçenek diğerinden iyidir ve yanlış seçsen de önemi yoktur.',
@@ -540,6 +619,12 @@ export const section2Models: DecisionModel[] = [
             { title: 'Küçükleri hızlandır', text: 'No-brainer ve elma/armut kararlarında oyalanma: küçük sonuçlu kararı uzatmak, en yaygın enerji israfıdır. Yazı tura bile at.' },
             { title: 'Zor seçimde içeri bak', text: 'Gerçek zor seçimde artı–eksi listesi eşitliği bozamaz; çünkü seçenekler farklı türden iyidir. Soruyu değiştir: "Hangi kararın arkasında durmak istediğim insan olurum?"' },
             { title: 'Gerekçeni yaz ve sahiplen', text: 'Verdiğin kararın öznel gerekçesini bir cümleyle yaz. Chang\'in dersi budur: zor seçimlerde gerekçeyi bulmayız, yaratırız — ve bu bizi sürüklenen değil karar veren kişi yapar.' },
+          ]},
+          { t: 'table', head: ['Karar tipi', 'Kıyas', 'Sonuç', 'Örnek', 'Ne yapmalı'], rows: [
+            ['No-brainer', 'Kolay', 'Küçük', 'Hangi otobüse binsem', 'Hemen seç, düşünme'],
+            ['Elma/armut', 'Zor', 'Küçük', 'Pide mi lahmacun mu', 'Yazı tura at, geç'],
+            ['Büyük seçim', 'Kolay', 'Büyük', 'Tek çare olan ameliyat', 'Kabul et, hazırlan'],
+            ['Zor seçim', 'Zor', 'Büyük', 'Memleket mi gurbet mi', 'İçine bak, gerekçeni yarat'],
           ]},
           { t: 'callout', kind: 'warn', title: 'Sık yapılan hata', text: 'Zor seçimi daha çok veriyle çözmeye çalışmak. Veri kıyaslanabilir seçenekleri ayırır; kıyaslanamaz seçeneklerde eksik olan bilgi değil, senin taahhüdündür.' },
         ],
@@ -571,6 +656,8 @@ export const section2Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Kafamız bize sık sık aynı dört oyunu oynar: ilk duyduğuna yapışır, haklı çıkmak ister, aklına ilk geleni kanıt sanır ve acele karar verir.' },
+          { t: 'callout', kind: 'ornek', title: 'Pazardan örnek', text: 'Halıcı Nurettin ikinci el araba bakar. Satıcı "500 bin" der; Nurettin 450\'ye alınca kâr ettiğini sanır, oysa arabanın gerçek değeri 400\'dü (çapa etkisi). Aynı gün komşusu "bu marka sağlamdır, bizimki 20 yıl gitti" der; Nurettin bir tanıdık hikâyesini servis kayıtlarından çok ciddiye alır (bulunabilirlik hatası). Kusur arayacağına hep aracı öven yazıları okur (doğrulama hatası) ve kaporayı o akşam aceleyle yatırır (hızlı düşünme).' },
           { t: 'p', text: 'Bilişsel önyargılar, hepimizin farkında olmadan yaptığı ve kararlarımızı etkileyen sistematik yargı hatalarıdır. Kitap dört tanesini öne çıkarır ve her birini aynı şablonla anlatır: varsayımımız ne, gerçek ne, çözüm ne?' },
           { t: 'h2', text: 'Dört hata' },
           { t: 'ul', items: [
@@ -591,6 +678,12 @@ export const section2Models: DecisionModel[] = [
             { title: 'Aleyhte kanıt ara', text: 'Karar öncesi bilinçli görev: görüşünü çürütecek en güçlü üç argümanı yaz. Bulamıyorsan araştırman bitmemiştir.' },
             { title: 'Anekdotu veriden ayır', text: '"Bir tanıdığım..." diye başlayan her gerekçeyi işaretle ve yerine ölçülmüş veri koymaya çalış.' },
             { title: 'Sistem 2\'yi devreye sok', text: 'Önemli mesaj ve kararlarda araya zaman koy: göndermeden önce bir kez daha oku, imzalamadan önce bir gece bekle.' },
+          ]},
+          { t: 'table', head: ['Hata', 'Sandığımız', 'Gerçek', 'Panzehir'], rows: [
+            ['Çapa etkisi', 'Her şeyi tarttık', 'İlk sayıya yapıştık', 'Referans noktasını sorgula'],
+            ['Doğrulama hatası', 'Nesnel baktık', 'Haklı çıkaran kanıtı seçtik', 'Aleyhte üç kanıt ara'],
+            ['Bulunabilirlik', 'İyi gerekçemiz var', 'Aklımıza ilk gelen anıya dayandık', 'Anekdot yerine veri koy'],
+            ['Hızlı/yavaş', 'Sezgim doğru', 'Sistem 1 acele karar verdi', 'Araya zaman koy, tekrar oku'],
           ]},
           { t: 'callout', kind: 'warn', title: 'Önyargı kör noktası', text: 'En tehlikeli önyargı, önyargıların başkalarında olduğuna inanmaktır. Bu listeyi ekip için değil, önce kendi son üç kararın için uygula.' },
         ],
@@ -622,6 +715,8 @@ export const section2Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: '"Şimdi ne yapacağım?" dediğin anda önce arkana bakar, sonra önündeki altı yolu tek tek sayarsın.' },
+          { t: 'callout', kind: 'ornek', title: 'Şantiyeden örnek', text: 'Sıvacı Hüseyin\'in çalıştığı firma kapanır. Panik yerine kağıdı alır: nereden geldim (yirmi yıl sıva), ne önemli (çocukların okulu, el emeği), kim önemli (eşi, eski kalfaları), ne engelliyor (kredi borcu), neden korkuyorum (sıfırdan başlamak). Sonra altı yolu yazar: eski tip firmada işe girmek, hep istediği restorasyon işine geçmek, hayali olan kendi ekibini kurmak, herkesin önerdiği belediye kadrosu, hiç düşünmediği ustalık eğitmenliği, memlekete dönmek. Karar hâlâ zor ama artık seçenekler masada, korkular isimli.' },
           { t: 'p', text: 'Hepimizin hayatında kendimizi bir yol ayrımında bulduğumuz ve "şimdi nereye?" diye sorduğumuz anlar olur. Yol ayrımı modeli, hayatta yönünü bulmana yardım eder. Önce arkana bakarsın: beş soru, seni buraya getiren yolları haritalar.' },
           { t: 'h2', text: 'Beş soru' },
           { t: 'ul', items: [
@@ -652,6 +747,14 @@ export const section2Models: DecisionModel[] = [
             { title: 'Notlarına dışarıdan bak', text: 'Yazdıklarına bak: ne eksik? Anahtar kelimeler bugünkü sen olma hikâyeni anlatıyor mu? Gerekirse ekle.' },
             { title: 'Altı yolu tek tek hayal et', text: 'Her yolu ciddiye alarak zihninde yürü: geriye giden yol da, çılgın hayal de meşru birer seçenektir. Hangisinde nefesin açılıyor?' },
             { title: 'Yolu sen seç', text: 'Model cevabı vermez; seçenekleri eksiksiz gösterir. Kararı, en makul yol ile seni çağıran yol arasındaki farkın bilincinde olarak ver.' },
+          ]},
+          { t: 'table', head: ['Yol', 'Hüseyin için karşılığı', 'His'], rows: [
+            ['Daha önce gittiğim yol', 'Başka firmada sıvacılık', 'Güvenli ama aynı'],
+            ['Beni çağıran yol', 'Restorasyon işine geçmek', 'Heyecan'],
+            ['En çılgın hayal', 'Kendi ekibini kurmak', 'Korku ve umut birlikte'],
+            ['En makul yol', 'Belediye kadrosu', 'Rahatlık, biraz sıkıntı'],
+            ['Hiç gidilmemiş yol', 'Ustalık eğitmenliği', 'Merak'],
+            ['Geriye giden yol', 'Memlekete dönmek', 'Özlem'],
           ]},
           { t: 'callout', kind: 'tip', title: 'Arkadaşla çalış', text: 'Kitabın önerisi: soruları iyi bir arkadaşla birlikte cevapla. Kendi hikâyeni yüksek sesle anlatmak, yazarken görünmeyen desenleri ortaya çıkarır.' },
         ],

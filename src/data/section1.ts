@@ -13,6 +13,8 @@ export const section1Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Önce hangi işin gerçekten önemli, hangisinin sadece acele olduğunu ayır; önemli olanı kendin yap, acele ama önemsiz olanı başkasına ver.' },
+          { t: 'callout', kind: 'ornek', title: 'Şantiyeden örnek', text: 'Usta Mehmet\'in önünde dört iş var: patlayan su borusu (acil+önemli: hemen kendisi müdahale eder), gelecek ayın malzeme siparişi (önemli ama acil değil: perşembe gününe not eder), kapıya gelen kargoyu teslim almak (acil ama önemsiz: çırağa söyler), eski faturaları dosyalamak (ne acil ne önemli: kışın yağmurlu bir gününe kalır).' },
           { t: 'p', text: 'ABD Başkanı Dwight D. Eisenhower\'a atfedilen söz şudur: "En acil kararlar nadiren en önemli olanlardır." Eisenhower Matrisi, önüne gelen her işi iki eksende değerlendirir: önem ve aciliyet.' },
           { t: 'h2', text: 'Dört kadran' },
           { t: 'ul', items: [
@@ -37,6 +39,12 @@ export const section1Models: DecisionModel[] = [
           ]},
           { t: 'callout', kind: 'tip', title: 'Buffett tekniği ile birleştir', text: 'Warren Buffett\'a atfedilen yöntem: bugün yapmak istediğin her şeyi listele, en üsttekiyle başla ve o bitmeden diğerine geçme. Eisenhower Matrisi neyin üste yazılacağını, Buffett listesi ise sıranın nasıl korunacağını söyler.' },
           { t: 'callout', kind: 'warn', title: 'Sık yapılan hata', text: 'Gelen kutusu aciliyet üretir, strateji üretmez. E-postayla gelen her iş "acil" hissettirir; matrise koymadan hiçbirine evet deme.' },
+          { t: 'table', head: ['Görev', 'Kadran', 'Ne yapılır'], rows: [
+            ['Patlayan su borusu', 'Acil + Önemli', 'Hemen kendin yap'],
+            ['Gelecek ayın malzeme siparişi', 'Önemli, acil değil', 'Takvime yaz'],
+            ['Kapıya gelen kargo', 'Acil, önemsiz', 'Çırağa devret'],
+            ['Eski faturaları dosyalamak', 'Ne acil ne önemli', 'Sonraya bırak veya hiç yapma'],
+          ]},
         ],
       },
       {
@@ -67,6 +75,8 @@ export const section1Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Bir işe girişmeden önce dört soruya dürüstçe cevap ver: Neyde iyiyim, neyde zayıfım, dışarıda hangi fırsat var, hangi tehlike var?' },
+          { t: 'callout', kind: 'ornek', title: 'Bakkaldan örnek', text: 'Bakkal Hasan mahalleye zincir market açılacağını duyunca kağıt kaleme sarılır. İyi yanı: herkesi tanır, veresiye defteri tutar. Zayıf yanı: fiyatları markete göre pahalı. Fırsat: yaşlı komşular kapıya servis istiyor. Tehlike: gençler alışverişi markete kaydırabilir. Karar netleşir: fiyat yarışına girmez, kapıya servise ve tanışıklığa yüklenir.' },
           { t: 'p', text: 'SWOT; Strengths (güçlü yönler), Weaknesses (zayıf yönler), Opportunities (fırsatlar) ve Threats (tehditler) kelimelerinin baş harfleridir. İç faktörleri (güçlü/zayıf) dış faktörlerle (fırsat/tehdit) aynı tabloda buluşturur.' },
           { t: 'h2', text: 'Tablonun mantığı' },
           { t: 'ul', items: [
@@ -89,6 +99,12 @@ export const section1Models: DecisionModel[] = [
             { title: 'Tek karara bağla', text: 'Analizin çıktısı bir sunum değil, bir karar olmalı: neyi yapacağız, neyi bırakacağız?' },
           ]},
           { t: 'callout', kind: 'warn', title: 'Sık yapılan hata', text: 'Zayıf yönleri yumuşatmak. "Gelişime açık alanlarımız" diye yazılan her madde, analizi kör eder. Zayıflık net yazılmazsa tehditle eşleşemez.' },
+          { t: 'table', head: ['Kutu', 'Bakkal Hasan için örnek', 'Çıkan eylem'], rows: [
+            ['Güçlü yön', 'Herkesi tanır, güven var', 'Tanışıklığı öne çıkar'],
+            ['Zayıf yön', 'Fiyatlar markete göre yüksek', 'Fiyat yarışına girme'],
+            ['Fırsat', 'Yaşlı komşular kapıya servis istiyor', 'Telefonla sipariş + servis başlat'],
+            ['Tehdit', 'Zincir market açılıyor', 'Müdavim müşteriyi elde tutacak jestler yap'],
+          ]},
         ],
       },
       {
@@ -118,6 +134,8 @@ export const section1Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Elindeki işleri dört gruba ayır: para kazandıran, parlayan, belirsiz ve ölü. Ölüyü bırak, kazandıranın parasıyla parlayanı büyüt.' },
+          { t: 'callout', kind: 'ornek', title: 'Lokantadan örnek', text: 'Lokantacı Ayşe menüsüne bakar: kuru fasulye her gün satılır, masrafı azdır — bu onun nakit ineğidir. Yeni koyduğu ızgara tabağı çok tutuldu ve talep büyüyor — bu yıldızdır. Denemeye koyduğu tatlı reyonu belli belirsiz gidiyor — soru işareti. Kimsenin sipariş etmediği balık çorbası ise köpektir: menüden çıkar. Fasulyenin kazancıyla ızgara ocağını büyütür.' },
           { t: 'p', text: 'Boston Consulting Group\'un 1970\'lerde geliştirdiği matris, bir portföydeki her ürünü iki eksende konumlandırır: pazarın büyüme hızı ve ürünün göreli pazar payı.' },
           { t: 'ul', items: [
             'Yıldızlar (yüksek büyüme, yüksek pay): yatırım yapmaya devam et.',
@@ -139,6 +157,12 @@ export const section1Models: DecisionModel[] = [
             { title: 'Soru işaretlerini karara bağla', text: 'Her soru işareti için tarih koy: "Şu tarihe kadar şu eşiği geçmezse çıkıyoruz."' },
           ]},
           { t: 'callout', kind: 'tip', title: 'Kişisel kullanım', text: 'Aynı matris kişisel projelere de uygulanır: hangi becerin nakit ineği (bugünkü ekmeğin), hangisi yıldız (geleceğin)? Köpek projelerini bırakmak, en ucuz verimlilik artışıdır.' },
+          { t: 'table', head: ['Menü kalemi', 'Satış gidişatı', 'Kutu', 'Karar'], rows: [
+            ['Kuru fasulye', 'Her gün düzenli satılıyor', 'Nakit ineği', 'Sağ, kârını başka yere aktar'],
+            ['Izgara tabağı', 'Talep hızla büyüyor', 'Yıldız', 'Yatırım yap, ocağı büyüt'],
+            ['Tatlı reyonu', 'Belli belirsiz gidiyor', 'Soru işareti', 'Tarih koy: tutmazsa çık'],
+            ['Balık çorbası', 'Neredeyse hiç satılmıyor', 'Köpek', 'Menüden çıkar'],
+          ]},
         ],
       },
       {
@@ -168,6 +192,8 @@ export const section1Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Aynı anda yürüttüğün bütün işleri tek bir kağıda dök ve her birine sor: Bana ne kazandırıyor, bana kaça mal oluyor? Böylece hangisini sürdürüp hangisini bırakacağını görürsün.' },
+          { t: 'callout', kind: 'ornek', title: 'Atölyeden örnek', text: 'Kaynakçı Osman\'ın elinde dört iş var: fabrikanın bakım sözleşmesi (az kazandırır ama düzenli), komşu siteye ferforje kapı (iyi para, çok mesai), kardeşine bedava tamir sözü (para yok, vakit yiyor) ve akşamları öğrendiği alüminyum kaynağı kursu (para yok ama yeni müşteri kapısı). Hepsini kağıda dizer: kardeşin tamirini hafta sonuna sıkıştırır, kursu sürdürür, çünkü gelecek oradadır.' },
           { t: 'p', text: 'Aynı anda birden çok projeyle mi uğraşıyorsun? O zaman bir "slasher"sın (/). Terimi New Yorklu yazar Marci Alboher ortaya attı: "Geçiminizi nasıl sağlıyorsunuz?" sorusuna tek cevap veremeyen insanları anlatır — öğretmen/müzisyen/web tasarımcısı gibi. Çeşitlilik çekicidir; ama bütün bu projeler nasıl dengelenir, düzenli gelir nasıl güvenceye alınır?' },
           { t: 'p', text: 'Genel bakış kazanmak için işle ilgili ve özel bütün güncel projelerini proje portföy matrisine yerleştir: klasik eksenler maliyet ve zamandır. Maliyeti yalnızca para olarak değil; dahil olan arkadaşlar, enerji ve psikolojik yük gibi kaynaklar olarak da düşün.' },
           { t: 'h2', text: 'Eksenler sana kalmış' },
@@ -193,6 +219,12 @@ export const section1Models: DecisionModel[] = [
           ]},
           { t: 'callout', kind: 'tip', title: 'Maliyeti geniş tanımla', text: 'Kitabın uyarısı: maliyet sadece para değildir. Bir projenin gerçek bedeli; harcadığın enerji, yıprattığın ilişkiler ve taşıdığın psikolojik strestir. Bu kalemleri de matrise dahil et.' },
           { t: 'callout', kind: 'warn', title: 'Yarım bırakma tuzağı', text: 'Modelin son uyarısı nettir: projelerini düzgün tamamla — başarısız olanları bile. Sessizce sönümlenen projeler hem öğrenmeyi hem itibarı zedeler.' },
+          { t: 'table', head: ['Proje', 'Ne kazandırıyor', 'Ne tüketiyor', 'Karar'], rows: [
+            ['Fabrika bakım sözleşmesi', 'Düzenli gelir', 'Az zaman', 'Devam et'],
+            ['Ferforje kapı işi', 'İyi para', 'Çok mesai', 'Devam et ama yenisini alma'],
+            ['Kardeşe bedava tamir', 'Aile gönlü', 'Hafta içi vakit', 'Hafta sonuna kaydır'],
+            ['Alüminyum kaynak kursu', 'Yeni müşteri kapısı', 'Akşamlar', 'Sürdür: gelecek burada'],
+          ]},
         ],
       },
       {
@@ -222,6 +254,8 @@ export const section1Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Önemli bir karar verirken ne olacağını tahmin edip bir kağıda yaz; aylar sonra kağıda dön ve tahminin tutup tutmadığına bak. Böylece neyde gerçekten iyi olduğunu öğrenirsin.' },
+          { t: 'callout', kind: 'ornek', title: 'Atölyeden örnek', text: 'Tornacı Kemal yeni bir çırak alırken deftere yazar: "Bu çocuk altı ayda tezgahı tek başına kullanır." Altı ay sonra deftere bakar: çırak tezgahı üç ayda söktü ama Kemal\'in "bu müşteri düzenli iş verir" diye yazdığı firma iki ayda kayboldu. Birkaç yıl böyle yazınca deseni görür: insan seçmede eli güçlü, müşteri tahmininde zayıf. Artık müşteri sözüne değil, sözleşmeye güvenir.' },
           { t: 'p', text: 'En büyük güçlü yönün ne? Çoğu insan neyde iyi olduğunu bildiğini sanır — ve genellikle yanılır. Bunu söyleyen, geçen yüzyılın en önemli yönetim düşünürlerinden Peter F. Drucker\'dır. Drucker, kendini daha iyi tanımak için basit ama zekice bir teknik önerdi.' },
           { t: 'p', text: 'Yöntem şudur: ne zaman önemli bir karar alsan, ne olmasını beklediğini yaz. Bir yıl sonra beklentini gerçek sonuçla karşılaştır.' },
           { t: 'p', text: 'Drucker hayatı boyunca kendi beklentilerini gerçek sonuçlarla karşılaştırdı. Kendine geri bildirim vermeyi öğrendi ve zamanla nerede, ne tür bir gelişime ihtiyacı olduğunu görmeye başladı. Başka bir deyişle: güçlü yönlerinin nerede olduğunu — ve nerede olmadığını — keşfetti.' },
@@ -240,6 +274,11 @@ export const section1Models: DecisionModel[] = [
             { title: 'Deseni çıkar', text: 'Birkaç döngü sonra tekrarlayan deseni ara: hangi tür kararlarda isabetlisin, hangilerinde sistematik olarak yanılıyorsun? Enerjini isabetli olduğun alana kaydır.' },
           ]},
           { t: 'callout', kind: 'tip', title: 'Kayıt hafızayı yener', text: 'Beklentiyi yazmadan yapılan değerlendirme işe yaramaz: hafıza, sonucu öğrendikten sonra beklentiyi sessizce günceller ("zaten biliyordum"). Yazılı kayıt bu geriye dönük düzeltmeyi engeller.' },
+          { t: 'table', head: ['Karar', 'Yazılan beklenti', 'Gerçekleşen', 'Çıkan ders'], rows: [
+            ['Yeni çırak alımı', 'Altı ayda tezgahı öğrenir', 'Üç ayda öğrendi', 'İnsan seçmede gözün keskin'],
+            ['Yeni müşteri', 'Düzenli iş verir', 'İki ayda kayboldu', 'Söze değil sözleşmeye güven'],
+            ['İkinci el tezgah alımı', 'Beş yıl sorunsuz çalışır', 'İlk yıl iki büyük arıza', 'Makine alırken uzmana danış'],
+          ]},
         ],
       },
       {
@@ -269,6 +308,8 @@ export const section1Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Büyük hayalin ile ona götüren günlük adımı ayır: hayal sana yön verir, günlük adım ise senin elindedir ve seni oraya taşır.' },
+          { t: 'callout', kind: 'ornek', title: 'Şantiyeden örnek', text: 'Kalfa İbrahim ustalık belgesi almak istiyor — bu onun nihai hedefi. Ama sınav tarihi de sonucu da tam onun elinde değil. Elinde olan şudur: her akşam yarım saat soru çözmek ve hafta sonu ustasının yanında kalıp iki saat pratik yapmak. Bu iki adım onun performans hedefidir. Adımlara sadık kalırsa belge kendiliğinden yaklaşır.' },
           { t: 'p', text: 'Kendine hedefler koyuyorsan, nihai hedefler ile performans hedeflerini ayırmalısın. Nihai hedef "maraton koşmak istiyorum" olabilir; performans hedefi ise bu amaca ulaşmanı sağlayan adımdır: "her sabah otuz dakika koşacağım."' },
           { t: 'p', text: 'Hedefini yaz ve adım adım, modeldeki on dört gereklilikle örtüşüp örtüşmediğini kontrol et. Model iki klasik akronimi genişletir: SMART (Specific–Özgül, Measurable–Ölçülebilir, Attainable–Ulaşılabilir, Realistic–Gerçekçi, Time-phased–Zamana bağlı), PURE (Positively stated–Olumlu ifade edilmiş, Understood–Anlaşılmış, Relevant–İlgili, Ethical–Etik) ve CLEAR (Challenging–Zorlayıcı, Legal–Yasal, Environmentally sound–Çevreye duyarlı, Agreed–Üzerinde anlaşılmış, Recorded–Kayıtlı).' },
           { t: 'p', text: 'Dikkat edilecek nokta: ulaşılamaz bir hedef umut bırakmaz; zorlamayan bir hedef ise motive etmez. On dört adım sana fazla karmaşık geliyorsa, hedef koyarken şu temel kuralı unutma:' },
@@ -287,6 +328,12 @@ export const section1Models: DecisionModel[] = [
             { title: 'Kaydet ve paylaş', text: 'Hedefi yaz (Recorded) ve ilgili kişilerle mutabık kal (Agreed). Yazılmamış hedef, dilek; paylaşılmamış hedef, kaçış kapısıdır.' },
           ]},
           { t: 'callout', kind: 'tip', title: 'Basitlik testi', text: 'On dört ölçüt bunaltıyorsa Whitmore\'un kendi kısayolunu kullan: KISS. Hedefini bir cümlede, bir yabancıya açıklayamıyorsan hedef henüz hazır değildir.' },
+          { t: 'table', head: ['Nihai hedef', 'Performans hedefi', 'Kontrol kimde'], rows: [
+            ['Ustalık belgesi almak', 'Her akşam 30 dakika soru çözmek', 'Tamamen sende'],
+            ['Maraton koşmak', 'Her sabah 30 dakika koşmak', 'Tamamen sende'],
+            ['Kendi dükkanını açmak', 'Her ay belirli bir tutar biriktirmek', 'Büyük ölçüde sende'],
+            ['Terfi almak', 'Her hafta bir yeni beceri çalışmak', 'Sonuç değil, adım sende'],
+          ]},
         ],
       },
       {
@@ -316,6 +363,8 @@ export const section1Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'İki iyi seçenek arasında sıkıştığında artı-eksi listesi yapma; kendine iki soru sor: Beni burada ne tutuyor, beni oraya ne çekiyor?' },
+          { t: 'callout', kind: 'ornek', title: 'Atölyeden örnek', text: 'Usta Salih\'e başka şehirden iyi maaşlı bir fabrika işi teklif edilir. Kararsızdır. İki liste yapar. Onu tutan: yirmi yıllık müşterileri, kendi tezgahının patronu olmak, çocukların okulu. Onu çeken: düzenli maaş, sigorta, yeni makineleri öğrenmek. İki liste de güzeldir — sorun kötü seçenek değil, iki iyi seçenektir. Listeye bakınca görür: onu tutanlar kalbine, çekenler cüzdanına sesleniyor. Kararı artık bilerek verir.' },
           { t: 'p', text: 'Tanıdık bir durum mu? Bir arkadaşın, meslektaşın ya da müşterin geleceğini geri dönülmez biçimde değiştirebilecek bir karar vermek zorunda: kariyer değiştirmek, başka bir şehre taşınmak ya da erken emekli olmak. Lehte ve aleyhteki argümanlar dengede. Onu bu ikilemden nasıl çıkarabilirsin?' },
           { t: 'p', text: 'Lastik bant modelini çiz ve kişiden kendisine şu iki soruyu sormasını iste: Beni ne tutuyor? Beni ne çekiyor?' },
           { t: 'p', text: 'İlk bakışta yöntem, klasik "artılar ve eksiler neler?" sorusunun basit bir çeşitlemesi gibi görünür. Fark şudur: "Beni ne tutuyor?" ve "Beni ne çekiyor?" olumlu sorulardır ve iki çekici seçeneğin bulunduğu bir durumu yansıtır. İnsan iki kötü seçenek arasında değil, iki lastik bandın çektiği iki iyi seçenek arasında gerilmektedir.' },
@@ -334,6 +383,12 @@ export const section1Models: DecisionModel[] = [
           ]},
           { t: 'callout', kind: 'tip', title: 'Neden artı/eksi listesinden iyi?', text: 'Artı/eksi listesi zihni tehditlere odaklar ve savunmaya geçirir. "Tutan/çeken" çerçevesi ise iki seçeneği de olumlu kabul ettiği için suçluluk ve korku yerine değerleri konuşturur.' },
           { t: 'callout', kind: 'warn', title: 'Başkası için kullanırken', text: 'Model bir tavsiye aracı değil, soru aracıdır. Karşındakinin listelerini sen doldurursan ikilem çözülmez, sadece sana devredilir.' },
+          { t: 'table', head: ['Beni ne tutuyor?', 'Beni ne çekiyor?'], rows: [
+            ['Yirmi yıllık sadık müşteriler', 'Düzenli maaş ve sigorta'],
+            ['Kendi tezgahımın patronuyum', 'Yeni makineleri öğrenme fırsatı'],
+            ['Çocukların okulu ve mahalle', 'Daha büyük bir şehirde imkanlar'],
+            ['Yarım kalan büyük sipariş', 'Sıfırdan temiz bir başlangıç'],
+          ]},
         ],
       },
       {
@@ -363,6 +418,8 @@ export const section1Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Sana söylenen her övgüyü ve eleştiriyi aynı kefeye koyma; her yorumu bir kutuya ayır ve yalnızca gerçekten değişmesi gerekenlerle uğraş.' },
+          { t: 'callout', kind: 'ornek', title: 'Şantiyeden örnek', text: 'Kalfa Yusuf\'un ördüğü duvara dört yorum gelir. Mimar: "Örgü düzgün ama derz kalınlığı standart dışı, düzelt" (tavsiye). Usta: "Terazin şaşmıyor, aynen devam" (övgü). Kontrol mühendisi: "Köşe bağlantısı yanlış, sökülecek" (eleştiri). Komşu usta: "Ben olsam başka harç kullanırdım ama bu da olur" (öneri). Yusuf paniklemez: söküp yapacağı tek şey köşedir, derzi ayarlar, terazisine güvenmeye devam eder, harç lafını not edip geçer.' },
           { t: 'p', text: 'Geri bildirim, gruplardaki en zor ve hassas süreçlerden biridir. Eleştiriyle insanları kırmak kolaydır; ama sahte övgüler de yararsızdır. Övgü çoğu zaman bizi rehavete sürükler, eleştiri ise özsaygımızı zedeleyip akılsız seçimlere itebilir.' },
           { t: 'p', text: 'Tek boyutlu "neyi iyi, neyi kötü buldun?" sorusu bu yüzden pek yardımcı olmaz. Geri bildirimden öğrenilecekler açısından asıl soru şudur: "Bu eleştiriyle ne yapabilirim?" Yani neyin olduğu gibi kalabileceğini, neyin değişmesi gerektiğini (bugüne kadar iyi olsa bile) ayırt etmek.' },
           { t: 'h2', text: 'Dört kutu' },
@@ -387,6 +444,12 @@ export const section1Models: DecisionModel[] = [
             { title: 'Şans payını sorgula', text: 'Övgü kutusundaki her madde için sor: bu gerçekten benim eserim mi, yoksa top şans eseri mi ağlara gitti?' },
           ]},
           { t: 'callout', kind: 'warn', title: 'İki uçlu tuzak', text: 'Her övgüye inanmak rehavete, her eleştiriyi içselleştirmek çaresizliğe götürür. Kutunun amacı geri bildirimi hissetmek değil, işlenebilir hâle getirmektir: değiştirilecekler kısa bir liste olmalı.' },
+          { t: 'table', head: ['Gelen yorum', 'Kutu', 'Yusuf ne yapar'], rows: [
+            ['Örgü düzgün ama derz standart dışı', 'Tavsiye', 'Derz kalınlığını ayarlar'],
+            ['Terazin şaşmıyor, devam', 'Övgü', 'Aynı titizliği sürdürür'],
+            ['Köşe bağlantısı yanlış, sökülecek', 'Eleştiri', 'Köşeyi söküp yeniden örer'],
+            ['Ben olsam başka harç kullanırdım', 'Öneri', 'Not eder, değiştirmek zorunda değil'],
+          ]},
         ],
       },
       {
@@ -416,6 +479,8 @@ export const section1Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Sık verdiğin kararlar için önceden birkaç kesin soru yaz; gelen her işi bu sorulardan geçir, biri bile "hayır" çıkarsa işi alma.' },
+          { t: 'callout', kind: 'ornek', title: 'Atölyeden örnek', text: 'Mobilyacı Recep her gelen siparişte saatlerce düşünmekten yorulmuştu. Üç soru yazdı ve duvara astı: Müşteri kaporayı peşin veriyor mu? Teslim süresi en az üç hafta mı? İş benim tezgahımda yapılabiliyor mu? Artık telefon geldiğinde üç soruyu soruyor; üçü de "evet" değilse kibarca reddediyor. Ne pazarlık uzuyor ne gece yarısı yetiştirme derdi kalıyor.' },
           { t: 'p', text: 'Hızla karara varmanın iyi bir yolu Evet/Hayır kuralını kullanmaktır. Kural, riskleri tartman gerektiği ama zamanın az olduğu durumlarda değer kazanır. Hasta hissedip doktora giden birini düşün: doktor, teşhisini bir eleme süreciyle koyar — Ateşi var mı? Tansiyonu düşük mü?' },
           { t: 'p', text: 'Evet/Hayır kuralı net parametrelere dayanır; bu yalnızca tıpta değil, yönetimde, özel hayatta ve siyasette de işe yarar. 2013\'te ABD Başkanı Barack Obama, insansız hava aracı saldırıları hakkında karar vermek için üç Evet/Hayır kuralı belirledi: Hedefteki kişi Amerikan halkı için kalıcı ve acil bir tehdit mi? Bu tehditle başa çıkabilecek tek ülke ABD mi? Sivillerin zarar görmeyeceği neredeyse kesin mi? Ancak üç soru da "Evet" ile yanıtlanabiliyorsa saldırı onaylanıyordu.' },
           { t: 'quote', text: 'En eski ve en kısa kelimeler — "evet" ve "hayır" — en çok düşünmeyi gerektirenlerdir.' },
@@ -432,6 +497,11 @@ export const section1Models: DecisionModel[] = [
             { title: 'Kuralı sabit tut', text: 'Kuralın değeri istisnasız uygulanmasındadır. Kural her vakada yeniden pazarlık edilirse hız avantajı kaybolur.' },
           ]},
           { t: 'callout', kind: 'warn', title: 'Kural, düşünmenin yerine geçmez', text: 'Evet/Hayır kuralı düşünceyi karar anından kural yazma anına taşır. Kötü yazılmış kural, kötü kararları hızlandırır: soruları belirlerken en yavaş ve dikkatli hâlinle çalış.' },
+          { t: 'table', head: ['Eleme sorusu', 'Cevap "Evet" ise', 'Cevap "Hayır" ise'], rows: [
+            ['Kapora peşin veriliyor mu?', 'Sonraki soruya geç', 'İşi alma'],
+            ['Teslim süresi en az üç hafta mı?', 'Sonraki soruya geç', 'İşi alma'],
+            ['İş kendi tezgahımda yapılabilir mi?', 'İşi kabul et', 'İşi alma'],
+          ]},
         ],
       },
       {
@@ -461,6 +531,8 @@ export const section1Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Önündeki seçenek sayısı arttıkça karar vermek kolaylaşmaz, zorlaşır; bu yüzden seçeneklerini bilerek azalt.' },
+          { t: 'callout', kind: 'ornek', title: 'Nalburdan örnek', text: 'Boyacı Veli, müşterisine renk seçtirmek için koca kataloğu açardı: iki yüz renk, bir saat kararsızlık, çoğu zaman "biz size döneriz". Sonra usulü değiştirdi: eve bakıp "size şu üç renk yakışır" diyerek üç kartela uzatmaya başladı. Müşteri beş dakikada seçiyor, iş o hafta bağlanıyor. Az seçenek, hem müşteriyi hem Veli\'yi rahatlattı.' },
           { t: 'p', text: 'Sezgisel olarak "daha çok, daha iyidir" diye düşünürüz: ne kadar çok seçenek değerlendirirsek nihai karar o kadar iyi, ne kadar çok seçeneğimiz varsa o kadar mutlu oluruz. Ama bazen tersi doğrudur: seçenek büyüdükçe beklentiler yükselir — ve yanlış karar verme endişemiz büyür. Bu, "seçim paradoksu"dur.' },
           { t: 'h2', text: 'Reçel deneyi' },
           { t: 'p', text: 'Profesör Sheena Iyengar bunu efsaneleşmiş bir deneyle gösterdi. Bir süpermarkette müşterilere tadımlık reçel sundu: bir gün altı çeşit, başka bir gün yirmi dört çeşit. Küçük seçkide müşterilerin yüzde 40\'ı tadım yaptı ve yüzde 30\'u bir kavanoz satın aldı. Büyük seçki müşterilerin yüzde 60\'ını çekti — ama yalnızca yüzde 2\'si reçel aldı. Sonuç: seçenek bolluğu cezbedicidir ama kafa karıştırır.' },
@@ -479,6 +551,11 @@ export const section1Models: DecisionModel[] = [
             { title: 'Başkalarına az seçenek sun', text: 'Müşteriye, ekibe ya da yöneticiye seçenek sunarken 2-3 net alternatif ver; 10 seçenekli sunum karar değil erteleme üretir.' },
           ]},
           { t: 'callout', kind: 'warn', title: 'Az seçenek de bir uçtur', text: 'Modelin eğrisi iki uçludur: hiç seçenek olmaması da mutsuz eder. Amaç sıfır seçenek değil, kafa karışıklığını en aza indiren orta bölgeyi bulmaktır.' },
+          { t: 'table', head: ['Durum', 'Az seçenek (6 reçel)', 'Çok seçenek (24 reçel)'], rows: [
+            ['Tezgaha uğrayan müşteri', 'Yüzde 40', 'Yüzde 60'],
+            ['Satın alan müşteri', 'Yüzde 30', 'Yalnızca yüzde 2'],
+            ['Sonuç', 'Az ilgi, çok satış', 'Çok ilgi, neredeyse hiç satış'],
+          ]},
         ],
       },
       {
@@ -508,6 +585,8 @@ export const section1Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Yeni bir işe girmeden önce rakiplerinin nerede durduğunu haritaya çiz; kimsenin olmadığı ama müşterinin istediği boş yeri bul, oraya yerleş.' },
+          { t: 'callout', kind: 'ornek', title: 'Mahalleden örnek', text: 'Fırıncı Nuri yeni dükkan açacak. Mahalledeki üç fırına bakar: biri ucuz ama kalitesiz, biri pahalı ve merkezde, biri sadece ekmek satıyor. Kimse sabah erken saatte sıcak poğaça ve simiti fabrika servis güzergahında satmıyor. Nuri dükkanı servis duraklarının yanına açar, sabah beşte fırını yakar. Boşluk doğru: işçiler daha ilk hafta kuyruk olur.' },
           { t: 'p', text: 'Her yeni işin amacı, pazarda bir boşluk keşfetmek ve o boşluğu doldurmaktır. Peki en iyi yol nedir? Pazar boşluğu modeli, pazarı üç boyutlu ve net bir biçimde resmeder: pazarını, müşterilerini ve gelecekteki ürünlerini ölçen üç eksen çiz.' },
           { t: 'h2', text: 'Kafe örneği' },
           { t: 'p', text: 'Diyelim ki yeni bir kafe açmak istiyorsun. Rakiplerini şu ölçütlere göre grafiğe yerleştir:' },
@@ -532,6 +611,12 @@ export const section1Models: DecisionModel[] = [
             { title: 'Konum kararını ver', text: 'Ya boş ve talepli bir nişe yerleş ya da dolu bölgeye ancak kategori katili olabilecek bir modelle gir. İkisinin arası — "biraz farklıyız" — en zayıf konumdur.' },
           ]},
           { t: 'callout', kind: 'tip', title: 'Talep testini ucuza yap', text: 'Boş bölgede talep olup olmadığını büyük yatırım yapmadan sına: ön satış, bekleme listesi, tek günlük pop-up. Boşluğun sesi, ancak müşteri parasıyla oylayınca duyulur.' },
+          { t: 'table', head: ['Rakip', 'Fiyat', 'Konum', 'Öne çıkan yanı'], rows: [
+            ['Fırın A', 'Ucuz', 'Ara sokak', 'Sadece ekmek, kalite düşük'],
+            ['Fırın B', 'Pahalı', 'Merkez cadde', 'Pasta ve tatlı ağırlıklı'],
+            ['Fırın C', 'Orta', 'Çarşı içi', 'Öğlen yoğun, sabah kapalı'],
+            ['Boşluk (Nuri)', 'Orta', 'Servis durakları', 'Sabah 5\'te sıcak poğaça ve simit'],
+          ]},
         ],
       },
       {
@@ -561,6 +646,8 @@ export const section1Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Yeni bir fikir bulmak için boş sayfaya bakma; elindeki parçaların özelliklerini bir tabloya dök ve onları daha önce denenmemiş şekillerde birleştir.' },
+          { t: 'callout', kind: 'ornek', title: 'Atölyeden örnek', text: 'Mobilyacı Cemil satışları artırmak istiyor. Bir tablo çizer: malzeme satırına ahşap, metal, cam; kullanım satırına oturma, saklama, çalışma; müşteri satırına öğrenci, ofis, kafe yazar. Parmağıyla kombinasyonları gezerken durur: metal + saklama + öğrenci — yurt odaları için kilitli, yatak altına giren ince metal sandık. Kimse yapmıyor. İlk partiyi yurt işletmecisine satar. Fikir ilhamdan değil, tablodan çıktı.' },
           { t: 'p', text: 'İnovasyon tamamen yeni bir şey yapmak olabileceği gibi, hâlihazırda var olan şeylerin yeni bir kombinasyonunu yapmak da olabilir. Peki bu nasıl başarılır?' },
           { t: 'p', text: 'Morfoloji kavramı, biyolojik yapı ve biçimlerin incelenmesinden gelir. 1930\'larda İsviçreli fizikçi Fritz Zwicky, Kaliforniya Teknoloji Enstitüsü\'nde "morfolojik kutu" adını verdiği bir problem çözme yöntemi geliştirdi: yeni bir varlık, çeşitli mevcut varlıkların özelliklerinin birleştirilmesiyle oluşturulur. Zwicky\'nin başlangıçta jet motoru teknolojisine uyguladığı yöntem, sonradan pazarlama stratejilerinde ve yeni fikirlerin geliştirilmesinde de kullanılmaya başlandı.' },
           { t: 'h2', text: 'Nasıl çalışır' },
@@ -589,6 +676,13 @@ export const section1Models: DecisionModel[] = [
             { title: 'SCAMPER ile zorla', text: 'Ortaya çıkan adayı yedi SCAMPER sorusundan geçir: neyi ikame edebilir, neyi birleştirebilir, neyi eleyebilir, neyi tersine çevirebilirsin?' },
           ]},
           { t: 'callout', kind: 'tip', title: 'Yapı, yaratıcılığın düşmanı değil', text: 'Modelin ana iddiası budur: boş sayfa değil, dolu tablo yaratıcılık üretir. Kombinasyon sayısı (ör. 7 parametre × 6 özellik) insan sezgisinin tek başına tarayamayacağı kadar büyüktür; kutu bu uzayı sistematik gezilebilir yapar.' },
+          { t: 'table', head: ['SCAMPER harfi', 'Soru', 'Cemil\'in sandığı için örnek'], rows: [
+            ['S - İkame et', 'Malzemeyi değiştirsem?', 'Ahşap yerine ince metal gövde'],
+            ['C - Birleştir', 'İki işlevi birleştirsem?', 'Sandık + oturma minderi: puf sandık'],
+            ['M - Değiştir', 'Boyutu değiştirsem?', 'Yatak altına girecek kadar alçalt'],
+            ['E - Ele', 'Neyi çıkarsam?', 'Süslü kulpları at, maliyeti düşür'],
+            ['R - Tersine çevir', 'Tersinden kullansam?', 'Kapak üstten değil önden açılsın'],
+          ]},
         ],
       },
       {
@@ -618,6 +712,8 @@ export const section1Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'İyi hediye pahalı olan değil, alan kişiye kıymetli gelendir; paran azsa bile isabetli ve gönülden bir hediye her zaman kazanır.' },
+          { t: 'callout', kind: 'ornek', title: 'Atölyeden örnek', text: 'Usta Şükrü, emekli olan kalfası için hediye düşünür. Mağazadan pahalı bir saat alabilir — ama kalfanın koluna takmayacağını bilir. Bunun yerine otuz yıl birlikte kullandıkları ilk el planyasını temizletir, üzerine küçük bir pirinç plaka çaktırır: "Otuz yılın hatırasına." Kalfa saati unuturdu; planyayı vitrinine koyar, her misafire anlatır. Az para, çok değer.' },
           { t: 'p', text: 'Hediye vermek bir tür mayın tarlasıdır. Ucuz ya da kişiliksiz bir hediye, alan kişiye değersiz hissettirebilir ve hem veren hem alan için tuhaf bir durum yaratır. Kitabın kendi deyişiyle "son derece bilim dışı" olan bu küçük modelin iki ekseni vardır:' },
           { t: 'ul', items: [
             'Hediye ne kadar pahalı?',
@@ -643,6 +739,12 @@ export const section1Models: DecisionModel[] = [
           ]},
           { t: 'callout', kind: 'tip', title: 'En ucuz ve en değerli hediye', text: 'Modelin haritasında en sağdaki nokta "ilgi"dir: dikkat ve zaman, neredeyse hiçbir maliyeti olmayan ama en yüksek değerde hissedilen hediyedir.' },
           { t: 'callout', kind: 'warn', title: '"Gerek yoktu" cümlesine kanma', text: 'Kitabın uyarısı: cimriliği "alçakgönüllülük" sinyalleriyle meşrulaştırma. Cömertlik, ilişki sermayesine yatırımdır.' },
+          { t: 'table', head: ['Hediye', 'Fiyatı', 'Alan için değeri'], rows: [
+            ['Vitrin işi lüks saat', 'Yüksek', 'Düşük: kişisel değil'],
+            ['Dedenin köstekli saati', 'Yüksek', 'Yüksek: hatıra taşıyor'],
+            ['Plakalı eski el planyası', 'Düşük', 'Yüksek: ortak anıyı taşıyor'],
+            ['Birlikte balık avına gitmek', 'Düşük', 'Yüksek: deneyim ve zaman'],
+          ]},
         ],
       },
       {
@@ -672,6 +774,8 @@ export const section1Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Çözemediğin sorunların çoğunda seni durduran, kimsenin koymadığı ama senin var sandığın kurallardır; önce o kuralları bul, sonra bilerek çiğne.' },
+          { t: 'callout', kind: 'ornek', title: 'Şantiyeden örnek', text: 'Şantiyede ağır bir kazan bodruma indirilecek; kapıdan sığmıyor, vinç içeri giremiyor. Herkes "kapıyı büyütelim mi, duvarı mı kıralım" diye tartışıyor. Genç bir usta sorar: "Kazanı tek parça indirmek zorunda mıyız?" Kimse o kuralı koymamıştır. Kazan sökülür, parçalar merdivenden iner, bodrumda kaynatılır. Çözüm, görünmez kuralı fark etmekle geldi.' },
           { t: 'p', text: 'Gerçekten yenilikçi bir fikir — eski bir fikrin yeni bir bağlama uygulanması ya da mevcut bir fikrin çeşitlemesi değil — nadirdir. Yenilikçi fikirler genellikle konfor alanımızdan çıktığımızda ya da kuralları çiğnediğimizde ortaya çıkar. Buradaki örnek, 20. yüzyılın başında bulmaca dergilerinde görülen "dokuz nokta problemi"dir.' },
           { t: 'p', text: 'Görev: dokuz noktayı, kalemi kâğıttan kaldırmadan en fazla dört düz çizgiyle birleştir. Çözümün püf noktası: çizgileri kutunun dışına uzatmak. Zihnimiz noktaların oluşturduğu kareyi görünmez bir sınır sayar; oysa böyle bir kural hiç konmamıştır.' },
           { t: 'h2', text: 'Ama acele etme: kutunun içi de işe yarar' },
@@ -690,6 +794,12 @@ export const section1Models: DecisionModel[] = [
             { title: 'İki modu dönüşümlü kullan', text: 'Önce serbest ihlal modu (kutu dışı), sonra sessiz derinleşme modu (kutu içi). Parlak fikir çoğu zaman ikisinin ardışıklığından çıkar.' },
           ]},
           { t: 'callout', kind: 'warn', title: 'Slogan tuzağı', text: '"Kutunun dışında düşün" bir emir olarak işe yaramaz; kimse istemle yaratıcı olmaz. İşe yarayan, somut varsayımları tek tek bulup sınamak ve zihne sakin alan açmaktır.' },
+          { t: 'table', head: ['Görünmez kural', 'Sorgulayan soru', 'Açılan çözüm'], rows: [
+            ['Kazan tek parça inmeli', 'Kim söyledi tek parça diye?', 'Söküp bodrumda birleştir'],
+            ['Çizgiler karenin içinde kalmalı', 'Kare diye bir sınır var mı?', 'Çizgiyi noktaların dışına taşır'],
+            ['Dükkan gündüz açık olmalı', 'Müşterim ne zaman boş?', 'Akşam vardiyası çıkışına göre aç'],
+            ['İyi fikir masa başında bulunur', 'Zihin ne zaman rahatlıyor?', 'Sessiz bir yürüyüşte düşün'],
+          ]},
         ],
       },
       {
@@ -719,6 +829,8 @@ export const section1Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'İşin başında az şey bilirsin ama kararların çok şey değiştirir; sonunda çok şey bilirsin ama iş işten geçmiştir. Bu yüzden önemli kararları erken ve cesurca ver.' },
+          { t: 'callout', kind: 'ornek', title: 'Şantiyeden örnek', text: 'Bir ev yapılırken temelin yeri ve genişliği en başta, daha zemin raporu bile tam değilken kararlaştırılır — ve bu karar her şeyi belirler. Boya rengi ise en sonda seçilir; her şeyi bilirsin ama artık değiştirebileceğin tek şey renktir. Usta Halil bunu bilir: temel ve kolon kararlarını ertelemez, en çok kafayı onlara yorar. Boya tartışmasına ise beş dakika ayırır.' },
           { t: 'p', text: 'Çoğu zaman sınırlı ya da belirsiz bilgiye dayanarak karar vermek zorunda kalırız. Örneğin bir projenin başında, ince ayrıntılar henüz netleşmemişken karar vermede cesur olmamız gerekir — özellikle de bu erken kararlar en geniş kapsamlı sonuçları doğurduğu için. Projenin sonuna doğru daha çok şey biliriz ve daha az şüphemiz olur; ama o noktada artık karar verilecek temel bir şey kalmamıştır.' },
           { t: 'p', text: 'O hâlde en önemli soru şudur: şüphe ile karar arasındaki uçurumu nasıl aşarız?' },
           { t: 'callout', kind: 'warn', title: 'Dikkat!', text: 'Şüphelerimiz olduğu için kararları sık sık erteleriz. Ama karar vermemek de başlı başına bir karardır. Bir çözümü ertelediğinde bu çoğu zaman bilinçsiz — ve iletilmeyen — bir karardır; ekipte belirsizlik yaratır. Kararı sonra vermek istiyorsan, bunu açıkça ilet.' },
@@ -737,6 +849,11 @@ export const section1Models: DecisionModel[] = [
             { title: 'Ertelemeyi açıkça ilan et', text: 'Bir kararı bilinçli erteliyorsan tarih koy ve ekibe duyur: "Bu kararı şu bilgi geldiğinde, en geç şu tarihte vereceğiz."' },
           ]},
           { t: 'callout', kind: 'tip', title: 'Sessiz erteleme en pahalı ertelemedir', text: 'Modelin en pratik dersi: ertelenen ama iletilmeyen karar, ekipte herkesin farklı varsayımla ilerlemesine yol açar. Ertelemek meşrudur; sessiz ertelemek değildir.' },
+          { t: 'table', head: ['İnşaat aşaması', 'Elindeki bilgi', 'Kararın etkisi'], rows: [
+            ['Temel ve kolonlar', 'Az: zemin raporu bile taze', 'Çok büyük: her şeyi belirler'],
+            ['Duvarlar ve tesisat', 'Orta: proje netleşti', 'Orta: değişiklik pahalı ama mümkün'],
+            ['Boya ve kaplama', 'Çok: her şey ortada', 'Küçük: sadece görünüşü değiştirir'],
+          ]},
         ],
       },
       {
@@ -766,6 +883,8 @@ export const section1Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Karmaşık bir kararda her şeyi hesaplamaya çalışma; önce bilgileri topla, sonra kararı bir süre kafandan çıkar — için zaten ne istediğini biliyor.' },
+          { t: 'callout', kind: 'ornek', title: 'Atölyeden örnek', text: 'Usta Fikret iki dükkan arasında kalmıştır: biri çarşıda pahalı, biri sanayide ucuz. Haftalarca hesap yapar, içinden çıkamaz. Kahvede arkadaşı bozuk para uzatır: "Yazı çarşı, tura sanayi." Para havadayken Fikret\'in içi "yazı gel" diye geçirir. Para yere düşmeden karar bellidir: çarşı. Yazı tura karar vermedi; Fikret\'in zaten verdiği kararı yüzeye çıkardı.' },
           { t: 'p', text: 'İyi kararların her şeyi sistematik biçimde düşünmenin sonucu olduğuna inanmak cazip gelir — ve gerçekten de karar görece basitse, artıları ve eksileri tarafsızca tartmak muhtemelen doğru sonuca götürür. Ama karar daha karmaşıksa ve bariz bir cevap yoksa, düşünmeye ara vermek daha iyidir. Bütün argümanları ve bilgiyi rasyonel biçimde tartmaya çalışmak yerine sezgine güven. Kulağa paradoksal gelebilir; ama bilinçdışı, büyük veri yığınlarını elemekte daha iyidir.' },
           { t: 'h2', text: 'Yazı tura numarası' },
           { t: 'p', text: 'Peki beynin rasyonel tarafı nasıl kapatılır? Psikolog Gerd Gigerenzer ilgi çekici derecede basit bir numara önerir: iki seçenek arasında karar veremiyorsan yazı tura at. Para havada dönerken hangi yüzün gelmesini istediğini büyük olasılıkla hissedeceksin. Gerçek sonuca bakmana bile gerek kalmaz.' },
@@ -784,6 +903,12 @@ export const section1Models: DecisionModel[] = [
             { title: 'Yazı turayla hissini yokla', text: 'Hâlâ kararsızsan Gigerenzer\'in numarasını uygula: parayı at ve havadayken hangi sonucu dilediğini yakala. O dilek, kararındır.' },
           ]},
           { t: 'callout', kind: 'warn', title: 'Sezgi, deneyimin kısaltmasıdır', text: 'Sezgi ancak deneyim olan alanlarda güvenilirdir: bin görüşme yapmış işe alımcının hissi veridir, ilk kez ev alan kişinin hissi çoğu zaman kaygıdır. Deneyimsiz alanda sezgiye değil yapılandırılmış analize dön.' },
+          { t: 'table', head: ['Karar türü', 'Örnek', 'Önerilen yol'], rows: [
+            ['Basit ve ölçülebilir', 'İki matkaptan ucuz ve sağlamını seçmek', 'Listele, karşılaştır, hesapla'],
+            ['Karmaşık, çok değişkenli', 'Dükkan yeri, ortaklık, meslek değişimi', 'Bilgiyi topla, ara ver, sezgiye kulak ver'],
+            ['İkisi başa baş', 'Birbirine denk iki teklif', 'Yazı tura at, havadayken dileğini yakala'],
+            ['Deneyimsiz alan', 'İlk kez ev almak', 'Sezgiye değil, uzmana ve analize güven'],
+          ]},
         ],
       },
       {
@@ -813,6 +938,8 @@ export const section1Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'İşin en heyecanlı yerinde doğru düşünemezsin; bu yüzden "şu olursa dururum" sınırını daha başlamadan, sakin kafayla koy ve sorgusuz uygula.' },
+          { t: 'callout', kind: 'ornek', title: 'Şantiyeden örnek', text: 'Usta Ramazan beton dökümüne başlamadan ekibe kuralı söyler: "Hava sıcaklığı beşin altına düşerse döküm durur, tartışma yok." Akşamüstü hava soğur; kalfa "az kaldı, bitirelim" der. Ramazan termometreye bakar: dört derece. Döküm durur. Ertesi gün komşu şantiyenin gece döktüğü beton çatlamıştır. Kural, en çok itiraz edilen anda hayat kurtardı.' },
           { t: 'p', text: 'Kathleen Eisenhardt ve Donald Sull, "Simple Rules" adlı kitaplarında bazı durumlarda basit kuralların karmaşık kurallardan daha etkili olduğunu savunur; çünkü basit kurallar, en zaman alıcı süreçlerden biri olan bilgi işleme süresini kısaltır.' },
           { t: 'p', text: 'Bir örnek: Bir kararı ne zaman gözden geçirmem gerektiğini nasıl bilirim? Kendine bir Durma Kuralı koy. Durma Kuralı, çoğu zaman işkenceye dönüşen durum tartma sürecinin katı ve neredeyse evrensel uygulanabilir alternatifidir. 1935\'te efsanevi yatırımcı Gerald Loeb, bütün yatırımcıların sorduğu ezelî soru için basit ama güçlü bir Durma Kuralı formüle etti: Ne zaman satmalıyım? Loeb\'in kuralı: bir yatırım değerinin yüzde 10\'unu kaybederse sat! Soru sorulmaz.' },
           { t: 'p', text: 'Bu tür Durma Kurallarının güzelliği koşulsuz olmalarıdır. Baş ağrısını önlerler — hatta hayat kurtarabilirler. Dağcılar güvenli dönüşlerini durma kurallarıyla garanti eder: örneğin "saat 14.00\'e kadar zirveye ulaşamazsak geri döneriz." 1996\'da Everest\'te böyle bir kural çiğnendiğinde sekiz kişi öldü.' },
@@ -835,6 +962,12 @@ export const section1Models: DecisionModel[] = [
             { title: 'Tetiklenince uygula', text: 'Eşik aşıldığında kural işler: soru sorulmaz. Kuralı sonradan tartışmak, kuralın koruduğu şeyi — seni kendi anlık duygularından — ortadan kaldırır.' },
           ]},
           { t: 'callout', kind: 'warn', title: 'Batık maliyet anında devreye girer', text: 'Durma Kuralı tam da en çok direneceğin anda değerlidir: "bu kadar yatırdık, biraz daha devam edelim" cümlesi, kuralın panzehiri olduğu hastalıktır.' },
+          { t: 'table', head: ['Alan', 'Durma kuralı örneği', 'Neyi önler'], rows: [
+            ['Yatırım', 'Değerin yüzde 10\'u giderse sat', 'Küçük kaybın batışa dönmesini'],
+            ['Dağcılık', 'Saat 14.00\'te zirvede değilsek döneriz', 'Karanlıkta ve fırtınada kalmayı'],
+            ['Beton dökümü', 'Sıcaklık 5 derecenin altına inerse dur', 'Çatlak ve zayıf betonu'],
+            ['Pazarlık', 'Şu fiyatın altına inersem masadan kalkarım', 'Zararına iş almayı'],
+          ]},
         ],
       },
       {
@@ -864,6 +997,8 @@ export const section1Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Büyük bir alışverişte sonsuza kadar araştırma: araştırmaya sınır koy, mükemmeli değil sana yeteni ara, kararın sandığın kadar hayati olmadığını hatırla.' },
+          { t: 'callout', kind: 'ornek', title: 'Atölyeden örnek', text: 'Usta Nazım işleri büyüyünce kamyonet alacak. İki hafta ilan sitelerinde kayboldu, kafası iyice karıştı. Sonra kendine kural koydu: üç akşam araştırma, iki galeri, sanayiden iki ustaya danışma — bu kadar. Kriterlerini yazdı: kasa boyu, yakıt, servis kolaylığı; "rengi ve model yılı" maddelerini sildi. Üç kriteri tutan ilk temiz aracı aldı. Bir yıl sonra tek pişmanlığı, iki haftayı ilanlarda harcamış olmak.' },
           { t: 'p', text: 'Diyelim ki bir araba almak istiyorsun ama bir türlü karar veremiyorsun. Kitap dört buçuk yararlı ipucu verir.' },
           { t: 'h2', text: '1. Bir araştırma stratejisi belirle' },
           { t: 'p', text: 'Araştırmanın sorunu şudur: asla yeterince bilemeyiz ama hızla çok fazla bilebiliriz. Bugün biraz internet araştırmasıyla bir araba satıcısı kadar bilgi edinmek mümkün. Ne kadar çok bilirsen o kadar güvende hissedersin; ama sonunda bir devrilme noktasına ulaşırsın — bir noktada çok fazla bilirsin. Teoride ömrünün kalanını araba yorumları okuyarak geçirebilirsin. Yapılacak şey: kendine sınırlar koy — örneğin üç saat Google, üç arkadaşa danış, iki galeri ziyareti.' },
@@ -887,6 +1022,12 @@ export const section1Models: DecisionModel[] = [
           ]},
           { t: 'callout', kind: 'tip', title: 'Model arabayla sınırlı değil', text: 'Aynı dört buçuk ipucu her büyük satın almada ve seçimde çalışır: ev, iş teklifi, okul, yazılım. Ortak düşman aynıdır: sonsuz araştırma ve mükemmellik beklentisi.' },
           { t: 'callout', kind: 'warn', title: 'Devir, sorumluluk kaçışı değildir', text: '"Bırak başkası seçsin" ipucu yalnızca gerçekten eşdeğer seçenekler için geçerlidir. Kriter listen henüz yokken kararı devretmek, kararsızlığı değil sorumluluğu devretmektir.' },
+          { t: 'table', head: ['İpucu', 'Ne yapılır', 'Nazım\'ın kamyoneti için'], rows: [
+            ['Araştırmayı sınırla', 'Zaman ve kaynak bütçesi koy', 'Üç akşam ilan, iki galeri, iki ustaya danışma'],
+            ['Beklentiyi düşür', 'Beş kriter yaz, son ikisini sil', 'Kasa boyu, yakıt, servis kaldı; renk ve yıl silindi'],
+            ['Endişelenme', '10 gün / 10 ay / 10 yıl diye sor', '10 yıl sonra hangi marka olduğu fark etmeyecek'],
+            ['Gerekirse devret', 'Başa baş iki seçenekte kararı bırak', 'İki denk araçta güvendiği ustaya sordu'],
+          ]},
         ],
       },
       {

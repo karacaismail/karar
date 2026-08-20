@@ -116,6 +116,7 @@ function curveOption(v: Extract<Viz, { kind: 'curve' }>): echarts.EChartsCoreOpt
     series: v.series.map((s, i) => ({
       name: s.name, type: 'line', data: s.data, smooth: true, symbol: 'none',
       lineStyle: { width: 3, color: PALETTE[i % PALETTE.length] },
+      itemStyle: { color: PALETTE[i % PALETTE.length] },
       areaStyle: v.series.length === 1 ? { color: BRAND, opacity: 0.12 } : undefined,
       markLine: i === 0 && v.marks?.length
         ? {

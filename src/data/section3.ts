@@ -13,6 +13,8 @@ export const section3Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Bir işe başlamadan önce kendine sor: neyi biliyorum, neyi bilmediğimi biliyorum, neyi hiç göremiyorum ve neyi bildiğim hâlde görmezden geliyorum?' },
+          { t: 'callout', kind: 'ornek', title: 'Şantiyeden örnek', text: 'Usta Recep temel kazısına başlamadan düşünür: zemin raporu elinde, bu bilinen. Yeraltı suyunun seviyesi belirsiz, ölçtürmesi lazım — bilinen bilinmeyen. Haritada olmayan eski bir kanalizasyon çıkabilir — bilinmeyen bilinmeyen, onun için kepçenin yanında bir gün yedek süre tutar. Bir de kalfanın "bu bölgede hep su çıkar usta" sözünü kimse ciddiye almamıştı — işte asıl tehlike o.' },
           { t: 'p', text: 'ABD Savunma Bakanı Donald Rumsfeld\'in 2002\'deki basın toplantısıyla ünlenen ayrım, bilgiyi dört hücreye böler:' },
           { t: 'ul', items: [
             'Bilinen bilinenler: bildiğimiz gerçekler. Planlama burada yapılır.',
@@ -21,6 +23,12 @@ export const section3Models: DecisionModel[] = [
             'Bilinmeyen bilinenler: aslında bildiğimiz ama bastırdığımız, görmezden geldiğimiz gerçekler.',
           ]},
           { t: 'p', text: 'Felsefeci Slavoj Žižek\'in eklediği dördüncü hücre çoğu zaman en tehlikelisidir: organizasyonun içinde birileri riski biliyordur — ama bilgi ya yukarı çıkamaz ya da çıktığında duyulmak istenmez.' },
+          { t: 'table', head: ['Hücre', 'Şantiyedeki hâli', 'Ne yapmalı?'], rows: [
+            ['Bilinen bilinen', 'Zemin raporu elimizde', 'Plana yaz, işe başla'],
+            ['Bilinen bilinmeyen', 'Yeraltı suyu seviyesi belirsiz', 'Ölçtür, araştır'],
+            ['Bilinmeyen bilinmeyen', 'Haritada olmayan eski boru', 'Yedek süre ve para ayır'],
+            ['Bilinmeyen bilinen', 'Kalfanın söylediği ama dinlenmeyen uyarı', 'Ekibe sor, susanı konuştur'],
+          ]},
         ],
       },
       {
@@ -62,12 +70,20 @@ export const section3Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Kaza tek bir hatadan olmaz; arka arkaya dizilmiş korumaların hepsindeki delikler aynı anda üst üste gelince olur.' },
+          { t: 'callout', kind: 'ornek', title: 'Atölyeden örnek', text: 'Pres makinesinde kaza oldu, herkes "işçi dikkatsizdi" dedi. Ama bakın: koruyucu kapağın sensörü üç aydır arızalıydı, bakım formu doldurulmuyordu, gece vardiyasında tek kişi çalışıyordu ve eldiven sıkışınca durduracak buton uzaktaydı. Dört koruma da delikti; delikler aynı gün aynı hizaya geldi. İşçiyi suçlamak delikleri kapatmaz.' },
           { t: 'p', text: 'James Reason\'ın modeli, bir organizasyonun savunma katmanlarını dilim dilim İsviçre peyniri gibi düşünür: her katmanda delikler (zayıflıklar) vardır. Kaza, deliklerin aynı hizaya geldiği nadir anda olur — tehlike bütün katmanlardan geçip gider.' },
           { t: 'ul', items: [
             'Aktif hatalar: son halkadaki kişinin yaptığı görünür hata (yanlış düğme, yanlış ilaç).',
             'Gizli koşullar: yıllardır sistemde bekleyen delikler (yorucu vardiya düzeni, belirsiz prosedür, bakımsız ekipman).',
           ]},
           { t: 'p', text: 'Modelin devrimci tarafı suçu yeniden konumlandırmasıdır: son halkadaki insan nadiren kök nedendir. Sorulacak soru "kim hata yaptı?" değil, "delikler neden aynı hizaya geldi?" sorusudur.' },
+          { t: 'table', head: ['Katman', 'Delik (zayıflık)', 'Önlem'], rows: [
+            ['Makine koruması', 'Sensör arızalı', 'Haftalık kontrol listesi'],
+            ['Bakım düzeni', 'Form doldurulmuyor', 'Bakım yapılmadan makine açılmaz kuralı'],
+            ['Vardiya düzeni', 'Gece tek kişi', 'Riskli işte en az iki kişi'],
+            ['Acil durdurma', 'Buton uzakta', 'Butonu el mesafesine taşı'],
+          ]},
         ],
       },
       {
@@ -109,6 +125,8 @@ export const section3Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'İnsanın ihtiyaçları basamak basamaktır: önce karın doyar, sonra güvence aranır, sonra sevgi, saygı ve en sonda kendi hayalini yaşamak gelir.' },
+          { t: 'callout', kind: 'ornek', title: 'Şantiyeden örnek', text: 'Kalfa Hasan\'ın maaşı iki aydır gecikiyor; aklı sürekli kirada ve taksitte. Patron ona "sana ustalık eğitimi verelim, kendini geliştir" diyor ama Hasan\'ın umurunda değil — çünkü ikinci basamak (güvence) boşken beşinci basamak (kendini geliştirme) kimseyi heyecanlandırmaz. Önce maaş düzenli yatmalı; eğitim ancak ondan sonra anlam kazanır.' },
           { t: 'p', text: 'Psikolog Abraham Maslow 1943\'te "ihtiyaçlar hiyerarşisi" modelini yayımladı. İnsan ihtiyaçlarını beş basamakta sınıflandırır:' },
           { t: 'ul', items: [
             'Fizyolojik ihtiyaçlar: yemek, uyku, sıcaklık.',
@@ -121,6 +139,13 @@ export const section3Models: DecisionModel[] = [
           { t: 'h2', text: 'İki piramit' },
           { t: 'p', text: 'Model asıl ilginç hâlini, arzularımızı ihtiyaçlarımızla karşı karşıya koyduğumuzda alır: "sahip olduklarımız" piramidi ile "istediklerimiz" ters piramidi yan yana çizilir. Batı dünyası için kitabın acı kuralı şudur: en çok arzuladığımız şeyler, en az ihtiyaç duyduklarımızdır.' },
           { t: 'quote', text: 'En çok arzuladığımız şeyler, en az ihtiyaç duyduğumuz şeylerdir.' },
+          { t: 'table', head: ['Basamak', 'Günlük hayattaki hâli', 'Karşılanmazsa ne olur?'], rows: [
+            ['1. Fizyolojik', 'Yemek, uyku, sıcak bir ev', 'Başka hiçbir şey düşünülemez'],
+            ['2. Güvenlik', 'Düzenli maaş, sigorta, sağlam çatı', 'Sürekli kaygı, kısa vadeli kararlar'],
+            ['3. Sosyal', 'Aile, arkadaş, ekipte kabul görmek', 'Yalnızlık, işe isteksizlik'],
+            ['4. Tanınma', 'Takdir, unvan, "eline sağlık" sözü', 'Küskünlük, motivasyon kaybı'],
+            ['5. Kendini gerçekleştirme', 'Kendi işini kurmak, ustalaşmak', 'Doyumsuzluk, "bir eksik var" hissi'],
+          ]},
         ],
       },
       {
@@ -164,11 +189,19 @@ export const section3Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'İnsanlar sadece kazandıkları parayla değil, neye değer verdikleriyle de gruplara ayrılır; kime ne satacağını bilmek için önce onun hangi gruptan olduğunu anla.' },
+          { t: 'callout', kind: 'ornek', title: 'Pazardan örnek', text: 'Manav Salih iki mahallede tezgâh açıyor. Birinde müşteri "en ucuzu hangisi?" diye soruyor, ötekinde "bunlar organik mi, nereden geliyor?" diye. İki mahallenin geliri aşağı yukarı aynı; farklı olan değer verdikleri şey. Salih birinci tezgâha kasa malı, ikinciye köy ürünü koyuyor ve ikisinde de satış artıyor. Aynı ürünü aynı sözle iki gruba da satamazsın.' },
           { t: 'p', text: 'Sinus Milieu, bir insanın ait olduğu farklı sosyokültürel grupları belirlemek için kullanılan psikografik bir yöntemdir; pazarlamada hedef kitle tanımlamak için sık kullanılır. Fikrin kökeni Fransız sosyolog Émile Durkheim\'a dayanır. Model, insanları iki eksende konumlandırır: sosyal statü (alt, orta, üst sınıf) ve temel yönelim (gelenek → modernleşme → yeniden yönelim).' },
           { t: 'p', text: 'Bu eksenlerin kesişiminde "yerleşikler", "liberal-entelektüeller", "yüksek başarılılar", "hedonistler", "gelenekseller" gibi milieu\'ler (yaşam ortamları) doğar. Pierre Bourdieu\'nün daha az bilinen eksen modeli ise kültürel sermaye ile ekonomik sermayeyi karşı karşıya koyar: hangi sporu yaptığın, hangi içkiyi içtiğin, hangi müziği dinlediğin, sınıfsal konumunun neredeyse haritasıdır. Bourdieu\'nün kültürel tüketim analizi, kökleşmiş kültürel tercihlerimizi ve alışkanlıklarımızı sorgulamaya zorlar.' },
           { t: 'h2', text: 'Modelin eleştirisi ve gücü' },
           { t: 'p', text: 'Sinus gruplarının darlığı sık eleştirilir: "Babam otobüs şoförü, annem hippi, ben moda tasarımcısıyım ve boş zamanımda golf kulübünden arkadaşlarımla takılıyorum — nereye aitim?" sorusuna model cevap veremez. Yine de bu tür modellerin popülerliği kilitlenme (lock-in) ilkesiyle açıklanır: neredeyse tüm pazar araştırması segmentasyonla ilgilenir ve çoğunluk bir sisteme alıştıysa yeni bir sistemin yerleşmesi zordur. Alışkanlık, iyileşme arzusundan güçlüdür.' },
           { t: 'quote', text: 'Kökenlerimiz geleceğimizdir. — Martin Heidegger' },
+          { t: 'table', head: ['Müşteri grubu', 'Neye değer verir?', 'Manav Salih ne yapar?'], rows: [
+            ['Gelenekseller', 'Tanıdık esnaf, pazarlık, alışkanlık', 'Selam verir, veresiye defteri tutar'],
+            ['Fiyat odaklılar', 'En ucuz, bol miktar', 'Kasa sonu indirimi duyurur'],
+            ['Statü arayanlar', 'Kaliteli görünen, özel ürün', 'Seçme malı öne, güzel kasaya dizer'],
+            ['Bilinçli tüketiciler', 'Organik, yerel, hikâyesi olan ürün', 'Köyün adını yazar, üreticiyi anlatır'],
+          ]},
         ],
       },
       {
@@ -211,12 +244,20 @@ export const section3Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Hatayı düzeltmek birinci ders; o hatayı neden hep aynı şekilde yaptığını sorgulamak ikinci ve asıl derstir.' },
+          { t: 'callout', kind: 'ornek', title: 'Atölyeden örnek', text: 'Kaynakçı Veli\'nin kaynakları arada çatlıyor. Her seferinde çatlağı taşlayıp yeniden kaynatıyor — bu birinci döngü: hatayı düzeltiyor ama hata geri geliyor. Bir gün duruyor ve soruyor: "Ben neden hep böyle çatlak veriyorum?" Cevap: işi yetiştirmek için parçayı ısıtmadan kaynağa giriyor. Acele etme alışkanlığını değiştirince çatlaklar kesiliyor. Davranışı değil, davranışı doğuran kuralı değiştirdi — bu ikinci döngü.' },
           { t: 'p', text: 'Çift döngülü öğrenme, eylemlerin üzerine düşünüp onlardan ders çıkarmaktır. Kulağa basit gelir ama neredeyse imkânsızdır. Kuram, sistem kuramcıları Heinz von Foerster ve Niklas Luhmann\'ın "ikinci dereceden gözlem" fikrine dayanır: birinci dereceden gözlemciler dünyayı olduğu gibi görür; ikinci dereceden gözlemciler ise görülen şeyi, görme biçimine bağlar — yani bir gözlemleme biçimini gözlemlerler. Birinci dereceden gözlemci, kendi görme biçiminin farkında değildir; bu onun kör noktasıdır.' },
           { t: 'p', text: 'Psikolog Chris Argyris ile felsefeci Donald Schön, çift döngülü öğrenmeyi bu fikirlerden geliştirdi. Tek döngü (birinci dereceden gözlem) en iyi ihtimalle "iyi pratik"tir: işe yarayan şey değiştirilmez, tekrarlanır. En kötü ihtimalle "kötü pratik"tir: aynı hata tekrarlanır ya da bir sorun, nasıl ortaya çıktığı hiç sorgulanmadan çözülür.' },
           { t: 'h2', text: 'İkinci döngü' },
           { t: 'p', text: 'Çift döngülü öğrenmede yaptığın şeyi düşünür ve sorgularsın; kendi kalıbını kırmaya çalışırsın — sadece bir şeyi farklı yaparak değil, onu neden o şekilde yaptığını düşünerek. Eylemlerinin arkasındaki hedefler ve değerler nedir? Bunların tam olarak farkına varırsan, onları değiştirebilirsin.' },
           { t: 'p', text: 'Çift döngünün içindeki asıl sorun, söylediğimiz ile yaptığımız arasındaki farktır: benimsenen kuram (ne yapacağımızı söylediğimiz) ile kullanılan kuram (gerçekte yaptığımız). Gerçekten bir şeyi değiştirmek istiyorsak talimat ve yönerge yetmez — bunlar bize yalnızca komut olarak ulaşır. Gerçek değişim, daha derindeki nedenleri, hedefleri ve değerleri yeniden değerlendirdiğimizde olur.' },
           { t: 'quote', text: 'Sahip olduklarımızı hak ediyoruz. Onları değiştirmediğimiz sürece.' },
+          { t: 'table', head: ['Soru', 'Tek döngü', 'Çift döngü'], rows: [
+            ['Kaynak çatladı, ne yaparım?', 'Taşlar, yeniden kaynatırım', 'Neden hep çatlıyor diye sorarım'],
+            ['Sorunun kaynağı ne?', 'Elimin hatası', 'Acele ettiren iş düzeni'],
+            ['Ne değişir?', 'O günkü parça', 'Çalışma alışkanlığının kendisi'],
+            ['Hata geri gelir mi?', 'Evet, tekrar eder', 'Hayır, kökü kurudu'],
+          ]},
         ],
       },
       {
@@ -259,6 +300,8 @@ export const section3Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Bir fikri büyütmek istiyorsan önce eksiğini değil, iyi olan tarafını bul ve oradan devam et.' },
+          { t: 'callout', kind: 'ornek', title: 'Atölyeden örnek', text: 'Çırak Emre ustasına yeni bir raf düzeni öneriyor. Usta Cemil "Olmaz, karışır" dese Emre bir daha fikir getirmez. Bunun yerine "Alet arama süresini kısaltma fikrin iyi; şuraya bir de etiket eklersek herkes bulur" diyor. Fikir bir haftada oturuyor ve Emre ertesi ay iki öneri daha getiriyor. Aynı fikir, iki farklı cevap, iki farklı atölye.' },
           { t: 'p', text: 'AI kısaltması Appreciative Inquiry (Takdir Eden Sorgulama) anlamına gelir; Amerikalı yönetim uzmanı David Cooperrider\'a atfedilen bu yöntem, bir şirketin ya da kişinin zayıflıklarına değil güçlü yönlerine, olumlu özelliklerine ve potansiyeline odaklanır. Klasik "Sorun ne?" sorusunun yerini "Şu anda gerçekten iyi giden ne?" alır. Zayıflığa odaklanmak, daha en baştan olumsuz bir hava yaratır.' },
           { t: 'p', text: 'Her insanın, her sistemin, her ürünün, her fikrin kusurları vardır. En iyi ihtimalle bunun farkında olmak, mükemmellik arayışına dönüşür. Ama çoğu durumda bir fikrin kusurlarına fazla odaklanmak, iyi çalışma pratiği için şart olan açık ve olumlu yaklaşımı boğar. Temel ilke şudur: henüz tam olgunlaşmamış bir fikri erkenden terk etmek yerine geliştirmeye devam etmek.' },
           { t: 'h2', text: 'Dört tartışma tipi' },
@@ -270,6 +313,12 @@ export const section3Models: DecisionModel[] = [
             'AI düşünürü: "Evet, üstelik şunu da yapabiliriz…" (olumlu ve yapıcı)',
           ]},
           { t: 'quote', text: 'Her aptal eleştirebilir. Ve çoğu aptal eleştirir. — Benjamin Franklin' },
+          { t: 'table', head: ['Tartışma tipi', 'Tipik cümlesi', 'Fikre etkisi'], rows: [
+            ['Kusur avcısı', '"Fikir güzel ama…"', 'Fikri yavaşça söndürür'],
+            ['Diktatör', '"Hayır!"', 'Fikri anında öldürür'],
+            ['Öğretmen', '"Hayır, çünkü…"', 'Öğretir ama cesaret kırar'],
+            ['AI düşünürü', '"Evet, üstelik şunu da…"', 'Fikri büyütür, yenisini çağırır'],
+          ]},
         ],
       },
       {
@@ -313,9 +362,18 @@ export const section3Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Derdin çoğu, az sayıda sebepten çıkar; önce o az sayıdaki büyük sebebi bul ve düzelt.' },
+          { t: 'callout', kind: 'ornek', title: 'Atölyeden örnek', text: 'Oto tamircisi Kemal bir ay boyunca gelen arızaları deftere yazdı: 40 aracın 28\'i ya akü ya balata. Onlarca farklı arıza tipi var ama işin sekseni iki kalemden geliyor. Kemal aküyü ve balatayı rafta hazır tutmaya başladı; bekleme süresi yarıya indi.' },
           { t: 'p', text: 'İtalyan iktisatçı Vilfredo Pareto, İtalya\'daki toprakların %80\'inin nüfusun %20\'sine ait olduğunu gözlemledi. Sonraki yüzyılda aynı asimetri sayısız alanda doğrulandı: müşterilerin %20\'si cironun %80\'ini, hataların %20\'si şikâyetlerin %80\'ini üretir.' },
           { t: 'p', text: '80/20 kesin bir oran değil, bir uyarıdır: girdiler eşit doğmaz. Kaynaklarını eşit dağıtıyorsan, büyük olasılıkla yanlış dağıtıyorsun.' },
           { t: 'quote', text: 'Her şey eşit derecede önemliyse, hiçbir şey önemli değildir.' },
+          { t: 'table', head: ['Arıza tipi', 'Bir aydaki sayı', 'Toplam içindeki pay'], rows: [
+            ['Akü', '16', '%40'],
+            ['Balata', '12', '%30'],
+            ['Far ve sinyal', '5', '%12'],
+            ['Egzoz', '4', '%10'],
+            ['Diğer (onlarca tip)', '3', '%8'],
+          ]},
         ],
       },
       {
@@ -358,11 +416,19 @@ export const section3Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Az satan yüzlerce ürünün toplamı, çok satan birkaç üründen daha büyük olabilir; yeter ki bu ürünleri rafta tutmak sana pahalıya gelmesin.' },
+          { t: 'callout', kind: 'ornek', title: 'Pazardan örnek', text: 'Hırdavatçı Nuri\'nin dükkânında en çok vida ve matkap ucu satılır. Ama Nuri internete de dükkân açtı ve az bulunan eski musluk contaları, nadir anahtar ağızları gibi yüzlerce garip parçayı listeledi. Her birinden ayda bir iki tane satılıyor; ama hepsinin toplamı, vidanın cirosunu geçti. Dükkânın rafına sığmayan bu ürünler internette depodan çıkıyor, kimseye yük olmuyor.' },
           { t: 'p', text: 'Pareto İlkesi hakkında okuduğun her şeyi unut — yani ürünlerin %20\'sinin cironun %80\'ini ürettiği fikrini. 2004\'te Wired dergisinin genel yayın yönetmeni Chris Anderson, internette satışa sunulan neredeyse her şeyin — ürün ne kadar tuhaf ya da gereksiz olursa olsun — gerçekten satıldığını öne sürdü. Sonuç olarak iş dünyası, tekdüzeliğin değil çeşitliliğin olduğu yere kayar.' },
           { t: 'p', text: 'Anderson iddiasını bir talep eğrisiyle gösterdi. En solda eğri dik biçimde yükselir: burada pazarın %20\'sini oluşturan çok satanlar ve gişe rekortmenleri vardır. Sonra eğri sağa doğru yumuşakça düzleşir: burada daha az popüler kitaplar ve filmler bulunur. Eğrinin bu kısmı zirveden çok daha geniştir ve çok daha fazla ürünü kapsar.' },
           { t: 'h2', text: 'Pareto\'nun tersine dönüşü' },
           { t: 'p', text: 'İçgüdüsel olarak Pareto ilkesinin haklı olduğu düşünülür: çok satanlar (%20) "az satanlardan" (%80) daha kârlıdır. Ama rakamlar başka bir şey söyler: uzun kuyruk, az sayıdaki çok satandan daha yüksek ciro üretir. 2004\'te bu cesur bir teoriydi; bugün pek çok sektörde standarttır. Kitlesel pazar çok satan ister, ama niş ürünlere de talep vardır: tek tek talep düşük olabilir, ama toplamda nişler çok satanlardan daha değerlidir.' },
           { t: 'quote', text: 'İnternet dünyanın en büyük kütüphanesidir. Sadece bütün kitaplar yerdedir. — John Allen Paulos' },
+          { t: 'table', head: ['', 'Çok satanlar (baş)', 'Niş ürünler (kuyruk)'], rows: [
+            ['Ürün sayısı', 'Az (birkaç kalem)', 'Çok (yüzlerce kalem)'],
+            ['Tek ürünün satışı', 'Yüksek', 'Düşük (ayda bir iki adet)'],
+            ['Toplam ciro', 'Büyük ama sınırlı', 'Toplandığında başı geçebilir'],
+            ['Şartı', 'Raf ve reklam ister', 'Ucuz depolama ve iyi arama ister'],
+          ]},
         ],
       },
       {
@@ -405,6 +471,8 @@ export const section3Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Bir kavgada altı yol vardır: kaçarsın, savaşırsın, boyun eğersin, büyüğe havale edersin, ortada buluşursun ya da oturup ikinizin de kazanacağı yeni bir yol bulursunuz.' },
+          { t: 'callout', kind: 'ornek', title: 'Şantiyeden örnek', text: 'Sıvacı Osman ile elektrikçi Murat aynı duvarda çalışmak istiyor; ikisi de "önce ben" diyor. Kaçsalar iş durur. Kavga etseler biri küser, iş yine aksar. Şefe gitseler şef kafasına göre karar verir. Ortada buluşup duvarı yarı yarıya bölseler ikisi de sıkışır. Sonunda oturup konuşuyorlar: Murat sabah kanalları açıyor, Osman öğleden sonra sıvayı çekiyor. Kimse geri adım atmadı; ikisinin de işine yarayan üçüncü bir yol kurdular.' },
           { t: 'p', text: 'Psikologlar, kilitlenmeyi ve karşılıklı suçlamayı önlemek, istikrarı ve iletişimi yeniden kurmak için çatışmaların ele alınması gerektiğinde hemfikirdir. Soru şudur: nasıl? İlke olarak bir çatışma durumuyla başa çıkmanın altı farklı yolu vardır.' },
           { t: 'h2', text: 'Altı tepki' },
           { t: 'ul', items: [
@@ -417,6 +485,14 @@ export const section3Models: DecisionModel[] = [
           ]},
           { t: 'p', text: 'İlk üç tepki duygusal, son üçü akılcı tepkilerdir. Model, hem kendi çatışma tipini hem karşı tarafınkini teşhis etmeye yarar.' },
           { t: 'quote', text: 'Başarısızlıklarımızın nedeni uğradığımız yenilgiler değil, katılmadığımız çatışmalardır. — Bern\'de bir gençlik merkezi duvar yazısı' },
+          { t: 'table', head: ['Tepki', 'Şantiyedeki hâli', 'Sonuç'], rows: [
+            ['Kaçış', 'İkisi de duvara yanaşmaz, iş durur', 'Kaybet–kaybet'],
+            ['Savaş', 'Bağırışırlar, biri duvarı kapar', 'Kazan–kaybet'],
+            ['Pes etme', 'Osman sesini çıkarmaz, içten içe biriktirir', 'Kaybet–kazan'],
+            ['Havale etme', 'Şef karar verir, iki taraf da söylenir', 'Riskli'],
+            ['Uzlaşma', 'Duvarı yarı yarıya bölerler, ikisi de sıkışır', 'Yarım kazanç'],
+            ['Konsensüs', 'Sabah kanal, öğleden sonra sıva', 'Kazan–kazan'],
+          ]},
         ],
       },
       {
@@ -459,11 +535,19 @@ export const section3Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: '"Bugüne kadar hep böyle oldu" demek geleceğin de böyle olacağını göstermez; en büyük felaketler tam da hiç beklenmedikleri için yıkıcıdır.' },
+          { t: 'callout', kind: 'ornek', title: 'Atölyeden örnek', text: 'Torna ustası Şükrü yirmi yıldır tek bir fabrikaya parça yapıyor; "bu müşteri hiç gitmez" diyor, çünkü hiç gitmedi. Bir sabah fabrikanın taşındığı haberi geliyor ve atölyenin işi bir günde bitiyor. Yirmi yıllık düzen, gitmeyeceğinin kanıtı değilmiş. İkinci bir müşteri aramaya işler iyiyken başlamak gerekiyordu, kötüyken değil.' },
           { t: 'p', text: 'Düşünen bir insan için üç soru: Bildiğimizi nereden biliyoruz? Geçmiş, geleceği öngörmemize yardım eder mi? Beklenmedik olayları neden hiç beklemeyiz?' },
           { t: 'p', text: 'Bertrand Russell, 1912 tarihli "Felsefenin Problemleri" kitabında üç sorunun da cevabını tek örnekle özetledi: her gün yemlenen bir tavuk, her gün yemleneceğini varsaymaya başlar; insanların iyi kalpli olduğuna giderek daha çok inanır. Tavuğun hayatındaki hiçbir şey, bir gün kesileceğine işaret etmez. En büyük felaketlerin genellikle tam bir sürpriz olarak geldiğini kabul etmek zorundayız; bu yüzden Russell\'a göre kanıksadığımız şeyleri her zaman sorgulamalıyız.' },
           { t: 'h2', text: 'Taleb\'in siyah kuğusu' },
           { t: 'p', text: 'Lübnanlı yazar Nassim Nicholas Taleb, geçmişten geleceği öngörememe hâlimize "siyah kuğu" adını verdi. Batı dünyasında bütün kuğuların beyaz olduğu varsayılırdı — ta ki 17. yüzyılda doğa bilimciler siyah kuğu türünü keşfedene kadar. O güne dek hayal bile edilemeyen şey, birden doğal karşılanır oldu. 11 Eylül 2001 saldırısında da benzer bir şey yaşandı: felaket tamamen habersiz gelmiş gibiydi; oysa sonraki haftalarda neredeyse her şeyin bu saldırıya işaret ettiği görüldü.' },
           { t: 'p', text: 'Taleb\'in siyah kuğu tezi aslında bir model değil, neden-sonuç ilkesinin reddidir. Ve bize şunu hatırlatır: en sıkı sarıldığımız direkler, devrilmekte olduğunu gördüklerimizdir.' },
+          { t: 'table', head: ['Varsayım', 'Sorulacak soru', 'Tampon'], rows: [
+            ['Tek büyük müşterim hiç gitmez', 'Giderse kaç ay ayakta kalırım?', 'İkinci ve üçüncü müşteri şimdiden'],
+            ['Tek tedarikçim hep teslim eder', 'Teslim edemezse ne olur?', 'Yedek tedarikçiyle küçük de olsa çalış'],
+            ['Maaşım her ay yatar', 'Üç ay yatmazsa?', 'Kenarda nakit rezerv'],
+            ['Bu makine hiç bozulmaz', 'En kritik günde bozulursa?', 'Bakım ve yedek parça'],
+          ]},
         ],
       },
       {
@@ -506,6 +590,8 @@ export const section3Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Yeni bir şey önce birkaç meraklıya, sonra öncülere yayılır; asıl zor adım, öncülerden kuşkucu çoğunluğa geçiştir — orada bir uçurum vardır.' },
+          { t: 'callout', kind: 'ornek', title: 'Pazardan örnek', text: 'Mahalleye kartla ödeme ilk geldiğinde sadece köşedeki genç kafeci taktı (yenilikçi). Sonra işleri iyi giden iki esnaf daha aldı (erken benimseyenler). Kasap Rıza aylarca direndi: "Benim müşterim nakitçidir." Ama müşteriler "kart geçiyor mu?" diye sorup yan dükkâna gidince o da aldı (kuşkucu kitle). En son, emekli tuhafiyeci Saim Amca taktı (ayak sürüyen). Cihaz aynı cihazdı; değişen, kimin kimden görüp güvendiğiydi.' },
           { t: 'p', text: 'Bazı fikirler — aptalca olanlar dahil — neden tutunup trende dönüşür de diğerleri kısa süre parlayıp gözden kaybolur? Sosyolog Everett Rogers, çekici bir fikrin ya da ürünün popülerleşme biçimini "difüzyon" (yayılım) olarak tanımladı. En ünlü difüzyon araştırmalarından biri, Bruce Ryan ile Neal Gross\'un 1930\'larda Iowa\'nın Greene County bölgesindeki hibrit mısır analizidir: yeni mısır türü eskisinden her bakımdan iyiydi, ama geniş kabul görmesi yirmi iki yıl aldı.' },
           { t: 'h2', text: 'Benimseyen grupları' },
           { t: 'ul', items: [
@@ -516,6 +602,12 @@ export const section3Models: DecisionModel[] = [
           ]},
           { t: 'p', text: 'Grafiğe döküldüğünde bu gelişim, bir salgının ilerleyişine benzeyen tipik bir eğri alır: önce yavaş yükselir, sonra her yeni ürünün kritik noktasına ulaşır — birçok ürünün başarısız olduğu yer. Her yenilik için kritik nokta, erken benimseyenlerden kuşkucu kitleye geçiştir; çünkü tam burada bir "uçurum" vardır. ABD\'li sosyolog Morton Grodzins\'e göre erken benimseyenler yeniliği uçurumun karşısına, kuşkucu kitleye taşımayı başarırsa salgın döngüsü devrilme noktasına ulaşır: eğri, kitle ürünü kabul ettiğinde keskin biçimde yükselir, geriye yalnızca ayak sürüyenler kaldığında yeniden düşer.' },
           { t: 'quote', text: 'Önce seni görmezden gelirler, sonra sana gülerler, sonra seninle savaşırlar; sonra sen kazanırsın. — Mahatma Gandhi' },
+          { t: 'table', head: ['Grup', 'Mahalledeki hâli', 'Onu ikna eden şey'], rows: [
+            ['Yenilikçiler', 'Genç kafeci: ilk deneyen', 'Yeniliğin kendisi'],
+            ['Erken benimseyenler', 'İşleri iyi giden iki esnaf', 'Öncünün deneyimi ve vizyon'],
+            ['Kuşkucu kitle', 'Kasap Rıza: "benim müşterim nakitçidir"', 'Kanıt, güvence, kaybolan müşteri'],
+            ['Ayak sürüyenler', 'Saim Amca: en son gelen', 'Başka çare kalmaması'],
+          ]},
         ],
       },
       {
@@ -558,11 +650,19 @@ export const section3Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Artık içini anlamadığımız pek çok şeyi kullanmak zorundayız; bu yüzden neye ve kime güveneceğimize bilerek karar vermeliyiz.' },
+          { t: 'callout', kind: 'ornek', title: 'Atölyeden örnek', text: 'Usta Fikret eski arabaların motorunu sesinden tanırdı; açar, bakar, anlardı. Yeni araç geldiğinde kaputun altı bilgisayar dolu: arıza cihazı "şu parçayı değiştir" diyor, Fikret nedenini bilmeden değiştiriyor. Cihaz çoğu zaman haklı çıkıyor; Fikret de güvenini şuna bağlıyor: cihazın dediği tutuyor mu, tutmuyor mu? İçini göremediği kutuyu, geçmiş performansından izliyor.' },
           { t: 'p', text: 'Tartışmasız bir gerçek var: dünyamız her geçen gün daha karmaşık hâle geliyor. Siyah ve beyazın, iyi ve kötünün, doğru ve yanlışın yerini, çoğu insanı karanlıkta bırakan karmaşık yapılar aldı.' },
           { t: 'p', text: 'Çevremiz hızlandıkça ve karmaşıklaştıkça, gerçekten bildiğimiz — gerçekten kavrayıp anlayabildiğimiz — miktar sürekli azalıyor. Daha 1980\'lerde öğretmenler öğrencilerine bilgisayarın ikili kodla nasıl çalıştığını anlatmaya çalışırdı. Bugün, çevremizi saran ve kullandığımız pek çok şeyi (örneğin akıllı telefonları) anlamadığımız aşağı yukarı kabullenilmiş durumda. Biri bize DNA kodunu anlatmaya kalksa bile büyük olasılıkla derinliğinde boğuluruz.' },
           { t: 'h2', text: 'Kara kutularla yaşamak' },
           { t: 'p', text: 'Giderek daha çok "kara kutuyla" çevriliyiz: bize açıklansa bile anlamadığımız karmaşık yapılar. Kara kutunun iç süreçlerini kavrayamayız; ama yine de girdilerini ve çıktılarını karar verme süreçlerimize dahil ederiz. Anlamadan inanmak zorunda olduğumuz şeylerin miktarı sürekli artıyor. Bunun sonucu şudur: bir şeyi açıklayabilen kişilere, açıklamanın kendisinden daha fazla önem atfetmeye başlarız.' },
           { t: 'quote', text: 'Gelecekte insanları argümanlarla değil, imgeler ve duygularla ikna etmek norm hâline gelecek.' },
+          { t: 'table', head: ['Kara kutu', 'Ne bilmiyoruz?', 'Neye bakarak güveniriz?'], rows: [
+            ['Arıza tespit cihazı', 'Kararı nasıl verdiğini', 'Dediğinin tutup tutmadığına'],
+            ['Telefon ve uygulamalar', 'İçeride ne döndüğünü', 'Geçmiş deneyime ve bilinirliğe'],
+            ['Banka ve finans ürünleri', 'Paranın nasıl işletildiğini', 'Denetime ve hesap verebilirliğe'],
+            ['Uzman raporu', 'Hesabın ayrıntısını', 'Uzmanın sicili ve bağımsızlığına'],
+          ]},
         ],
       },
       {
@@ -605,8 +705,16 @@ export const section3Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Karşındakiyle bir daha karşılaşmayacaksan kandırmak cazip gelir; ama tekrar tekrar iş yapacaksanız dürüst olmak ikinize de kazandırır.' },
+          { t: 'callout', kind: 'ornek', title: 'Pazardan örnek', text: 'Turistik çarşıda seyyar satıcı, bir daha hiç görmeyeceği müşteriye çürük malı üstten kapatıp satabilir; müşteri gider, dönmez. Mahalle manavı Salih bunu asla yapmaz: aynı müşteri yarın yine gelecek. Bir kez çürük çıkarsa müşteri komşuya anlatır, kaybı bir kasadan büyük olur. İkisi de aynı meyveyi satıyor; farkı yaratan, oyunun tek seferlik mi tekrarlı mı olduğu.' },
           { t: 'p', text: 'İki şüpheli ayrı hücrelerde sorgulanır. İkisi de susarsa az ceza alır; biri ötekini ele verirse eleveren serbest kalır, susan ağır ceza alır; ikisi de eleverirse ikisi de orta ceza alır. Bireysel akıl "ele ver" der; ama iki taraf da bunu yaptığında sonuç, ikisinin de susmasından kötüdür.' },
           { t: 'p', text: 'Modelin asıl dersi tek elli oyunda değil, tekrarlı oyundadır: taraflar tekrar karşılaşacaksa işbirliği rasyonel hâle gelir. Robert Axelrod\'un turnuvalarında en başarılı strateji en basiti çıktı: "kısasa kısas" — işbirliğiyle başla, karşındakinin son hamlesini aynen yansıt, affetmeyi bil.' },
+          { t: 'table', head: ['', 'Tek seferlik oyun', 'Tekrarlı oyun'], rows: [
+            ['Örnek', 'Turiste satış, tek pazarlık', 'Mahalle esnafı, uzun vadeli tedarikçi'],
+            ['İhanetin bedeli', 'Düşük: müşteri dönmez zaten', 'Yüksek: itibar ve gelecek satışlar gider'],
+            ['Akıllı strateji', 'Temkinli ol, güvence iste', 'İşbirliğiyle başla, kısasa kısas uygula'],
+            ['Güvenin kaynağı', 'Sözleşme ve peşin ödeme', 'İtibar ve tekrar karşılaşma ihtimali'],
+          ]},
         ],
       },
       {

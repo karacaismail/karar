@@ -13,6 +13,8 @@ export const section4Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'İşe başlamadan önce "bu iş için hangi beceriler lazım, ekibimde bunlar ne kadar var?" diye tek tek puan ver; eksik yeri iş bitmeden gör.' },
+          { t: 'callout', kind: 'ornek', title: 'Şantiyeden örnek', text: 'Müteahhit Salih yeni bir villa işi alıyor. Kâğıda beş beceri yazıyor: kalıp, demir, elektrik, seramik, sıva. Her usta için 10 üzerinden puan veriyor ve "en az 6 olmalı" diye çizgi çekiyor. Tablo bitince görüyor ki ekipte elektrikte 6\'yı geçen kimse yok. İş başlamadan taşeron elektrikçi anlaşması yapıyor; şantiye ortasında panik yaşamıyor.' },
           { t: 'p', text: 'İster bir anaokulunun ister bir millî takımın başında ol, ister şirket ister yardım komitesi kuruyor ol — soru aynıdır: Bu proje için doğru insanlar bende var mı? Becerilerimiz hedeflerimizle örtüşüyor mu?' },
           { t: 'h2', text: 'Modelin mantığı' },
           { t: 'ul', items: [
@@ -37,6 +39,13 @@ export const section4Models: DecisionModel[] = [
             { title: 'Öz değerlendirmeyle karşılaştır', text: 'Aynı puanlamayı üyelerin kendilerine de yaptır. Senin puanınla öz puan arasındaki fark, konuşulması gereken asıl konudur.' },
           ]},
           { t: 'callout', kind: 'tip', title: 'İpucu', text: 'Boşluk bulunca ilk refleks işe alım olmasın: eğitim, dışarıdan danışmanlık ya da kapsam daraltma çoğu zaman daha hızlı kapatır.' },
+          { t: 'h3', text: 'Örnek puan tablosu: villa şantiyesi' },
+          { t: 'table', head: ['Usta', 'Kalıp', 'Demir', 'Elektrik', 'Seramik', 'Sınır: 6'], rows: [
+            ['Veli', '9', '7', '3', '5', 'Elektrikte eksik'],
+            ['Cemal', '6', '8', '4', '8', 'Elektrikte eksik'],
+            ['Hasan', '7', '6', '5', '7', 'Elektrikte eksik'],
+            ['EKİP EN İYİSİ', '9', '8', '5', '8', 'Elektrik 6 altı: taşeron gerek'],
+          ]},
         ],
       },
       {
@@ -66,6 +75,8 @@ export const section4Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Yeni çırağa adım adım tarif edersin, ustalaşana sadece hedefi söyleyip çekilirsin; herkese aynı davranmak ikisine de haksızlıktır.' },
+          { t: 'callout', kind: 'ornek', title: 'Atölyeden örnek', text: 'Torna atölyesinde ustabaşı Nuri, ilk haftasındaki çırağa her parçayı başında durup tarif ediyor (talimat). Altı aylık kalfaya "sen yap, takıldığında sor" diyor (koçluk). On yıllık usta Veli\'ye ise sadece siparişi uzatıyor: "Cuma\'ya yetişsin" (devir). Nuri aynı tavrı herkese uygulasaydı çırak parçayı yakar, Veli de "bana güvenmiyor" diye küserdi.' },
           { t: 'p', text: 'Paul Hersey ve Ken Blanchard\'ın modeli tek bir "doğru liderlik tarzı" olmadığını söyler: doğru tarz, çalışanın o işteki yetkinlik ve isteklilik düzeyine bağlıdır.' },
           { t: 'ul', items: [
             'Talimat ver (yetkinlik düşük, motivasyon yüksek): ne yapılacağını net söyle, sık kontrol et.',
@@ -87,6 +98,13 @@ export const section4Models: DecisionModel[] = [
             { title: 'Düzenli güncelle', text: 'Düzeyler değişir. Mikro yönetim, çoğu zaman güncellenmemiş bir haritanın belirtisidir.' },
           ]},
           { t: 'callout', kind: 'warn', title: 'Sık yapılan hata', text: 'Yetkin kişiye talimat vermek (mikro yönetim) motivasyonu; yetkin olmayana devretmek (yanlış özerklik) kaliteyi öldürür. İki hata da "tek tarz" alışkanlığından doğar.' },
+          { t: 'h3', text: 'Hangi çalışana hangi tarz?' },
+          { t: 'table', head: ['Çalışan durumu', 'Bilgisi', 'İsteği', 'Doğru tarz'], rows: [
+            ['İlk haftasındaki çırak', 'Az', 'Çok', '1. Talimat ver'],
+            ['Altı aylık kalfa', 'Orta', 'İnişli çıkışlı', '2. Koçluk yap'],
+            ['Usta ama özgüveni düşük', 'Çok', 'Dalgalı', '3. Destekle'],
+            ['On yıllık usta', 'Çok', 'Çok', '4. Devret'],
+          ]},
         ],
       },
       {
@@ -116,6 +134,8 @@ export const section4Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Bir konuyu tartışırken herkes aynı anda aynı gözlükle bakar: önce herkes iyimser, sonra herkes eleştirmen; böylece kavga çıkmadan her açı konuşulur.' },
+          { t: 'callout', kind: 'ornek', title: 'Kahvehaneden örnek', text: 'Mahalle esnafı ortak bir otopark yaptırmayı konuşuyor. Muhtar kural koyuyor: önce beş dakika herkes sadece iyi yanlarını söyleyecek, sonra beş dakika herkes sadece risklerini. Ne oluyor? İyimser bakkalın da riskleri sayması gerekiyor, kötümser kasabın da fırsatları. Kimse "sen hep karşısın" diyemiyor, çünkü sıra herkese aynı şapkayı taktırıyor.' },
           { t: 'p', text: 'Yaratıcı düşünce gurusu Edward de Bono 1986\'da "altı düşünme şapkası"nı sunduğunda eleştirmenler bunu bir eğlence sayıp geçti. Bugün teknik, toplantılarda iletişimi canlandıran ciddi bir yöntem olarak dünya çapında kullanılıyor: grup üyeleri tartışma sırasında hep birlikte aynı renkteki şapkayı takar — yani aynı anda aynı tek boyutlu bakış açısını benimser.' },
           { t: 'ul', items: [
             'Beyaz şapka: analitik, nesnel düşünme; vurgu gerçekler ve yapılabilirlikte.',
@@ -141,6 +161,14 @@ export const section4Models: DecisionModel[] = [
             { title: 'Fikri sahiplendir', text: 'Kitabın taktiği: iyi bir fikrin dirençle karşılaşacağından korkuyorsan, tartışmayı diğerleri fikri kendileri bulmuş gibi hissedecek şekilde yönet. İnsanlar kendi ürettiklerini sandıkları fikir için savaşır.' },
           ]},
           { t: 'callout', kind: 'tip', title: 'İpucu', text: 'Altı şapkayı yalnız başına da kullanabilirsin: zor bir karara altı şapkayı sırayla takarak bakmak, tek perspektifin körlüğünü kırar.' },
+          { t: 'h3', text: 'Örnek toplantı planı: yeni makine alınsın mı?' },
+          { t: 'table', head: ['Sıra', 'Şapka', 'Süre', 'Konuşulan'], rows: [
+            ['1', 'Beyaz', '5 dk', 'Fiyat, kapasite, mevcut makinenin arıza kaydı'],
+            ['2', 'Sarı', '5 dk', 'Alırsak neler kazanırız?'],
+            ['3', 'Siyah', '5 dk', 'Nerede batarız? Borç, eğitim, yedek parça'],
+            ['4', 'Yeşil', '5 dk', 'Kiralama? İkinci el? Ortak alım?'],
+            ['5', 'Kırmızı + Mavi', '5 dk', 'İçimize siniyor mu? Karar ve ilk adım'],
+          ]},
         ],
       },
       {
@@ -170,6 +198,8 @@ export const section4Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Süreni üçe böl ve işi üç kez bitir: önce kaba taslak, sonra düzeltme, en son cila; tek seferde mükemmel yapmaya çalışan, son gece yetiştiremez.' },
+          { t: 'callout', kind: 'ornek', title: 'Marangozhaneden örnek', text: 'Marangoz İsmet\'e üç haftada mutfak dolabı sipariş edildi. İlk hafta dolabın tamamını kabaca kuruyor: gövde, kapaklar, raflar yerinde ama ham. İkinci hafta menteşeleri ayarlıyor, kusurlu kapağı değiştiriyor. Üçüncü hafta zımpara ve vernik. Komşu atölye ise üç haftayı "kusursuz tek kurulum" için harcadı; son gün cila kururken müşteri kapıdaydı.' },
           { t: 'p', text: 'Çoğu proje yönetimi yöntemi, sabit bir süre içinde fikirlerin toplandığı (T), bir konseptte birleştirildiği (B) ve uygulandığı (U) varsayımına dayanır. Gerçek hayatta ise süre hiçbir zaman yetmez — ve elimizdeki az zaman, tam yazıcıyı kullanacakken bozulması gibi öngörülemeyen olaylarla daha da kısalır.' },
           { t: 'p', text: 'Sonuç optimizasyonu modeli, mevcut süreyi eşit uzunlukta üç döngüye böler ve proje yöneticisini projeyi üç kez tamamlamaya zorlar: birinci döngüde taslak plan, ikincide rafine etme, üçüncüde optimizasyon. Her döngü kendi içinde topla-birleştir-uygula adımlarını içerir.' },
           { t: 'ul', items: [
@@ -192,6 +222,12 @@ export const section4Models: DecisionModel[] = [
             { title: 'Üç aşamayı ayrı tut', text: 'Geliştirme süreçlerinde toplama, birleştirme ve uygulama aşamalarını net ayır; aynı anda hem fikir toplayıp hem uygulamak iki işi de bozar.' },
           ]},
           { t: 'callout', kind: 'warn', title: 'Dikkat', text: 'Model, mükemmeliyetçiliğin ilacıdır ama disiplin ister: birinci döngüde "daha bitmedi ki göstereyim" direnci kırılmazsa üç döngü tek uzun döngüye geri döner.' },
+          { t: 'h3', text: 'Üç haftalık iş için döngü planı' },
+          { t: 'table', head: ['Döngü', 'Süre', 'Hedef', 'Sonunda elde ne var?'], rows: [
+            ['1. Taslak', '1. hafta', 'Kaba ama BÜTÜN', 'Çalışan/duran ama tam bir ilk sürüm'],
+            ['2. Rafine', '2. hafta', 'Hataları düzelt', 'Gösterilebilir ikinci sürüm'],
+            ['3. Cila', '3. hafta', 'İnce ayar', 'Teslim edilen iş + yedek zaman'],
+          ]},
         ],
       },
       {
@@ -221,6 +257,8 @@ export const section4Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Hızlı, ucuz ve kaliteli: bu üçünden aynı anda en fazla ikisini seçebilirsin; üçünü birden isteyen, ortada birini gizlice kaybeder.' },
+          { t: 'callout', kind: 'ornek', title: 'Şantiyeden örnek', text: 'Ev sahibi boyacı Ramazan\'a "bu hafta bitsin, kaliteli olsun, ucuz olsun" diyor. Ramazan gülüyor: "Abi üçü olmaz. Hızlı ve kaliteli istersen yanıma iki işçi daha alırım, pahalıya gelir. Hızlı ve ucuz istersen tek kat geçerim, seneye döküler. Kaliteli ve ucuz istersen boş günlerimde gelirim, üç haftaya biter. Hangisini istiyorsun?"' },
           { t: 'p', text: 'Üçgenin üç köşesi vardır: zaman (hızlı), maliyet (ucuz), kalite/kapsam (iyi). Model acımasız bir aritmetik sunar: aynı anda en fazla ikisini seçebilirsin.' },
           { t: 'ul', items: [
             'Hızlı + iyi → ucuz olmaz: kaliteli işi hızlandırmanın yolu daha çok kaynaktır.',
@@ -239,6 +277,12 @@ export const section4Models: DecisionModel[] = [
             { title: 'Sabit köşeyi koru', text: 'Sabit köşe (örneğin yasal bir tarih) değişmezse, her yeni istek diğer iki köşeden ödenir. Bunu görünür bir kural yap.' },
             { title: 'Değişim taleplerini üçgenden geçir', text: 'Her kapsam ekleme talebine tek soruyla cevap ver: "Bunu hangi köşeden ödüyoruz — tarih mi, bütçe mi, başka bir kapsam mı?"' },
             { title: 'Feragati erken ilan et', text: 'Kırpılacak şeyi proje sonunda itiraf etmek yerine başında seç: bilinçli feragat ucuz, mecburi feragat pahalıdır.' },
+          ]},
+          { t: 'h3', text: 'Üç senaryo, üç bedel' },
+          { t: 'table', head: ['İstenen ikili', 'Feda edilen', 'Boya işi örneği'], rows: [
+            ['Hızlı + İyi', 'Ucuzluk', 'İki işçi daha: 3 günde biter, maliyet artar'],
+            ['Hızlı + Ucuz', 'Kalite', 'Tek kat boya: seneye döküler'],
+            ['İyi + Ucuz', 'Hız', 'Boş günlerde çalışılır: üç hafta sürer'],
           ]},
         ],
       },
@@ -269,6 +313,8 @@ export const section4Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Bir grup insan takım olana kadar yedi duraktan geçer: neden buradayım, sana güvenir miyim, ne yapıyoruz, nasıl yapacağız, kim yapacak, işler tıkırında, devam mı; durak atlayan geri döner.' },
+          { t: 'callout', kind: 'ornek', title: 'Şantiyeden örnek', text: 'Yeni kurulan kalıp ekibi ilk gün birbirini tanımıyor (durak 1-2). Formen doğrudan iş dağıtırsa (durak 5\'e atlarsa) bir hafta sonra kavga çıkıyor: kimse kimin sözüne güveneceğini bilmiyor. Tecrübeli formen önce çayda herkesi tanıştırıyor, işin hedefini anlatıyor, sonra rolleri dağıtıyor; ekip iki günde oturuyor.' },
           { t: 'p', text: 'Yüzlerce takım performans modeli vardır; en iyilerinden biri, danışman Allan Drexler ile The Grove\'un kurucusu David Sibbet tarafından geliştirildi. Model, bir projedeki katılımcıların tipik olarak geçtiği yedi aşamayı gösterir.' },
           { t: 'ul', items: [
             '1. Oryantasyon — "Neden buradayım?" Çözüldüğünde: amaç, takım kimliği, aidiyet.',
@@ -294,6 +340,13 @@ export const section4Models: DecisionModel[] = [
             { title: 'Çatışmadan korkma', text: 'Olumsuz duyguları açığa çıkarmaktan çekinme: açık çatışma, birkaç aşama boyunca için için kaynayıp en sonda patlayan çatışmadan iyidir.' },
           ]},
           { t: 'callout', kind: 'warn', title: 'Dikkat', text: 'Takımı modele katı biçimde hizalamaya çalışma. Model bir yön bulma aracıdır: pusuladır, kalp pili değil.' },
+          { t: 'h3', text: 'Durak teşhis tablosu' },
+          { t: 'table', head: ['Görülen belirti', 'Takılınan durak', 'Yapılacak'], rows: [
+            ['"Ben niye buradayım ki?" sesleri', '1. Oryantasyon', 'Amacı yeniden anlat'],
+            ['Herkes temkinli, kimse açık konuşmuyor', '2. Güven', 'Birebir tanışma, ortak mola'],
+            ['Aynı işi iki kişi yapıyor, bir iş sahipsiz', '4. Taahhüt', 'Rolleri yazılı dağıt'],
+            ['İş yürüyor ama herkes tükenmiş', '7. Yenilenme', 'Kutla, dinlendir, yeni hedef koy'],
+          ]},
         ],
       },
       {
@@ -323,6 +376,8 @@ export const section4Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Hiç beklentin yoksa hiçbir şey sevindirmez, beklentin ölçüsüz olursa hiçbir şey yetmez; mutluluk, beklentiyi doğru ayarlamaktır.' },
+          { t: 'callout', kind: 'ornek', title: 'Pazardan örnek', text: 'Manav Şükrü çırağına ayda beş bin lira söz verip altı bin verirse çırak bayram eder. Yedi bin söz verip altı bin verirse aynı para küslük çıkarır. Para aynı: altı bin. Değişen tek şey beklentiydi. Şükrü bunu bildiği için müşteriye de "domates biraz ekşice" der; tatlı çıkınca müşteri bir daha hep ondan alır.' },
           { t: 'p', text: 'Model, yüksek beklenti sorununu partner seçimi örneğiyle anlatır: gelecekteki partnerinden hiçbir beklentin yoksa kayıtsızsındır — ve kayıtsız kararlar nadiren tatmin eder. Beklentin yükseldikçe, ona uyan birini bulduğundaki mutluluk da artar.' },
           { t: 'p', text: 'Ama bir devrilme noktası vardır: beklentiler kritik eşiği aşarsa hayal kırıklığı kaçınılmazdır, çünkü hayalini kurduğun şey ulaşılamaz hâle gelir. Deneyim, mükemmelliğin Loch Ness canavarına benzediğini öğretir: hayatı boyunca onu arayanlar vardır — ama kimse görmemiştir.' },
           { t: 'p', text: 'Elbette yüksek beklentiye sahip olmakta ilkesel bir yanlışlık yok. Ama standartlarının asla karşılanamayacağı hissi taşıyorsan kendine sor: beklentilerini düşürsen ne kaybederdin?' },
@@ -340,6 +395,12 @@ export const section4Models: DecisionModel[] = [
             { title: 'Karşı tarafla eşitle', text: 'İki taraflı ilişkilerde beklentileri karşılıklı açıkla: söylenmemiş beklenti, karşı taraf için görünmez bir sınavdır ve çoğu insan girmediği sınavdan kalır.' },
           ]},
           { t: 'callout', kind: 'tip', title: 'İpucu', text: 'Model tersinden de çalışır: sıfır beklentiyle girilen iş ya da ilişki kayıtsızlık üretir. Hedef beklentisizlik değil, bilinçli kalibrasyondur.' },
+          { t: 'h3', text: 'Aynı sonuç, farklı beklenti' },
+          { t: 'table', head: ['Söz verilen', 'Gerçekleşen', 'Hissedilen'], rows: [
+            ['5.000 TL', '6.000 TL', 'Bayram: beklentinin üstü'],
+            ['6.000 TL', '6.000 TL', 'Memnuniyet: tam karşılandı'],
+            ['7.000 TL', '6.000 TL', 'Küslük: aynı para, kırık söz'],
+          ]},
         ],
       },
       {
@@ -369,6 +430,8 @@ export const section4Models: DecisionModel[] = [
         slug: 'kavram',
         title: 'Kavram',
         blocks: [
+          { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Artık birçok kararı bilgisayarlar veriye bakarak öneriyor; bu iyi bir yardımcıdır ama direksiyon hâlâ sende olmalı, çünkü makinenin neye göre karar verdiğini çoğu zaman kimse bilmiyor.' },
+          { t: 'callout', kind: 'ornek', title: 'Nakliyeden örnek', text: 'Kamyoncu Askar navigasyonun "40 dakika kısa" dediği yola giriyor; yol kısa ama alçak köprü var, kamyon geçemiyor. Navigasyon veriye baktı ama yükün yüksekliğini bilmiyordu. Ertesi gün Askar yine navigasyon kullanıyor — ama önce kendisi haritaya bakıp "bu güzergâhta köprü var mı?" diye kontrol ediyor. Alet öneriyor, kararı şoför veriyor.' },
           { t: 'p', text: 'Gottlieb Duttweiler Enstitüsü araştırma direktörü Karin Frick, kitabın ilk baskısı için yazdığı denemede "bağlantılılık yeni nedenselliktir" demişti: akıllı makineler modellerle değil veriyle çıkarım yapar; yaptığımız, aldığımız ve karar verdiğimiz neredeyse her şey dijital iz bırakır.' },
           { t: 'p', text: 'Frick\'e göre önümüzdeki yılların en güçlü yönetim araçları akıllı analizler değil, akıllı asistanlar olacak. Yapay zekâ iki şeyi mümkün kılar: gerçekliğe birçok farklı perspektiften ve dolayısıyla daha nesnel bakmak; ve insanların aksine, geçmişin öznel deneyimiyle değil gerçek zamanlı bilgiyle analiz yapmak.' },
           { t: 'h2', text: 'HiPPO\'nun sonu' },
@@ -389,6 +452,13 @@ export const section4Models: DecisionModel[] = [
             { title: 'Sorumluluğu devretme', text: 'Yapay zekâ önerir, insan karar verir: kararın gerekçesini "algoritma öyle dedi" olmaktan çıkar; imza hâlâ senin.' },
           ]},
           { t: 'callout', kind: 'warn', title: 'Dikkat', text: 'Chaplin\'in Büyük Diktatör\'deki sözünün özü hâlâ geçerli: ilerlemeyi kucakla, ama nasıl kullanıldığına karşı tetikte ol. Makineden çok insanlığa, zekâdan çok nezakete ihtiyacımız var.' },
+          { t: 'h3', text: 'Karar masasında iş bölümü' },
+          { t: 'table', head: ['İş', 'Makine mi, insan mı?', 'Neden'], rows: [
+            ['Binlerce kaydı tarayıp örüntü bulmak', 'Makine', 'Hız ve hafıza insanı aşar'],
+            ['Örüntünün anlamını yorumlamak', 'İnsan', 'Bağlamı ve istisnayı insan bilir'],
+            ['Değer yargısı gerektiren seçim', 'İnsan', 'Neyin "iyi" olduğunu makine tanımlayamaz'],
+            ['Sonucun sorumluluğunu taşımak', 'Her zaman insan', 'İmza devredilemez'],
+          ]},
         ],
       },
       {
