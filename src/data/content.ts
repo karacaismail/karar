@@ -23,7 +23,7 @@ export const sections: Section[] = [
   { id: 'oyun-teorisi-muzakere', title: 'Oyun Teorisi ve Müzakere', subtitle: 'Güven, rekabet ve pazarlıkta stratejik davranış', icon: 'ph-strategy' },
   { id: 'ogrenme-geri-bildirim', title: 'Öğrenme ve Geri Bildirim', subtitle: 'Hatadan öğrenme, koçluk ve geri bildirim döngüleri', icon: 'ph-arrows-clockwise' },
   { id: 'ekip-liderlik', title: 'Ekip ve Liderlik', subtitle: 'Ekip kurmak, yönetmek ve geliştirmek', icon: 'ph-users-three' },
-  { id: 'strateji-rekabet', title: 'Strateji ve Rekabet Analizi', subtitle: 'Pazarı, rakibi ve kendi gücünü analiz eden işletme çerçeveleri', icon: 'ph-chess-knight' },
+  { id: 'strateji-rekabet', title: 'Strateji ve Rekabet Analizi', subtitle: 'Pazarı, rakibi ve kendi gücünü analiz eden işletme çerçeveleri', icon: 'ph-binoculars' },
   { id: 'pazarlama-musteri', title: 'Pazarlama ve Müşteri', subtitle: 'Müşteri nasıl karar verir, ürün pazara nasıl yayılır?', icon: 'ph-storefront' },
   { id: 'hedef-performans', title: 'Hedef ve Performans', subtitle: 'Hedef koyma ve ölçme sistemleri', icon: 'ph-target' },
   { id: 'proje-urun', title: 'Proje ve Ürün Geliştirme', subtitle: 'Planlama, kısıtlar ve doğrulama döngüleri', icon: 'ph-package' },

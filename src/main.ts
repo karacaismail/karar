@@ -36,18 +36,21 @@ function parseRoute(): { view: 'home' } | { view: 'section'; id: string } | { vi
 
 // ── Sidebar (accordion per section) ──────────────────────────────────────────
 
+const pad2 = (n: number): string => String(n).padStart(2, '0')
+
 function sidebarHtml(active: { slug?: string; page?: string; sectionId?: string }): string {
   return sections
-    .map((sec) => {
+    .map((sec, si) => {
       // Accordions are closed by default; only the active section starts open.
       const isOpen = active.sectionId === sec.id
       const items = modelsBySection(sec.id)
-        .map((m) => {
+        .map((m, mi) => {
           const isActive = active.slug === m.slug
           return `
             <li>
               <a href="#/model/${m.slug}/kavram"
                  class="flex items-center gap-2 rounded-lg px-3 py-2 text-base ${isActive ? 'bg-brand-50 font-semibold text-brand-700' : 'text-ink-600 hover:bg-ink-50 hover:text-ink-900'}">
+                <span class="w-7 shrink-0 tabular-nums text-ink-400">${pad2(mi + 1)}</span>
                 <span class="min-w-0 flex-1">${esc(m.title)}</span>${newBadge(m.slug)}
               </a>
               ${
@@ -74,6 +77,7 @@ function sidebarHtml(active: { slug?: string; page?: string; sectionId?: string 
         <details class="group mb-2 rounded-xl border border-ink-100" ${isOpen ? 'open' : ''}>
           <summary class="flex min-h-[44px] cursor-pointer list-none items-center gap-2.5 rounded-xl px-3 py-2.5 font-semibold ${active.sectionId === sec.id ? 'text-brand-600' : 'text-ink-800'} hover:bg-ink-50 [&::-webkit-details-marker]:hidden">
             <i class="ph ${sec.icon} text-xl shrink-0" aria-hidden="true"></i>
+            <span class="shrink-0 tabular-nums text-ink-400">${pad2(si + 1)}</span>
             <span class="flex-1 text-base leading-snug">${esc(sec.title)}</span>
             <i class="ph ph-caret-down text-base text-ink-400 transition-transform group-open:rotate-180" aria-hidden="true"></i>
           </summary>
@@ -257,7 +261,7 @@ function exportPayload(route: ReturnType<typeof parseRoute>): ExportPayload {
 /** Header dropdown: download the current page's complete data as JSON or Markdown. */
 function exportMenuHtml(): string {
   return `
-    <details id="export-menu" class="relative ml-auto">
+    <details id="export-menu" class="relative ml-2">
       <summary class="flex h-11 min-w-[44px] cursor-pointer list-none items-center justify-center gap-1.5 rounded-lg px-2.5 text-ink-500 hover:bg-ink-50 [&::-webkit-details-marker]:hidden">
         <i class="ph ph-download-simple text-2xl" aria-hidden="true"></i>
         <span class="hidden text-base font-medium sm:inline">İndir</span>
@@ -309,6 +313,9 @@ function render(): void {
           </span>
           <span class="truncate text-base font-bold text-ink-900">Karar Kitabı</span>
         </a>
+        <span class="ml-auto inline-flex h-8 shrink-0 items-center gap-1 rounded-full bg-ink-100 px-3 text-base font-semibold tabular-nums text-ink-600" title="Küme / model sayısı">
+          ${sections.length}<span class="text-ink-400">/</span>${sections.reduce((a, s) => a + modelsBySection(s.id).length, 0)}
+        </span>
         ${exportMenuHtml()}
       </div>
     </header>
