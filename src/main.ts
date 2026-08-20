@@ -8,7 +8,7 @@ import { initFlowbite } from 'flowbite'
 import { sections, modelsBySection, findModel } from './data/content'
 import { vizBySlug } from './data/viz'
 import { mountCharts } from './chart'
-import { renderBlocks, esc } from './render'
+import { renderBlocks, staticVizHtml, esc } from './render'
 import type { DecisionModel } from './types'
 
 const app = document.querySelector<HTMLDivElement>('#app')!
@@ -166,8 +166,11 @@ function modelHtml(m: DecisionModel, pageSlug: string): string {
       ${
         showViz
           ? `<figure class="!mt-6 rounded-2xl border border-ink-100 bg-white p-2 xs:p-3">
-              <div data-viz="${m.slug}" class="h-72 w-full xs:h-80" role="img" aria-label="${esc(m.title)} diyagramı"></div>
-              ${viz.note ? `<figcaption class="px-2 pb-1 text-base leading-7 text-ink-500">${esc(viz.note)}</figcaption>` : ''}
+              ${
+                staticVizHtml(viz) ??
+                `<div data-viz="${m.slug}" class="h-72 w-full xs:h-80" role="img" aria-label="${esc(m.title)} diyagramı"></div>`
+              }
+              ${viz.note ? `<figcaption class="px-2 pb-1 pt-2 text-base leading-7 text-ink-500">${esc(viz.note)}</figcaption>` : ''}
             </figure>`
           : ''
       }
