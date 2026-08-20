@@ -876,7 +876,7 @@ export const section1Models: DecisionModel[] = [
     section: 'karar-verme',
     title: 'Bilinçsiz Düşünme Teorisi',
     question: 'Sezgisel kararlar nasıl verilir?',
-    summary: 'Karmaşık kararlarda bilinçdışının büyük veri yığınlarını rasyonel akıldan daha iyi elediğini söyleyen teori.',
+    summary: 'Karmaşık kararlarda zihnin görünmeyen tarafının, hesap yapan akıldan daha iyi eleme yaptığını söyleyen teori.',
     tags: ['sezgi', 'bilinçdışı', 'karar verme'],
     pages: [
       {
@@ -885,10 +885,10 @@ export const section1Models: DecisionModel[] = [
         blocks: [
           { t: 'callout', kind: 'simple', title: 'Bir cümlede', text: 'Karmaşık bir kararda her şeyi hesaplamaya çalışma; önce bilgileri topla, sonra kararı bir süre kafandan çıkar — için zaten ne istediğini biliyor.' },
           { t: 'callout', kind: 'ornek', title: 'Atölyeden örnek', text: 'Usta Fikret iki dükkan arasında kalmıştır: biri çarşıda pahalı, biri sanayide ucuz. Haftalarca hesap yapar, içinden çıkamaz. Kahvede arkadaşı bozuk para uzatır: "Yazı çarşı, tura sanayi." Para havadayken Fikret\'in içi "yazı gel" diye geçirir. Para yere düşmeden karar bellidir: çarşı. Yazı tura karar vermedi; Fikret\'in zaten verdiği kararı yüzeye çıkardı.' },
-          { t: 'p', text: 'İyi kararların her şeyi sistematik biçimde düşünmenin sonucu olduğuna inanmak cazip gelir — ve gerçekten de karar görece basitse, artıları ve eksileri tarafsızca tartmak muhtemelen doğru sonuca götürür. Ama karar daha karmaşıksa ve bariz bir cevap yoksa, düşünmeye ara vermek daha iyidir. Bütün argümanları ve bilgiyi rasyonel biçimde tartmaya çalışmak yerine sezgine güven. Kulağa paradoksal gelebilir; ama bilinçdışı, büyük veri yığınlarını elemekte daha iyidir.' },
+          { t: 'p', text: 'İyi kararın, her şeyi tek tek düşünüp tartmanın sonucu olduğuna inanmak cazip gelir — ve karar basitse bu doğrudur da: artıları ve eksileri yaz, tart, seç. Ama karar karmaşıksa ve bariz bir cevap yoksa, düşünmeye ara vermek daha iyidir. Bütün bilgiyi kafanda hesaplayarak tartmaya çalışmak yerine iç sesine güven. Kulağa ters gelebilir; ama zihnin farkında olmadan çalışan tarafı, büyük bilgi yığınlarını elemekte hesap yapan tarafından daha iyidir.' },
           { t: 'h2', text: 'Yazı tura numarası' },
-          { t: 'p', text: 'Peki beynin rasyonel tarafı nasıl kapatılır? Psikolog Gerd Gigerenzer ilgi çekici derecede basit bir numara önerir: iki seçenek arasında karar veremiyorsan yazı tura at. Para havada dönerken hangi yüzün gelmesini istediğini büyük olasılıkla hissedeceksin. Gerçek sonuca bakmana bile gerek kalmaz.' },
-          { t: 'p', text: 'Amaç, beynin rasyonel tarafını devre dışı bırakıp en derin arzularınla ve deneyimlerinle doğrudan temas kurmaktır. Ap Dijksterhuis ve Zeger van Olden\'in yöntemi de aynı ilkeye dayanır: kararını yaz, dikkatini dağıtan kısa bir görev (ör. anagram çözmek) yap, sonra kararını hemen yaz. Bilinçli düşünce meşgulken bilinçdışı, kararı olgunlaştırır.' },
+          { t: 'p', text: 'Peki beynin hesap yapan tarafı nasıl susturulur? Psikolog Gerd Gigerenzer\'in numarası çok basit: iki seçenek arasında karar veremiyorsan yazı tura at. Para havada dönerken hangi yüzün gelmesini istediğini içinde hissedeceksin. Paranın hangi yüze düştüğüne bakmana bile gerek kalmaz — cevabı zaten öğrendin.' },
+          { t: 'p', text: 'Amaç, hesap yapan tarafı bir süre meşgul edip asıl isteklerinle ve birikmiş deneyiminle doğrudan temas kurmaktır. Ap Dijksterhuis ve Zeger van Olden\'in yöntemi de aynı ilkeye dayanır: soruyu kafana koy, sonra dikkatini dağıtan kısa bir işle uğraş (bulmaca çözmek gibi), sonra kararını hemen yaz. Bilinçli düşünce bulmacayla meşgulken, zihnin görünmeyen tarafı kararı arka planda pişirir.' },
           { t: 'quote', text: 'Sezgi, hissettiğimiz ama açıklayamadığımız bilgidir.' },
         ],
       },

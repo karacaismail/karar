@@ -5,7 +5,7 @@ import '@phosphor-icons/web/regular/style.css'
 import '@phosphor-icons/web/bold/style.css'
 import './style.css'
 import { initFlowbite } from 'flowbite'
-import { sections, modelsBySection, findModel } from './data/content'
+import { sections, modelsBySection, findModel, newSlugs } from './data/content'
 import { vizBySlug } from './data/viz'
 import { areasBySlug } from './data/areas'
 import { mountCharts } from './chart'
@@ -41,8 +41,8 @@ function sidebarHtml(active: { slug?: string; page?: string; sectionId?: string 
           return `
             <li>
               <a href="#/model/${m.slug}/kavram"
-                 class="block rounded-lg px-3 py-2 text-base ${isActive ? 'bg-brand-50 font-semibold text-brand-700' : 'text-ink-600 hover:bg-ink-50 hover:text-ink-900'}">
-                ${esc(m.title)}
+                 class="flex items-center gap-2 rounded-lg px-3 py-2 text-base ${isActive ? 'bg-brand-50 font-semibold text-brand-700' : 'text-ink-600 hover:bg-ink-50 hover:text-ink-900'}">
+                <span class="min-w-0 flex-1">${esc(m.title)}</span>${newBadge(m.slug)}
               </a>
               ${
                 isActive
@@ -78,6 +78,13 @@ function sidebarHtml(active: { slug?: string; page?: string; sectionId?: string 
         </details>`
     })
     .join('')
+}
+
+/** "Yeni" pill for models added after the frozen v1 snapshot. */
+function newBadge(slug: string): string {
+  return newSlugs.has(slug)
+    ? '<span class="inline-flex shrink-0 items-center rounded-full bg-brand-500 px-2.5 py-0.5 text-base font-semibold leading-6 text-white">Yeni</span>'
+    : ''
 }
 
 // ── Views ────────────────────────────────────────────────────────────────────
@@ -121,7 +128,7 @@ function sectionHtml(id: string): string {
         .map(
           (m) => `
         <a href="#/model/${m.slug}/kavram" class="block rounded-2xl border border-ink-200 bg-white p-5 transition hover:border-brand-300 hover:shadow-md">
-          <h2 class="text-lg font-bold text-ink-900">${esc(m.title)}</h2>
+          <h2 class="flex flex-wrap items-center gap-2 text-lg font-bold text-ink-900">${esc(m.title)}${newBadge(m.slug)}</h2>
           <p class="mt-1 text-base italic text-brand-600">${esc(m.question)}</p>
           <p class="mt-2 text-base leading-7 text-ink-600">${esc(m.summary)}</p>
           <div class="mt-3 flex flex-wrap gap-1.5">
@@ -164,7 +171,7 @@ function modelHtml(m: DecisionModel, pageSlug: string): string {
     </div>
 
     <div class="doc-prose">
-      <h1>${esc(m.title)}</h1>
+      <h1 class="flex flex-wrap items-center gap-3">${esc(m.title)}${newBadge(m.slug)}</h1>
       <p class="!mt-2 italic text-brand-600">${esc(m.question)}</p>
       ${
         areasBySlug[m.slug]?.length

@@ -39,6 +39,11 @@ export const models: DecisionModel[] = [
   ...section6bModels,
 ]
 
+/** v1 anlık görüntüsünden SONRA eklenen modeller: arayüzde "Yeni" etiketi alır. */
+export const newSlugs: Set<string> = new Set(
+  [...section5aModels, ...section5bModels, ...section5cModels, ...section6aModels, ...section6bModels].map((m) => m.slug),
+)
+
 export function modelsBySection(id: string): DecisionModel[] {
   return models.filter((m) => m.section === id)
 }
