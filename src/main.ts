@@ -10,8 +10,7 @@ import { vizBySlug } from './data/viz'
 import { areasBySlug } from './data/areas'
 import { mountCharts } from './chart'
 import { renderBlocks, staticVizHtml, esc } from './render'
-import { runExport, download, type ExportPayload } from './export'
-import { v2Docs, findV2Doc, loadV2Html, loadV2Raw } from './v2'
+import { runExport, type ExportPayload } from './export'
 import type { DecisionModel } from './types'
 
 const app = document.querySelector<HTMLDivElement>('#app')!
@@ -21,16 +20,11 @@ const app = document.querySelector<HTMLDivElement>('#app')!
 // #/bolum/<sectionId>      → section index
 // #/model/<slug>/<page>    → model page
 
-function parseRoute():
-  | { view: 'home' }
-  | { view: 'section'; id: string }
-  | { view: 'model'; slug: string; page: string }
-  | { view: 'v2'; slug?: string } {
+function parseRoute(): { view: 'home' } | { view: 'section'; id: string } | { view: 'model'; slug: string; page: string } {
   const hash = location.hash.replace(/^#\/?/, '')
   const parts = hash.split('/').filter(Boolean)
   if (parts[0] === 'bolum' && parts[1]) return { view: 'section', id: parts[1] }
   if (parts[0] === 'model' && parts[1]) return { view: 'model', slug: parts[1], page: parts[2] ?? 'kavram' }
-  if (parts[0] === 'v2') return { view: 'v2', slug: parts[1] }
   return { view: 'home' }
 }
 
@@ -39,7 +33,8 @@ function parseRoute():
 function sidebarHtml(active: { slug?: string; page?: string; sectionId?: string }): string {
   return sections
     .map((sec) => {
-      const isOpen = active.sectionId === sec.id || !active.sectionId
+      // Accordions are closed by default; only the active section starts open.
+      const isOpen = active.sectionId === sec.id
       const items = modelsBySection(sec.id)
         .map((m) => {
           const isActive = active.slug === m.slug
@@ -87,50 +82,6 @@ function sidebarHtml(active: { slug?: string; page?: string; sectionId?: string 
 
 // ── Views ────────────────────────────────────────────────────────────────────
 
-function v2ListHtml(): string {
-  return `
-    <div class="doc-prose">
-      <p class="text-base font-bold uppercase tracking-widest text-brand-600">Ek Kaynaklar</p>
-      <h1>V2 Dokümanları</h1>
-      <p class="!mt-3 text-ink-500">Eğitim setine eklenen ${v2Docs.length} ek doküman: strateji ve yönetim modelleri, oyun teorisi kaynakları, aksiyon planları ve Dilts'in Dahi Stratejileri tam metni.</p>
-    </div>
-    <ul class="mt-8 space-y-2">
-      ${v2Docs
-        .map(
-          (d) => `
-        <li>
-          <a href="#/v2/${d.slug}" class="flex min-h-[44px] items-center gap-3 rounded-xl border border-ink-200 bg-white px-4 py-3 transition hover:border-brand-300 hover:shadow-sm">
-            <i class="ph ph-file-text shrink-0 text-xl text-brand-600" aria-hidden="true"></i>
-            <span class="text-base font-medium text-ink-800">${esc(d.title)}</span>
-          </a>
-        </li>`,
-        )
-        .join('')}
-    </ul>`
-}
-
-function v2DocHtml(slug: string): string {
-  const doc = findV2Doc(slug)
-  if (!doc) return notFoundHtml()
-  return `
-    <nav class="mb-5 flex flex-wrap items-center gap-1.5 text-base text-ink-400" aria-label="Breadcrumb">
-      <a href="#/" class="hover:text-brand-600">Ana Sayfa</a><i class="ph ph-caret-right text-base" aria-hidden="true"></i>
-      <a href="#/v2" class="hover:text-brand-600">Ek Kaynaklar</a><i class="ph ph-caret-right text-base" aria-hidden="true"></i>
-      <span class="text-ink-600">${esc(doc.title)}</span>
-    </nav>
-    <div class="doc-prose">
-      <h1>${esc(doc.title)}</h1>
-      <div class="!mt-4">
-        <button id="v2-download" type="button" class="inline-flex h-11 items-center gap-2 rounded-lg border border-ink-200 px-4 text-base font-medium text-ink-700 hover:border-brand-300">
-          <i class="ph ph-download-simple text-xl text-brand-600" aria-hidden="true"></i> Kaynağı indir (.md)
-        </button>
-      </div>
-    </div>
-    <div id="v2-body" class="md-body mt-6 max-w-prose">
-      <p class="text-base text-ink-400">Yükleniyor…</p>
-    </div>`
-}
-
 function homeHtml(): string {
   return `
     <div class="doc-prose">
@@ -153,14 +104,6 @@ function homeHtml(): string {
         </a>`,
         )
         .join('')}
-      <a href="#/v2" class="group rounded-2xl border border-ink-200 bg-white p-5 transition hover:border-brand-300 hover:shadow-md">
-        <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-50 text-brand-600">
-          <i class="ph ph-books text-2xl" aria-hidden="true"></i>
-        </span>
-        <h2 class="mt-3 text-lg font-bold text-ink-900 group-hover:text-brand-600">Ek Kaynaklar</h2>
-        <p class="mt-1.5 text-base leading-7 text-ink-500">Strateji ve yönetim modelleri, oyun teorisi kaynakları, aksiyon planları.</p>
-        <p class="mt-3 inline-flex items-center gap-1 text-base font-semibold text-brand-600">${v2Docs.length} doküman <i class="ph ph-arrow-right" aria-hidden="true"></i></p>
-      </a>
     </div>`
 }
 
@@ -317,8 +260,6 @@ function render(): void {
   } else if (route.view === 'section') {
     content = sectionHtml(route.id)
     active = { sectionId: route.id }
-  } else if (route.view === 'v2') {
-    content = route.slug ? v2DocHtml(route.slug) : v2ListHtml()
   } else {
     const m = findModel(route.slug)
     if (m) {
@@ -361,23 +302,6 @@ function render(): void {
         </button>
       </div>
       ${sidebarHtml(active)}
-      <details class="group mb-2 rounded-xl border border-ink-100" ${parseRoute().view === 'v2' ? 'open' : ''}>
-        <summary class="flex min-h-[44px] cursor-pointer list-none items-center gap-2.5 rounded-xl px-3 py-2.5 font-semibold ${parseRoute().view === 'v2' ? 'text-brand-600' : 'text-ink-800'} hover:bg-ink-50 [&::-webkit-details-marker]:hidden">
-          <i class="ph ph-books text-xl shrink-0" aria-hidden="true"></i>
-          <span class="flex-1 text-base leading-snug">Ek Kaynaklar</span>
-          <i class="ph ph-caret-down text-base text-ink-400 transition-transform group-open:rotate-180" aria-hidden="true"></i>
-        </summary>
-        <div class="px-2 pb-2">
-          <a href="#/v2" class="mb-1 block rounded-lg px-3 py-1.5 text-base text-ink-400 hover:text-brand-600">Tüm liste (${v2Docs.length})</a>
-          <ul class="space-y-0.5">
-            ${v2Docs
-              .map(
-                (d) => `<li><a href="#/v2/${d.slug}" class="block rounded-lg px-3 py-2 text-base text-ink-600 hover:bg-ink-50 hover:text-ink-900">${esc(d.title)}</a></li>`,
-              )
-              .join('')}
-          </ul>
-        </div>
-      </details>
     </aside>
 
     <!-- Content: clearspace-first — generous padding even at 320px -->
@@ -394,25 +318,12 @@ function render(): void {
 
   initFlowbite()
   bindDrawer()
+  bindAccordion()
   bindExport(exportPayload(route))
   mountCharts(vizBySlug)
-  if (route.view === 'v2' && route.slug) void fillV2Doc(route.slug)
   window.scrollTo({ top: 0 })
 }
 
-/** Load the markdown body of a v2 doc asynchronously and wire its download button. */
-async function fillV2Doc(slug: string): Promise<void> {
-  const body = document.getElementById('v2-body')
-  if (!body) return
-  const html = await loadV2Html(slug)
-  // Guard against a route change while the chunk was loading.
-  if (!document.getElementById('v2-body')) return
-  body.innerHTML = html ?? '<p class="text-base text-ink-500">Doküman yüklenemedi.</p>'
-  document.getElementById('v2-download')?.addEventListener('click', async () => {
-    const raw = await loadV2Raw(slug)
-    if (raw != null) download(`${slug}.md`, raw, 'text/markdown')
-  })
-}
 
 function bindExport(payload: ExportPayload): void {
   const menu = document.getElementById('export-menu') as HTMLDetailsElement | null
@@ -426,6 +337,16 @@ function bindExport(payload: ExportPayload): void {
   // Tap outside closes the menu (mobile friendliness).
   document.addEventListener('click', (e) => {
     if (menu.open && !menu.contains(e.target as Node)) menu.open = false
+  })
+}
+
+/** Exclusive accordion: opening one sidebar section closes the others. */
+function bindAccordion(): void {
+  const items = Array.from(document.querySelectorAll<HTMLDetailsElement>('#doc-sidebar details'))
+  items.forEach((d) => {
+    d.addEventListener('toggle', () => {
+      if (d.open) items.forEach((other) => { if (other !== d) other.open = false })
+    })
   })
 }
 

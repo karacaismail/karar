@@ -59,4 +59,23 @@ export const areasBySlug: Record<string, string[]> = {
   'drexler-sibbet-modeli': ['Ekip kurma', 'Proje başlatma', 'Değişim yönetimi'],
   'beklentiler-modeli': ['İlişkiler', 'Müşteri yönetimi', 'İK / ücret görüşmesi', 'Satış vaadi'],
   'gelecekte-nasil-karar-verecegiz': ['Yapay zekâ kullanımı', 'Yöneticilik', 'Veri kültürü'],
+
+  // Strateji Araç Kutusu
+  'freud-belirti-okuma': ['Kök neden analizi', 'Müşteri görüşmesi', 'Ekip sorunları'],
+  'olumlu-niyet-cercevesi': ['Çatışma çözme', 'Alışkanlık değişimi', 'Ekip iletişimi'],
+  'leonardo-gormeyi-bilmek': ['Usta-çırak eğitimi', 'Kalite kontrol', 'Gözlem becerisi'],
+  'tesla-zihinsel-prototipleme': ['Tasarım', 'Ar-Ge', 'Planlama', 'Zanaat işleri'],
+  'guven-stratejileri': ['Müzakere', 'Ortaklık kurma', 'Tedarikçi ilişkileri'],
+  'ortak-mallar-trajedisi': ['Kaynak yönetimi', 'Ortak alan kullanımı', 'Çevre', 'Kooperatifçilik'],
+  'sifir-toplamli-oyunlar': ['Müzakere', 'Rekabet stratejisi', 'Pazarlık'],
+  'schelling-ayrisma-modeli': ['Şehircilik', 'Ekip kültürü', 'Sistem düşüncesi'],
+  'hedef-sabitleme-tuzagi': ['Hedef tasarımı', 'Prim sistemleri', 'Yapay zekâ kullanımı'],
+  'porter-bes-guc': ['Rekabet analizi', 'Pazara giriş kararı', 'Fiyatlama', 'KOBİ stratejisi'],
+  'pestle-analizi': ['Pazar araştırması', 'Risk yönetimi', 'Yatırım kararı'],
+  'smart-hedefler': ['Hedef belirleme', 'Performans yönetimi', 'Kişisel planlama'],
+  'okr': ['Hedef yönetimi', 'Ekip hizalama', 'Büyüme dönemleri'],
+  'dengeli-karne': ['Performans ölçümü', 'Strateji uygulama', 'Yöneticilik'],
+  'vrio': ['Rekabet avantajı', 'Kaynak analizi', 'Strateji'],
+  'mavi-okyanus': ['Ürün konumlandırma', 'Girişimcilik', 'Pazar yaratma'],
+  'mvp-ve-gate-dongusu': ['Girişimcilik', 'Ürün geliştirme', 'Yatırım kararları'],
 }

@@ -5,6 +5,7 @@ export type SectionId =
   | 'kendini-anla'
   | 'baskalarini-anla'
   | 'baskalarini-gelistir'
+  | 'strateji-araclari'
 
 export interface Section {
   id: SectionId
