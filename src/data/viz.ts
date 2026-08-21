@@ -200,14 +200,31 @@ export const vizBySlug: Record<string, Viz> = {
 
   // ── Kendini Daha İyi Anla ──────────────────────────────────────────────────
   'akis-modeli': {
-    kind: 'curve',
-    xLabel: 'Beceri düzeyi',
-    yLabel: 'Zorluk düzeyi',
-    series: [
-      { name: 'Kaygı sınırı', data: [[0, 2], [2, 4], [4, 6], [6, 8], [8, 10]] },
-      { name: 'Sıkıntı sınırı', data: [[2, 0], [4, 2], [6, 4], [8, 6], [10, 8]] },
-    ],
-    note: 'Csikszentmihalyi\'nin orijinal diyagramı: iki çizginin arasındaki bant akış kanalıdır; üstü kaygı, altı sıkıntı üretir.',
+    kind: 'svg',
+    svg: `<svg viewBox="0 0 560 400" role="img" aria-label="Akış kanalı diyagramı: beceri ve zorluk eksenleri arasında akış bandı, üstte kaygı, altta sıkıntı bölgesi" class="mx-auto w-full max-w-lg min-w-[420px]">
+      <g font-family="Roboto, sans-serif">
+        <defs>
+          <marker id="aks-ok" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#82929c"/></marker>
+        </defs>
+        <line x1="70" y1="340" x2="70" y2="40" stroke="#82929c" stroke-width="2" marker-end="url(#aks-ok)"/>
+        <line x1="70" y1="340" x2="520" y2="340" stroke="#82929c" stroke-width="2" marker-end="url(#aks-ok)"/>
+        <text x="40" y="190" font-size="14" fill="#414d57" font-weight="600" transform="rotate(-90 40 190)" text-anchor="middle">Zorluk</text>
+        <text x="295" y="378" font-size="14" fill="#414d57" font-weight="600" text-anchor="middle">Beceri</text>
+        <polygon points="70,340 70,220 400,40 520,40 520,160 190,340" fill="#f95428" fill-opacity="0.14"/>
+        <line x1="70" y1="220" x2="400" y2="40" stroke="#f95428" stroke-width="2.5" stroke-dasharray="7 5"/>
+        <line x1="190" y1="340" x2="520" y2="160" stroke="#f95428" stroke-width="2.5" stroke-dasharray="7 5"/>
+        <text x="315" y="205" font-size="17" font-weight="700" fill="#b52f0f" text-anchor="middle" transform="rotate(-29 315 205)">AKIŞ KANALI</text>
+        <text x="150" y="110" font-size="15" font-weight="700" fill="#4f5e6a">KAYGI</text>
+        <text x="150" y="130" font-size="13" fill="#82929c">iş beceriyi aşıyor</text>
+        <text x="380" y="290" font-size="15" font-weight="700" fill="#4f5e6a">SIKINTI</text>
+        <text x="380" y="310" font-size="13" fill="#82929c">beceri işi aşıyor</text>
+        <circle cx="150" cy="300" r="6" fill="#4f6d8c"/>
+        <text x="163" y="304" font-size="13" fill="#4f5e6a">çırak: kolay işle başlar</text>
+        <circle cx="430" cy="115" r="6" fill="#4f6d8c"/>
+        <text x="423" y="100" font-size="13" fill="#4f5e6a" text-anchor="end">usta: zor işle akışta kalır</text>
+      </g>
+    </svg>`,
+    note: 'Csikszentmihalyi\'nin orijinal diyagramı: beceri arttıkça akışta kalmak için zorluk da artmalıdır. Kesikli çizgilerin arasındaki turuncu bant akış kanalıdır; üstüne çıkan iş kaygı, altına düşen iş sıkıntı üretir.',
   },
   'johari-penceresi': {
     kind: 'table',
