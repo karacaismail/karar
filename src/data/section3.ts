@@ -138,14 +138,14 @@ export const section3Models: DecisionModel[] = [
           { t: 'p', text: 'İlk üç basamak temel ihtiyaçtır: karşılandığında insan artık onları düşünmez. Son iki basamak ise arzular, yani kişisel gelişim ihtiyaçlarıdır — hiçbir zaman tam olarak doyurulamazlar.' },
           { t: 'h2', text: 'İki piramit' },
           { t: 'p', text: 'Model asıl ilginç hâlini, arzularımızı ihtiyaçlarımızla karşı karşıya koyduğumuzda alır: "sahip olduklarımız" piramidi ile "istediklerimiz" ters piramidi yan yana çizilir. Batı dünyası için kitabın acı kuralı şudur: en çok arzuladığımız şeyler, en az ihtiyaç duyduklarımızdır.' },
-          { t: 'quote', text: 'En çok arzuladığımız şeyler, en az ihtiyaç duyduğumuz şeylerdir.' },
-          { t: 'table', head: ['Basamak', 'Günlük hayattaki hâli', 'Karşılanmazsa ne olur?'], rows: [
+                    { t: 'table', head: ['Basamak', 'Günlük hayattaki hâli', 'Karşılanmazsa ne olur?'], rows: [
             ['1. Fizyolojik', 'Yemek, uyku, sıcak bir ev', 'Başka hiçbir şey düşünülemez'],
             ['2. Güvenlik', 'Düzenli maaş, sigorta, sağlam çatı', 'Sürekli kaygı, kısa vadeli kararlar'],
             ['3. Sosyal', 'Aile, arkadaş, ekipte kabul görmek', 'Yalnızlık, işe isteksizlik'],
             ['4. Tanınma', 'Takdir, unvan, "eline sağlık" sözü', 'Küskünlük, motivasyon kaybı'],
             ['5. Kendini gerçekleştirme', 'Kendi işini kurmak, ustalaşmak', 'Doyumsuzluk, "bir eksik var" hissi'],
           ]},
+{ t: 'quote', text: 'En çok arzuladığımız şeyler, en az ihtiyaç duyduğumuz şeylerdir.' },
         ],
       },
       {
@@ -195,13 +195,13 @@ export const section3Models: DecisionModel[] = [
           { t: 'p', text: 'Bu eksenlerin kesişiminde "yerleşikler", "liberal-entelektüeller", "yüksek başarılılar", "hedonistler", "gelenekseller" gibi milieu\'ler (yaşam ortamları) doğar. Pierre Bourdieu\'nün daha az bilinen eksen modeli ise kültürel sermaye ile ekonomik sermayeyi karşı karşıya koyar: hangi sporu yaptığın, hangi içkiyi içtiğin, hangi müziği dinlediğin, sınıfsal konumunun neredeyse haritasıdır. Bourdieu\'nün kültürel tüketim analizi, kökleşmiş kültürel tercihlerimizi ve alışkanlıklarımızı sorgulamaya zorlar.' },
           { t: 'h2', text: 'Modelin eleştirisi ve gücü' },
           { t: 'p', text: 'Sinus gruplarının darlığı sık eleştirilir: "Babam otobüs şoförü, annem hippi, ben moda tasarımcısıyım ve boş zamanımda golf kulübünden arkadaşlarımla takılıyorum — nereye aitim?" sorusuna model cevap veremez. Peki madem kusurlu, neden herkes kullanmaya devam ediyor? Çünkü pazar araştırması dünyası müşteriyi gruplara ayırma işini hep bu haritayla yapageldi; herkes aynı haritaya alışınca, daha iyisi çıksa bile yenisine geçmek zorlaşır. Tıpkı herkesin kullandığı klavye düzeni gibi: kusurlu ama yerleşik. Alışkanlık, iyileşme arzusundan güçlüdür.' },
-          { t: 'quote', text: 'Kökenlerimiz geleceğimizdir. — Martin Heidegger' },
-          { t: 'table', head: ['Müşteri grubu', 'Neye değer verir?', 'Manav Salih ne yapar?'], rows: [
+                    { t: 'table', head: ['Müşteri grubu', 'Neye değer verir?', 'Manav Salih ne yapar?'], rows: [
             ['Gelenekseller', 'Tanıdık esnaf, pazarlık, alışkanlık', 'Selam verir, veresiye defteri tutar'],
             ['Fiyat odaklılar', 'En ucuz, bol miktar', 'Kasa sonu indirimi duyurur'],
             ['Statü arayanlar', 'Kaliteli görünen, özel ürün', 'Seçme malı öne, güzel kasaya dizer'],
             ['Bilinçli tüketiciler', 'Organik, yerel, hikâyesi olan ürün', 'Köyün adını yazar, üreticiyi anlatır'],
           ]},
+{ t: 'quote', text: 'Kökenlerimiz geleceğimizdir. — Martin Heidegger' },
         ],
       },
       {
@@ -251,13 +251,13 @@ export const section3Models: DecisionModel[] = [
           { t: 'h2', text: 'İkinci döngü' },
           { t: 'p', text: 'Çift döngülü öğrenmede yaptığın şeyi düşünür ve sorgularsın; kendi kalıbını kırmaya çalışırsın — sadece bir şeyi farklı yaparak değil, onu neden o şekilde yaptığını düşünerek. Eylemlerinin arkasındaki hedefler ve değerler nedir? Bunların tam olarak farkına varırsan, onları değiştirebilirsin.' },
           { t: 'p', text: 'Çift döngünün içindeki asıl sorun, söylediğimiz ile yaptığımız arasındaki farktır: benimsenen kuram (ne yapacağımızı söylediğimiz) ile kullanılan kuram (gerçekte yaptığımız). Gerçekten bir şeyi değiştirmek istiyorsak talimat ve yönerge yetmez — bunlar bize yalnızca komut olarak ulaşır. Gerçek değişim, daha derindeki nedenleri, hedefleri ve değerleri yeniden değerlendirdiğimizde olur.' },
-          { t: 'quote', text: 'Sahip olduklarımızı hak ediyoruz. Onları değiştirmediğimiz sürece.' },
-          { t: 'table', head: ['Soru', 'Tek döngü', 'Çift döngü'], rows: [
+                    { t: 'table', head: ['Soru', 'Tek döngü', 'Çift döngü'], rows: [
             ['Kaynak çatladı, ne yaparım?', 'Taşlar, yeniden kaynatırım', 'Neden hep çatlıyor diye sorarım'],
             ['Sorunun kaynağı ne?', 'Elimin hatası', 'Acele ettiren iş düzeni'],
             ['Ne değişir?', 'O günkü parça', 'Çalışma alışkanlığının kendisi'],
             ['Hata geri gelir mi?', 'Evet, tekrar eder', 'Hayır, kökü kurudu'],
           ]},
+{ t: 'quote', text: 'Sahip olduklarımızı hak ediyoruz. Onları değiştirmediğimiz sürece.' },
         ],
       },
       {
@@ -312,13 +312,13 @@ export const section3Models: DecisionModel[] = [
             'Öğretmen: "Hayır, fikir iyi değil çünkü…" (olumsuz ama yapıcı)',
             'AI düşünürü: "Evet, üstelik şunu da yapabiliriz…" (olumlu ve yapıcı)',
           ]},
-          { t: 'quote', text: 'Her aptal eleştirebilir. Ve çoğu aptal eleştirir. — Benjamin Franklin' },
-          { t: 'table', head: ['Tartışma tipi', 'Tipik cümlesi', 'Fikre etkisi'], rows: [
+                    { t: 'table', head: ['Tartışma tipi', 'Tipik cümlesi', 'Fikre etkisi'], rows: [
             ['Kusur avcısı', '"Fikir güzel ama…"', 'Fikri yavaşça söndürür'],
             ['Diktatör', '"Hayır!"', 'Fikri anında öldürür'],
             ['Öğretmen', '"Hayır, çünkü…"', 'Öğretir ama cesaret kırar'],
             ['AI düşünürü', '"Evet, üstelik şunu da…"', 'Fikri büyütür, yenisini çağırır'],
           ]},
+{ t: 'quote', text: 'Her aptal eleştirebilir. Ve çoğu aptal eleştirir. — Benjamin Franklin' },
         ],
       },
       {
@@ -366,14 +366,14 @@ export const section3Models: DecisionModel[] = [
           { t: 'callout', kind: 'ornek', title: 'Atölyeden örnek', text: 'Oto tamircisi Kemal bir ay boyunca gelen arızaları deftere yazdı: 40 aracın 28\'i ya akü ya balata. Onlarca farklı arıza tipi var ama işin sekseni iki kalemden geliyor. Kemal aküyü ve balatayı rafta hazır tutmaya başladı; bekleme süresi yarıya indi.' },
           { t: 'p', text: 'İtalyan iktisatçı Vilfredo Pareto, İtalya\'daki toprakların %80\'inin nüfusun %20\'sine ait olduğunu gözlemledi. Sonraki yüzyılda aynı asimetri sayısız alanda doğrulandı: müşterilerin %20\'si cironun %80\'ini, hataların %20\'si şikâyetlerin %80\'ini üretir.' },
           { t: 'p', text: '80/20 kesin bir oran değil, bir uyarıdır: girdiler eşit doğmaz. Kaynaklarını eşit dağıtıyorsan, büyük olasılıkla yanlış dağıtıyorsun.' },
-          { t: 'quote', text: 'Her şey eşit derecede önemliyse, hiçbir şey önemli değildir.' },
-          { t: 'table', head: ['Arıza tipi', 'Bir aydaki sayı', 'Toplam içindeki pay'], rows: [
+                    { t: 'table', head: ['Arıza tipi', 'Bir aydaki sayı', 'Toplam içindeki pay'], rows: [
             ['Akü', '16', '%40'],
             ['Balata', '12', '%30'],
             ['Far ve sinyal', '5', '%12'],
             ['Egzoz', '4', '%10'],
             ['Diğer (onlarca tip)', '3', '%8'],
           ]},
+{ t: 'quote', text: 'Her şey eşit derecede önemliyse, hiçbir şey önemli değildir.' },
         ],
       },
       {
@@ -422,13 +422,13 @@ export const section3Models: DecisionModel[] = [
           { t: 'p', text: 'Anderson iddiasını bir talep eğrisiyle gösterdi. En solda eğri dik biçimde yükselir: burada pazarın %20\'sini oluşturan çok satanlar ve gişe rekortmenleri vardır. Sonra eğri sağa doğru yumuşakça düzleşir: burada daha az popüler kitaplar ve filmler bulunur. Eğrinin bu kısmı zirveden çok daha geniştir ve çok daha fazla ürünü kapsar.' },
           { t: 'h2', text: 'Pareto\'nun tersine dönüşü' },
           { t: 'p', text: 'İçgüdüsel olarak Pareto ilkesinin haklı olduğu düşünülür: çok satanlar (%20) "az satanlardan" (%80) daha kârlıdır. Ama rakamlar başka bir şey söyler: uzun kuyruk, az sayıdaki çok satandan daha yüksek ciro üretir. 2004\'te bu cesur bir teoriydi; bugün pek çok sektörde standarttır. Kitlesel pazar çok satan ister, ama niş ürünlere de talep vardır: tek tek talep düşük olabilir, ama toplamda nişler çok satanlardan daha değerlidir.' },
-          { t: 'quote', text: 'İnternet dünyanın en büyük kütüphanesidir. Sadece bütün kitaplar yerdedir. — John Allen Paulos' },
-          { t: 'table', head: ['', 'Çok satanlar (baş)', 'Niş ürünler (kuyruk)'], rows: [
+                    { t: 'table', head: ['', 'Çok satanlar (baş)', 'Niş ürünler (kuyruk)'], rows: [
             ['Ürün sayısı', 'Az (birkaç kalem)', 'Çok (yüzlerce kalem)'],
             ['Tek ürünün satışı', 'Yüksek', 'Düşük (ayda bir iki adet)'],
             ['Toplam ciro', 'Büyük ama sınırlı', 'Toplandığında başı geçebilir'],
             ['Şartı', 'Raf ve reklam ister', 'Ucuz depolama ve iyi arama ister'],
           ]},
+{ t: 'quote', text: 'İnternet dünyanın en büyük kütüphanesidir. Sadece bütün kitaplar yerdedir. — John Allen Paulos' },
         ],
       },
       {
@@ -484,8 +484,7 @@ export const section3Models: DecisionModel[] = [
             'Konsensüs: iki tarafın birlikte geliştirdiği yeni bir çözüme dayanır. Uzlaşmanın aksine kimse geri adım atmak zorunda kalmaz; iki taraf birlikte bir "üçüncü yol" geliştirir (kazan–kazan).',
           ]},
           { t: 'p', text: 'İlk üç tepki duygusal, son üçü akılcı tepkilerdir. Model, hem kendi çatışma tipini hem karşı tarafınkini teşhis etmeye yarar.' },
-          { t: 'quote', text: 'Başarısızlıklarımızın nedeni uğradığımız yenilgiler değil, katılmadığımız çatışmalardır. — Bern\'de bir gençlik merkezi duvar yazısı' },
-          { t: 'table', head: ['Tepki', 'Şantiyedeki hâli', 'Sonuç'], rows: [
+                    { t: 'table', head: ['Tepki', 'Şantiyedeki hâli', 'Sonuç'], rows: [
             ['Kaçış', 'İkisi de duvara yanaşmaz, iş durur', 'Kaybet–kaybet'],
             ['Savaş', 'Bağırışırlar, biri duvarı kapar', 'Kazan–kaybet'],
             ['Pes etme', 'Osman sesini çıkarmaz, içten içe biriktirir', 'Kaybet–kazan'],
@@ -493,6 +492,7 @@ export const section3Models: DecisionModel[] = [
             ['Uzlaşma', 'Duvarı yarı yarıya bölerler, ikisi de sıkışır', 'Yarım kazanç'],
             ['Konsensüs', 'Sabah kanal, öğleden sonra sıva', 'Kazan–kazan'],
           ]},
+{ t: 'quote', text: 'Başarısızlıklarımızın nedeni uğradığımız yenilgiler değil, katılmadığımız çatışmalardır. — Bern\'de bir gençlik merkezi duvar yazısı' },
         ],
       },
       {
@@ -601,8 +601,7 @@ export const section3Models: DecisionModel[] = [
             'Ayak sürüyenler: en katı muhafazakârlar; yeniliği en son alan grup.',
           ]},
           { t: 'p', text: 'Grafiğe döküldüğünde bu gelişim, bir salgının ilerleyişine benzeyen tipik bir eğri alır: önce yavaş yükselir, sonra her yeni ürünün kritik noktasına ulaşır — birçok ürünün başarısız olduğu yer. Her yenilik için kritik nokta, erken benimseyenlerden kuşkucu kitleye geçiştir; çünkü tam burada bir "uçurum" vardır. ABD\'li sosyolog Morton Grodzins\'e göre erken benimseyenler yeniliği uçurumun karşısına, kuşkucu kitleye taşımayı başarırsa salgın döngüsü devrilme noktasına ulaşır: eğri, kitle ürünü kabul ettiğinde keskin biçimde yükselir, geriye yalnızca ayak sürüyenler kaldığında yeniden düşer.' },
-          { t: 'quote', text: 'Önce seni görmezden gelirler, sonra sana gülerler, sonra seninle savaşırlar; sonra sen kazanırsın. — Mahatma Gandhi' },
-          { t: 'table', head: ['Grup', 'Nüfus payı (Rogers\'ın araştırması)', 'Mahalledeki hâli', 'Onu ikna eden şey'], rows: [
+                    { t: 'table', head: ['Grup', 'Nüfus payı (Rogers\'ın araştırması)', 'Mahalledeki hâli', 'Onu ikna eden şey'], rows: [
             ['Yenilikçiler', 'Yüzde 2,5', 'Genç kafeci: ilk deneyen', 'Yeniliğin kendisi'],
             ['Erken benimseyenler', 'Yüzde 13,5', 'İşleri iyi giden iki esnaf', 'Öncünün deneyimi ve vizyon'],
             ['— UÇURUM —', 'Ürünlerin çoğu bu çizgide ölür', 'İlk yüzde 16 ile kalabalık arasındaki boşluk', 'Buradan sonrası kanıt ister, hayal değil'],
@@ -610,6 +609,7 @@ export const section3Models: DecisionModel[] = [
             ['Geç çoğunluk', 'Yüzde 34', 'Komşu esnafın çoğu kullanınca gelenler', 'Mahallede standart hâline gelmesi'],
             ['Ayak sürüyenler', 'Yüzde 16', 'Saim Amca: en son gelen', 'Başka çare kalmaması'],
           ]},
+{ t: 'quote', text: 'Önce seni görmezden gelirler, sonra sana gülerler, sonra seninle savaşırlar; sonra sen kazanırsın. — Mahatma Gandhi' },
         ],
       },
       {
@@ -658,13 +658,13 @@ export const section3Models: DecisionModel[] = [
           { t: 'p', text: 'Çevremiz hızlandıkça ve karmaşıklaştıkça, gerçekten bildiğimiz — gerçekten kavrayıp anlayabildiğimiz — miktar sürekli azalıyor. Daha 1980\'lerde öğretmenler öğrencilerine bilgisayarın ikili kodla nasıl çalıştığını anlatmaya çalışırdı. Bugün, çevremizi saran ve kullandığımız pek çok şeyi (örneğin akıllı telefonları) anlamadığımız aşağı yukarı kabullenilmiş durumda. Biri bize DNA kodunu anlatmaya kalksa bile büyük olasılıkla derinliğinde boğuluruz.' },
           { t: 'h2', text: 'Kara kutularla yaşamak' },
           { t: 'p', text: 'Giderek daha çok "kara kutuyla" çevriliyiz: bize açıklansa bile anlamadığımız karmaşık yapılar. Kara kutunun iç süreçlerini kavrayamayız; ama yine de girdilerini ve çıktılarını karar verme süreçlerimize dahil ederiz. Anlamadan inanmak zorunda olduğumuz şeylerin miktarı sürekli artıyor. Bunun sonucu şudur: bir şeyi açıklayabilen kişilere, açıklamanın kendisinden daha fazla önem atfetmeye başlarız.' },
-          { t: 'quote', text: 'Gelecekte insanları argümanlarla değil, imgeler ve duygularla ikna etmek norm hâline gelecek.' },
-          { t: 'table', head: ['Kara kutu', 'Ne bilmiyoruz?', 'Neye bakarak güveniriz?'], rows: [
+                    { t: 'table', head: ['Kara kutu', 'Ne bilmiyoruz?', 'Neye bakarak güveniriz?'], rows: [
             ['Arıza tespit cihazı', 'Kararı nasıl verdiğini', 'Dediğinin tutup tutmadığına'],
             ['Telefon ve uygulamalar', 'İçeride ne döndüğünü', 'Geçmiş deneyime ve bilinirliğe'],
             ['Banka ve finans ürünleri', 'Paranın nasıl işletildiğini', 'Denetime ve hesap verebilirliğe'],
             ['Uzman raporu', 'Hesabın ayrıntısını', 'Uzmanın sicili ve bağımsızlığına'],
           ]},
+{ t: 'quote', text: 'Gelecekte insanları argümanlarla değil, imgeler ve duygularla ikna etmek norm hâline gelecek.' },
         ],
       },
       {
